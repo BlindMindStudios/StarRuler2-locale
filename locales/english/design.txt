@@ -41,3 +41,20 @@ IMPORT_INTO_CLASS: Import into Class:
 SAVED_CLASS: <Saved Class>
 EXPORT_DESIGN: Export
 DUPLICATE_DESIGN: Duplicate
+
+SANDBOX_WAR: Fighting!
+SANDBOX_PEACE: Ceasing Fire...
+SPAWN_ALLIED: Spawn Allied
+SPAWN_ENEMY: Spawn Enemy
+SANDBOX_CLEAR: Clear Sandbox
+SANDBOX_CONFIRM_CLEAR: Are you sure you wish to destroy all ships in the sandbox?
+SANDBOX_DESC: Welcome to the designs sandbox!\nDesigns are auto-exported here.\nUse 'Import Designs' to load them in-game.
+SANDBOX_SAVE_EXPORT: Save + Export
+
+TT_EDIT_DESIGN: Edit this design.
+TT_OBSOLETE_DESIGN: Mark this design as obsolete. It will no longer appear in most design lists. Obsolete support designs will no longer be automatically built by Defense.
+TT_UNOBSOLETE_DESIGN: Put this design back into active use, removing its obsolete status.
+SHOW_OBSOLETE: Show Obsolete
+TT_SHOW_OBSOLETE: Toggle whether to show designs that have been marked as obsolete.
+TT_SUPPORT_DESIGN: This design uses a support ship hull. Support ships cannot move independently and can only act as part of a larger fleet, centered around a flagship or planet.
+TT_FLAGSHIP_DESIGN: This design uses a flagship hull. Flagships can move and act independently, and may be able to provide command for a support fleet. The amount of support ships a flagship can have is dependent on how much "Support Command" is in its design.

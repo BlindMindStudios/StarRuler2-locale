@@ -65,6 +65,14 @@ GTT_MONEY: <<
 	Upcoming Budget: [right]$2[/right]
 >>
 
+GTT_BONUS_MONEY: <<|
+	[font=Subtitle][b]Special Funds:[/b] [right][color=#0f0]$1[/color][/right][/font]
+
+	[i]Special funds are collected from various one-time sources such as
+	Profiteering cards or Anomalies, and will carry over between budgets if not
+	spent.[/i]
+>>
+
 GTT_INFLUENCE: <<
 	[font=Medium]Influence[/font]
 	[i]Influence points are used to trigger diplomatic actions and win galactic senate votes. If storing more points than your optimal storage cap (based on your total generation), your generation rate will be decreased.[/i]
@@ -207,7 +215,7 @@ FULRATE_DESC: <<
 
 GEMS: Gems
 GEMS_DESC: <<
-	Makes the consuming planet happy.
+	Whenever gems are delivered to a planet by a civilian trade ship, that planet becomes Happy for 3 minutes.
 >>
 
 PEKELM: Pekelm
@@ -482,7 +490,8 @@ CLEAR_WATER: Clear Water
 CLEAR_WATER_DESC: <<|
 	Created from bonding 8 Water.
 
-	Converts all civilian production into $1 money generation.
+	Converts all civilian Influence, Defense, Research and Energy production
+	into money generation.
 >>
 
 AWESOME_WATER: Phoenix Water

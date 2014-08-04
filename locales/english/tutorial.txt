@@ -366,7 +366,7 @@ TUT_DSG_ACT2_TEXT: Remove the three separate crew facility subsystems (with brid
 TUT_DSG_ACT3_TITLE: Add Control Computer
 TUT_DSG_ACT3_TEXT: Add a 1-hex control computer on the ship to provide command.
 TUT_DSG_ACT4_TITLE: Add Fusion Generators
-TUT_DSG_ACT4_TEXT: Fill up the remaining empty space by adding 2 Fusion Reactor hexes, to sufficient power for our control computer.
+TUT_DSG_ACT4_TEXT: Fill up the remaining empty space by adding 2 Fusion Reactor hexes, to generate sufficient power for our control computer.
 TUT_DSG_ACT5_TITLE: Save the Design
 TUT_DSG_ACT5_TEXT: Click the [b]Save[/b] button in the top right to save your changes to the "Heavy Carrier" design.
 

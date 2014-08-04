@@ -24,6 +24,18 @@ SUPPORT_CAPACITY: Support Capacity
 SLIPSTREAM_TEAR: Slipstream Tear
 ODDITY_GATE: Warp Through
 EFFECTIVENESS: Effectiveness
+SHIP_CARGO: Cargo:
+SHIP_CARGO_WORTH: [right][b][color=#0f0]$1[/color][/b] value[/right]
+CARGO_GOODS: [img=ResourceIconsSmall::32;21;#888/] [color=#aaa]Goods[/color]
+CIVILIAN_MERCHANT: Civilian Trader
+CIVILIAN_FREIGHTER: Civilian Freighter
+CIVILIAN_CARAVAN: Civilian Caravan
+CIVILIAN_STATION: Civilian Trade Station
+CIVILIAN: Civilian
+STATUS_BLOCKADED: Blockaded!
+STATUS_BLOCKADED_DESC: <<|
+	Some of the civilian trade ships carrying this planet's imports were shot down. As a result, the planet produces 1 less of a random empire resource for each stack of "Blockaded!".
+>>
 
 PICKUP_RESEARCH: Research Data
 PICKUP_RESEARCH_DESC: Gives 30 research progress points.

@@ -90,11 +90,12 @@ DECAYING_PLANETS: Decaying Planets
 LABOR_PLANETS: Planets/Orbitals with Labor
 DEFENSE_PLANETS: Planets with Defense
 COLONIZING_PLANETS: Partially Colonized
-INFLUENCE_STACK: Influence
+INFLUENCE_STACK: Influence Peddling
 WONDER_PLANETS: Owned Wonders
 UNDER_SIEGE_PLANETS: Planets under Siege
-ALL_FLEETS: All Flagships
-COMBAT_FLEETS: Flagships in Combat
+ALL_FLEETS: All Fleets
+COMBAT_FLEETS: Fleets in Combat
+FLEETS_LOW_SUPPLY: Fleets on Low Supply
 AVAIL_ARTIFACTS: Available Artifacts
 
 GO_RESOURCE: $1

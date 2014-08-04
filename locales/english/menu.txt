@@ -56,6 +56,10 @@ MP_WAITING_TRANSFER: Transfering Game
 MP_IRC_CHAT: Open IRC Chat Lobby
 MP_NO_GAMES: No active multiplayer games...
 INVITE_FRIEND: Invite Friend
+MP_CONNECT_EVENT: $1 has connected to the game.
+MP_DISCONNECT_EVENT: $1 has disconnected.
+MP_PLAY_EVENT: $1 is now playing as the $2 empire.
+MP_SPECTATING_EVENT: $1 is now spectating.
 
 CHOOSE_MAP: Choose Map
 ADD_GALAXY: Add Galaxy
@@ -71,6 +75,12 @@ TEX_QUAL_5: Ultra
 RESOLUTION: Resolution
 RES_DESKTOP: Desktop
 FULLSCREEN: Fullscreen
+
+NG_DISABLE_TRADE: Disable Civilian Freight Trade
+NGTT_DISABLE_TRADE: <<|
+	Disable civilian trade ships from spawning in this game. Will remove all raiding mechanics, but can improve performance in very large galaxies.
+>>
+
 
 NG_WARN_PEREMP: <<|
 	[b][color=#f00]Warning:[/color][/b] You are creating a large map with more than 25 systems per empire,
@@ -154,3 +164,8 @@ DISCONNECT_2: Connection closed
 DISCONNECT_3: Kicked by server
 DISCONNECT_4: Version mismatch
 DISCONNECT_5: Incorrect password
+
+SANDBOX: Designs Sandbox
+PROMPT_QUIT: Are you sure you want to quit the game? All unsaved progress will be lost.
+PROMPT_TUTORIAL: Starting the tutorial now will end your current game. All unsaved progress will be lost. Proceed?
+PROMPT_SANDBOX: Loading the designs sandbox now will end your current game. All unsaved progress will be lost. Proceed?

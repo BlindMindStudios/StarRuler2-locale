@@ -344,7 +344,7 @@ DESIG_BASTION_DESC: <<|
 
 STATUS_HAPPY: Happy
 STATUS_HAPPY_DESC: <<|
-	Adds 1 production to all resources being produced on this planet.
+	All empire resources already being produced on this planet gain 1 extra production.
 >>
 
 STATUS_VIRILE: Virile
