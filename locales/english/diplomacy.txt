@@ -1,0 +1,597 @@
+DIPLOMACY: Diplomacy
+POLITICAL: Political
+POLITICAL_STRENGTH: Political Strength:
+MILITARY_STRENGTH: Military Strength:
+TERRITORY_STRENGTH: Territory:
+MILITARY: Military
+STR_WEAK: Weak
+STR_AVERAGE: Average
+STR_STRONG: Strong
+PEACEFUL: Peaceful
+WAR: War
+WAR_STATUS: $1: Diplomatic Relations
+WAR_STATUS_WAR: The $1 has [color=#f00]declared war[/color]!
+WAR_STATUS_PROPOSE: The $1 has sent a [color=#0f0]peace offer[/color]!
+WAR_STATUS_ACCEPT: The $1 has [color=#0f0]accepted[/color] our peace offer!
+WAR_EVT: [color=#fb0]Contested:[/color] $1
+WAR_EVT_CONTEST: $1 is [color=#fb0]under attack[/color]!
+WAR_EVT_LOST: $1 has been [color=#f00]lost[/color]...
+EMPIRE_INFLUENCE: $1 influence
+EMPIRE_POINTS: $1 points
+EMPIRE_STRENGTH: $1 strength
+EMPIRE_PLANETS: $1 planets
+ACTIVE_VOTES: Active Propositions
+ACTIVE_INFLUENCE_EFFECTS: Active Effects
+ELECT_VOTE: Run for Senate Leader
+UNIFY_VOTE: Reach for Galactic Unification
+SAY_LABEL: Say:
+TIME_REMAINING: Remaining Time:
+DIPLOMACY_BACK: Back to Diplomacy
+VIEW_NEGOTIATIONS: View Negotiations
+VIEW_VOTE_HISTORY: View History
+VOTE_HISTORY: Proposition History
+CARD_STACK: Influence Peddling and Events
+AVAILABLE_CARDS: Available Diplomatic Actions
+CARD_COST: $1 Influence
+CARD_COST_SPLIT: $1+$2 Influence
+CARD_WEIGHT: $1 Support
+VOTING_HEADER: VOTING
+VOTE_PETITIONER: Petitioner
+VOTE_TARGET: Target
+SENATE_LEADER: Galactic Senate Leader
+PLAY_SUPPORT: Play in Support
+PLAY_OPPOSE: Play in Opposition
+PLAY_NEUTRAL: Play Action
+USES_UNLIMITED: Unlimited
+PURCHASE_CARD: Purchase
+PLAY_CARD: Activate
+PLAY_CARD_OPTION: $1 ($2 influence)
+SUPPORT: Support
+OPPOSE: Oppose
+EFFECT_DISMISS: Dismiss
+EFFECT_UPKEEP: $1% Upkeep
+INFLUENCE_UPKEEP: Upkeep:
+CARD_GENERIC: Any
+CARD_DESC_COST: Influence Cost:
+CARD_DESC_WEIGHT: Weight:
+CARD_PURCHASE_MONEY: Purchase Cost:
+CARD_PURCHASE_INFLUENCE: Purchase Cost:
+CARD_PLAY_MONEY: Play Cost:
+INFLUENCE_POPULATION: Population
+VOTES_FOR: $1 for
+VOTES_AGAINST: $1 against
+EFFECT_CONFIRM_DISMISS: <<|
+	Are you sure you wish to dismiss this influence effect?
+
+	You will no longer have to pay any influence upkeep, but the effect will
+	stop working immediately. This cannot be undone.
+>>
+
+INFLUENCE_TT_ACTION: <<|
+	This is a diplomatic [b]action[/b]. After being purchased, it can be used at will,
+	although it may require an activation cost to be paid first.
+>>
+
+INFLUENCE_TT_INSTANT: <<|
+	This is an [b]instant action[/b]. After being purchased, its effect triggers immediately.
+>>
+
+INFLUENCE_TT_VOTE: <<|
+	This is a [b]vote action[/b]. When activating this action, a galactic senate vote
+	will be started to determine its outcome.
+>>
+
+INFLUENCE_TT_EFFECT: <<|
+	This is an [b]effect action[/b]. Activating this action will create a
+	persistent effect. Effects can have a limited duration and usually reduce
+	your total influence generation by a percentage while active.
+>>
+
+INFLUENCE_TT_EVENT: <<|
+	This is an [b]influence event[/b]. Various effects will be active while
+	this action is in the influence stack.
+>>
+
+INFLUENCE_TT_SUPPORT: <<|
+	This is a [b]support action[/b]. This action can only be used inside
+	a galactic senate vote, and can sway the vote in particular ways,
+	depending on its weight.
+>>
+
+INFLUENCE_TT_QUALITY: <<|
+	This action has superior [b]quality[/b], and comes with various
+	benefits compared to its mundane counterpart.
+>>
+
+INFLUENCE_TT_BUY_COST: <<|
+	Purchasing this action costs [b]$1 influence[/b].
+>>
+
+INFLUENCE_TT_PLAY_COST: <<|
+	Playing this action costs [b]$1 influence[/b].
+>>
+
+INFLUENCE_TT_PLAY_COST_UNKNOWN: <<|
+	The cost to play this action depends on factors specific to its use.
+>>
+
+INFLUENCE_TT_WEIGHT: <<|
+	This action provides [b]$1 weight[/b] to votes.
+>>
+
+INFLUENCE_TT_WEIGHT_NEXT: <<|
+	This action provides [b]$1 weight[/b] to a support action in the future.
+>>
+
+INFLUENCE_TT_WEIGHT_UNKNOWN: <<|
+	The weight this action provides depends on factors specific to its use.
+>>
+
+INFLUENCE_TT_UPKEEP: <<|
+	The effect created by this action will lower your total
+	influence generation by $1 while it is active, as upkeep.
+>>
+
+INFLUENCE_DURATION: Duration
+INFLUENCE_TT_DURATION: <<|
+	The effect created by this action will last for $1.
+>>
+
+INFLUENCE_TT_FAIL: <<|
+	When the vote timer reaches [b][color=#f00]-3 minutes[/color][/b], the red
+	bar will be filled completely and the proposition will be [b]rejected[/b].
+>>
+INFLUENCE_TT_PASS: <<|
+	When the vote timer reaches [b][color=#0f0]+3 minutes[/color][/b], the green
+	bar will be filled completely and the proposition will be [b]passed[/b].
+>>
+
+INFLUENCE_TT_BOUGHTBY: Bought by the $1.
+
+DECLARE_WAR: Declare War
+PROPOSE_PEACE: Propose Peace
+RETRACT_PEACE: Retract Peace Proposal
+ACCEPT_PEACE: Accept Peace Proposal
+OPTION_INFLUENCE_COST: $1 ($2 influence)
+
+PROMPT_WAR: Are you sure you wish to declare war on the $1?
+
+VOTE_LOG_START: * Proposition started by the $1.
+VOTE_LOG_START_CARD: * Proposition [b][color=$3]$2[/color][/b] started by the $1.
+VOTE_LOG_MESSAGE: $1: [offset=140]$2[/offset]
+VOTE_LOG_LEAVE: * The $1 has left the negotiations.
+VOTE_LOG_WITHDRAW: * The $1 has withdrawn the proposition.
+VOTE_LOG_SUCCESS: * [color=#0f0]Proposition was accepted![/color]
+VOTE_LOG_FAIL: * [color=#f00]Proposition was rejected.[/color]
+
+VS: vs
+VOTE_LOG: Senate Record
+VOTE_YEA: Support
+VOTE_NAY: Opposition
+VOTES_YEA: $1 Support
+VOTES_NAY: $1 Opposition
+
+NO_VOTES: No currently active propositions...
+NO_EFFECTS: No currently active effects...
+
+VOTE_LEAVE: Leave Negotiations
+PROMPT_LEAVE: <<|
+	Are you sure you wish to leave the negotiations on this proposition
+	altogether? All your support or opposition will be withdrawn.
+
+	You will no longer be able to see any of the communication or actions
+	used, but you will still be affected by the outcome.
+>>
+
+VOTE_WITHDRAW: Withdraw Proposition
+PROMPT_WITHDRAW: <<|
+	Are you sure you wish to withdraw this proposition?
+
+	The vote will end in failure immediately if you do.
+	All effects will resolve as if the proposition was rejected.
+>>
+
+
+CARD_NEGOTIATE: Negotiate
+CARD_NEGOTIATIONS_LOG_Y: * The $1 [b]Negotiates[/b] to add [color=#0f0]$2 support[/color].
+CARD_NEGOTIATIONS_LOG_N: * The $1 [b]Negotiates[/b] to add [color=#f00]$2 opposition[/color].
+CARD_NEGOTIATE_DESC: <<|
+	By employing a team of skillful negotiators, we can convince
+	a number of members of the galactic senate to support our cause
+	on a particular vote.
+
+	[i]Adds 1 weight to either side of the vote. Each additional quality will increase
+	the weight granted.[/i]
+>>
+
+CARD_SPY: Spy ($1)
+CARD_SPY_DESC: <<|
+	Through a clandestine intelligence operation, we can obtain the transponder
+	codes of another empire's communications system, letting us keep close tabs
+	on their territory and movements for a limited time until countered.
+
+	[i]Grants vision for 5 minutes. Each additional quality will increase the
+	duration of the spy effect by 3 minutes.[/i]
+>>
+CARD_SPY_EFFECT: Spy on the $1
+CARD_SPY_EFFECT_DESC: <<|
+	The $1 is currently being spied on, granting vision over all their systems and fleets.
+>>
+
+CARD_OPENFORUM: Open Forum
+CARD_OPENFORUM_DESC: <<|
+	Holding an open and unrestricted debate about issues provides additional
+	opportunities for political maneuvering and media manipulation.
+
+	[i]Increases the size of the influence card stack by 1. The cost of
+	purchasing cards further into the stack is reduced by one for you.[/i]
+>>
+EFFECT_OPENFORUM: Open Forum
+
+CARD_BUREAUCRACY: Bureaucracy
+CARD_BUREAUCRACY_DESC: <<|
+	Setting up arcane and convoluted bureaucratic systems for getting anything
+	done within the galactic senate forces all other empires to rely on your
+	understanding for guidance.
+	
+	[i]Whenever another empire starts a vote or persistent effect, you gain
+	leverage against them.[/i]
+>>
+EFFECT_BUREAUCRACY: Bureaucracy
+
+CARD_ANNEX_PLANET: Annex Planet
+CARD_ANNEX_PLANET_DESC: <<|
+	Despite the current situation, certain territories belong to our empire by
+	right! We can petition the galactic senate to rectify the situation, and
+	try to convince them we deserve to be in control.
+	
+	[i]The influence cost to play this action depends on the loyalty of the
+	target planet. If the vote created by this action passes, you will gain
+	control of the planet. The target planet must be within your trade
+	borders.[/i]
+>>
+VOTE_ANNEX_PLANET: Annex Planet $1
+
+CARD_ANNEX_SYSTEM: Annex System
+CARD_ANNEX_SYSTEM_DESC: <<|
+	Putting pressure on the galactic senate to act, we claim that the people of
+	the system are better off under our benevolent rule. The empires that control
+	it now are no good for the populace.
+	
+	[i]The influence cost to play this action depends on the loyalty of the
+	planets in the target system. If the vote created by this action passes,
+	you will gain control of those planets. The target system must be within
+	your trade borders.[/i]
+>>
+VOTE_ANNEX_SYSTEM: Annex System $1
+
+CARD_PROFITEERING: Profiteering
+CARD_MONEY_GAIN: Money Gained
+CARD_PROFITEERING_DESC: <<|
+	Back-room deals with certain powerful civilian figures have gained you
+	a significant chunk of spending money.
+
+	[i]You will receive the money immediately on purchase of this action.[/i]
+>>
+
+CARD_GIFT: Gift
+CARD_GIFT_DESC: <<|
+	Generously provide some of our political capital in order to solve one of
+	another empire's sticky situations, recording the events to be used as
+	leverage later.
+
+	[i]Gifts any one influence action to another empire. Grants random leverage
+	on that empire, proportional to the purchase cost of the gifted action.
+	Cannot be used on empires you are currently at war with.[/i]
+>>
+GIFT_NOTIFY: The $1 has gifted you a $5.
+
+CARD_SABOTAGE: Sabotage
+CARD_SABOTAGE_DESC: <<|
+	Setting in motion a series of meticulously planned events and political
+	maneuvers, we can sabotage one of another empire's ongoing operations.
+
+	[i]Permanently dismisses any target influence effect. The owner of the
+	influence effect gains leverage on you.[/i]
+>>
+SABOTAGE_NOTIFY: The $1 have sabotaged the $2's "$5" effect.
+
+CARD_INVESTIGATE: Investigate
+CARD_INVESTIGATE_DESC: <<|
+	After subtly spreading rumors of nefarious developments occuring in another
+	empire, we offer to petition for a galactic senate investigation into the
+	matter to clear these obvious misunderstandings. The investigation will
+	prove useful for gaining intelligence on the other empire's internal
+	affairs.
+
+	[i]If the vote created by this action passes, all empires will gain vision
+	of the target empire for 10 minutes. Does not work on empires you are at
+	war with. Only you pay the effect's upkeep cost.[/i]
+>>
+VOTE_INVESTIGATE: Investigate the $1
+EFFECT_INVESTIGATE: Investigation of the $1
+
+CARD_RIDER: Attach Rider
+CARD_RIDER_DESC: <<|
+	By attaching a seemingly frivolous ammendment to the galactic senate
+	proposition, we secure ourselves a way to take advantage of its passing for
+	political capital.
+
+	[i]If the vote this is attached to passes, you will gain leverage for use
+	against the empire that started it. Can only be used once per vote. Cannot
+	be used on votes with less than a minute remaining.[/i]
+>>
+CARD_RIDER_LOG: * The $1 has attached a [b]Rider[/b] to the proposition.
+
+CARD_LEVERAGE: Leverage ($1)
+CARD_LEVERAGE_LOG_Y: * The $1 uses their [b]Leverage[/b] against the $3 to add [color=#0f0]$2 support[/color].
+CARD_LEVERAGE_LOG_N: * The $1 uses their [b]Leverage[/b] against the $3 to add [color=#f00]$2 opposition[/color].
+CARD_LEVERAGE_DESC: <<|
+	Use leverage previously built up against the $1 to further your cause.
+
+	[i]Can only be played if the $1 has voted on the opposite side of the proposition.[/i]
+>>
+
+CARD_BLACKMAIL: Blackmail: $1
+CARD_BLACKMAIL_LOG_Y: * The $1 [b]Blackmails[/b] the $2 to [color=#0f0]support the proposition[/color].
+CARD_BLACKMAIL_LOG_N: * The $1 [b]Blackmails[/b] the $2 to [color=#f00]oppose the proposition[/color].
+CARD_BLACKMAIL_DESC: <<|
+	Blackmail an empire based on previously collected information to stop
+	supporting or opposing the proposition.
+
+	If the proposition ends in a different way to what this card specified, and
+	the target empire is still present in the negotiations, the target empire
+	loses a random proportion of their total influence.
+>>
+
+CARD_SUBDUE: Subdue: $1
+CARD_SUBDUE_LOG: * The $1 [b]Subdues[/b] the $2 to [color=#f0f]remove them from the negotiations[/color].
+CARD_SUBDUE_DESC: <<|
+	Forcibly remove the target empire from the negotiations altogether.
+
+	Can only be played if the empire has attempted to influence the proposition
+	before.
+>>
+
+CARD_FAVORS: Favors
+CARD_FAVORS_DESC: <<|
+	By doing certain favors for powerful diplomatic figures, we have gained
+	some political capital to use. Granting these favors did not come cheap,
+	however.
+
+	[i]After purchasing this you immediately gain one completely random action.
+	This action does not cost influence to purchase, but takes money from your
+	budget.[/i]
+>>
+
+CARD_BRIBE: Bribe
+CARD_BRIBE_DESC: <<|
+	Offer a juicy bribe to the next empire to support our side of the
+	negotiations. Through our cooperative efforts, we can also add more weight
+	to their action.
+
+	[i]The next other empire to play a support action on the side this bribe
+	was played in gains the money spent on it. The weight of this action is
+	also added to it.[/i]
+>>
+CARD_BRIBE_LOG_Y: * The $1 offers a [b]Bribe[/b] of [color=#d1cb6a]$5[/color] to the next empire to [color=#0f0]support the proposition[/color].
+CARD_BRIBE_LOG_N: * The $1 offers a [b]Bribe[/b] of [color=#d1cb6a]$5[/color] to the next empire to [color=#f00]oppose the proposition[/color].
+
+CARD_CALLOUT: Call Out ($1)
+CARD_CALLOUT_DESC: <<|
+	Calling out another empire by name, we pressure them to weigh in on the
+	vote publicly or face the blowback of seeming afraid. Giving them this
+	opportunity, however, increases the impact of their next action, regardless
+	of whether they support our cause.
+
+	[i]When the vote ends, if the target empire has not added weight to the vote
+	after this card was played, you gain leverage on them. Can only be used on
+	an empire once per vote. The weight of this action is added to the target
+	empire's next support action.[/i]
+>>
+CARD_CALLOUT_LOG: * The $1 [b]Calls Out[/b] the $3 to weigh in on the vote.
+
+CARD_NAMEPLANET: Name Planet
+CARD_NAMEPLANET_DESC: <<|
+	Magnificent planets deserve magnificent names. By influencing the civilian
+	sector and organizing a grand naming festival we make sure the new name of
+	this planet will go down into the ages. The recognition is sure to bring
+	it fame and prosperity.
+
+	[i]Renames an owned planet. The planet permanently receives +2 Maximum
+	Population and +1 Labor Generation. Planets can only be named once. Each
+	additional quality increases the added maximum population by 1.[/i]
+>>
+NAMEPLANET_NOTIFY: The $1 have gloriously named [b]$3[/b].
+
+CARD_NAMEFLAGSHIP: Name Flagship
+CARD_NAMEFLAGSHIP_DESC: <<|
+	Flagships are the backbone of the war effort, inspiring the hearts and
+	minds of many of our empire's loyal subjects. Bestowing an imposing name
+	on our flagships heightens the morale back home, as well as that of the
+	sailors, eager to return with stories of their battle alongside the behemoth.
+
+	[i]Renames an owned flagship. The flagship permanently gains 10% extra
+	effectiveness for it and its supporting fleet. Flagships can only be named
+	once. Each additional quality increases the added effectiveness by 3%.[/i]
+>>
+NAMEFLAGSHIP_NOTIFY: The $1 have christened their mighty flagship $3.
+
+CARD_PROTECT_SYSTEM: Protect System
+CARD_PROTECT_SYSTEM_DESC: <<|
+	Citing critical humanitarian reasons, we convince the galactic senate to
+	declare the planets in our system to be protected and to prevent any empire
+	from attempting to conquer them by force.
+
+	[i]Prevents owned planets in the target system from losing loyalty. Lasts
+	5 minutes by default. Each additional quality increases the duration by
+	another 5 minutes.[/i]
+>>
+PROTECT_SYSTEM_EFFECT: Protect System $1
+PROTECT_SYSTEM_NOTIFY: The $1 have declared $3 a protected system.
+
+CARD_UPRISING: Patriotic Surge
+CARD_UPRISING_DESC: <<|
+	The people have sat idle for too long. Pirates, invaders, threatening asteroids.
+	What more will it take for them to take up arms for their own sake?!
+	Now is the time to act!
+
+	[i]Inspire the population of a target planet to rise up their own
+	militia for their defense. Restores 5 Loyalty and creates 25 Labor worth
+	of defense ships. Each additional quality increases the amount of defense
+	ships created by 25 Labor.[/i]
+>>
+
+CARD_CULTIVATION: Cultivation
+CARD_CULTIVATION_DESC: <<|
+	A concerted effort from local governance and civilian enterprise has
+	allowed for the introduction and cultivation of an entirely new species of
+	fruit, perfected to grow in the conditions specific to this planet.
+
+	[i]Target owned planet gains a native Fruit.[/i]
+>>
+
+CARD_ENHANCE: Enhance
+CARD_ENHANCE_DESC: <<|
+	Renewed efforts to gain a diplomatic advantage have benefited our position,
+	letting us put more strength behind certain diplomatic maneuvers.
+
+	[i]Upgrades one use of a card to its maximum quality.
+	Where appropriate, adds one additional extra quality.[/i]
+>>
+
+CARD_RHETORIC: Rhetoric
+CARD_RHETORIC_DESC: <<|
+	Incessantly repeated and emphasized talking points sway public opinion to
+	our side of the debate, drowning out any dissenting voices. Other empires
+	would be fools not to partake in the benefits of a unified rhetoric.
+
+	[i]If the vote succeeds on the side this card is played in, three randomly
+	generated cards are distributed to other empires that voted on that side,
+	proportional to their contributions. Multiple rhetorics played on the same
+	side cost more to play and gain increased weight.[/i]
+>>
+CARD_RHETORIC_LOG_Y: * The $1 crafts [color=#ff8044][b]Rhetoric[/b][/color] to add [color=#0f0]$2 support[/color].
+CARD_RHETORIC_LOG_N: * The $1 crafts [color=#ff8044][b]Rhetoric[/b][/color] to add [color=#f00]$2 opposition[/color].
+
+CARD_CONTROL: Take Control
+CARD_CONTROL_DESC: <<|
+	Vie for control of a diplomatic station in our territory, attempting to
+	guide its decisions using our presence.
+
+	[i]If the vote succeeds, gain ownership of target Embassy Core orbital
+	within your trade region.[/i]
+>>
+VOTE_TAKE_CONTROL: Take control of $1
+
+CARD_INTELLIGENCE: Intelligence ($1)
+CARD_INTELLIGENCE_LOG_Y: * The $1 uses their [b]Intelligence[/b] about the $3 to add [color=#0f0]$2 support[/color].
+CARD_INTELLIGENCE_LOG_N: * The $1 uses their [b]Intelligence[/b] about the $3 to add [color=#f00]$2 opposition[/color].
+CARD_INTELLIGENCE_DESC: <<|
+	Collected intelligence data about another empire gives us a favourable position during negotiations.
+
+	[i]Can only be played if the $1 has voted on the opposite side of the proposition.
+	Each subsequent intelligence against the same empire played in the same vote loses 2 weight.
+	
+	You can only have 3 Intelligence about one empire at any time. If no
+	Listening Posts are generating any intelligence, your existing intelligence
+	will expire over time.[/i]
+>>
+
+CARD_PROMISES: Promises
+CARD_PROMISES_LOG_Y: * The $1 makes [b][color=#fa00ff]Promises[/color][/b] to add [color=#0f0]$2 support[/color].
+CARD_PROMISES_LOG_N: * The $1 makes [b][color=#fa00ff]Promises[/color][/b] to add [color=#f00]$2 opposition[/color].
+CARD_PROMISES_DESC: <<|
+	The promises we make to gather support now will require using some of
+	our political pull in the future, but this seems a small price to pay for
+	their overwhelming endorsements.
+
+	[i]Reduces your empire's total influence generation by 40% for the next
+	3 minutes. Each additional quality increases the weight given by 3, as well
+	as the influence upkeep by 15%.[/i]
+>>
+
+CARD_CLAIM_ARTIFACT: Claim Artifact
+CARD_CLAIM_ARTIFACT_DESC: <<|
+	We are the only empire qualified to use this artifact! If the galactic
+	senate will allow it, we shall send a civilian-backed retrieval expedition
+	to obtain and safeguard it from abuse.
+
+	[i]If the vote succeeds, the target artifact is moved to a system in your
+	empire and only you will be able to use it from now on.[/i]
+>>
+VOTE_CLAIM_ARTIFACT: Claim Artifact: $1
+
+CARD_SENATE_BUILDING: Host Senate Building
+CARD_SENATE_BUILDING_DESC: <<|
+	Hosting the galactic senate on one of our worlds gives us great power and
+	esteem, the privilege is therefore sought after highly by all empires.
+
+	[i]If the vote started by this action passes, the targeted planet will
+	become the host for the galactic senate building. This adds bonus influence
+	generation to the planet based on its level, and causes all votes you start
+	to gain 2 increased support. Every time a different site is selected, the
+	cost of this card and its influence generation benefit increases.[/i]
+>>
+VAR_INFLUENCE_INCOME: Influence Gen.
+VOTE_SENATE_BUILDING: Host Galactic Senate on $1
+STATUS_SENATE_BUILDING: Hosting Galactic Senate Building
+STATUS_SENATE_BUILDING_DESC: <<|
+	This planet is hosting the senate building.
+	
+	The planet is gaining bonus influence generation per level and increases
+	the support level of votes you start by 2.
+>>
+
+CARD_UNITED_RESEARCH: United Research Center
+CARD_UNITED_RESEARCH_DESC: <<|
+	By hosting the senate's united research center on one of our worlds we can
+	reap the benefits of shared information.
+
+	[i]If the vote started by this action passes, the targeted planet will
+	become the host for the united research center. This adds bonus research
+	generation to the planet based on its level, and lets you gain an Insight
+	every 3 research levels instead of 4. Every time a different site is
+	selected, the cost of this card and its research generation benefit
+	increases.[/i]
+>>
+VAR_RESEARCH_INCOME: Research Gen.
+VOTE_UNITED_RESEARCH: Host United Research Center on $1
+STATUS_UNITED_RESEARCH: Hosting United Research Center
+STATUS_UNITED_RESEARCH_DESC: <<|
+	This planet is hosting the galactic united research center.
+	
+	The planet is gaining bonus research generation per level and increases the
+	rate at which you gain Insights.
+>>
+
+CARD_GALAXY_MALL: Mall of the Galaxy
+CARD_GALAXY_MALL_DESC: <<|
+	Constructing the greatest mall in the galaxy drives the trade of materials
+	to our planet, increasing the efficiency of our imperial construction.
+
+	[i]The targeted planet will become home to the Mall of the Galaxy. All
+	construction on the planet will have a reduced build cost. Every time
+	a different site is selected, the cost of this card and its benefit
+	increase. [/i]
+>>
+VAR_BUILD_COST_DECREASE: Cost Decrease
+NOTIFY_GALAXY_MALL: The $1 have constructed the greatest Mall of the Galaxy on $3.
+STATUS_GALAXY_MALL: Mall of the Galaxy
+STATUS_GALAXY_MALL_DESC: <<|
+	This planet is home to the largest Mall of the Galaxy.
+	
+	Construction projects on this planet have reduced build cost.
+>>
+
+CARD_DENOUNCE: Denounce ($1)
+CARD_DENOUNCE_DESC: <<|
+	No longer will we suffer the injustices of another. We fully denounce our
+	opponent, and commit our resources towards suporting any who would oppose
+	them.
+	
+	[i]The next cards to enter the influence card stack will all be leverage
+	against the targeted empire. Instantly rotates the influence card stack
+	when played.[/i]
+>>
+DENOUNCE_NOTIFY: The $1 have denounced the $3!

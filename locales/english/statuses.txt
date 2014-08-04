@@ -1,0 +1,2 @@
+STATUS_DEVASTATE: Devastation
+STATUS_DEVASTATE_DESC: This planet is losing population over time.

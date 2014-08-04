@@ -1,0 +1,189 @@
+PROJECT: Project
+PROJECTS: Projects
+LABEL_NAME: Name:
+LABEL_UNLOCKS: Next Level:
+REQUIRES_INSIGHT: Costs
+RESEARCH_PROJECT: Research
+PROJECT_COMPLETED: [i]Completed[/i]
+AVAIL_INSIGHTS: Available Insights
+NO_INSIGHTS: No available insights... You will gain a random insight every $1 technology levels.
+NO_PROJECTS: No available projects... Level up technology fields to gain projects.
+
+RES_UPGRADE: Upgrade
+RES_UPGRADE_TT: <<|
+	Spend a [b]$1[/b] in order to gain an extra instance of its basic level-up
+	benefits.
+>>
+
+RES_ENDORSE: Endorse
+RES_ENDORSE_TT: <<|
+	Spend a [b]$1[/b] in order to reduce its research cost by one level.
+>>
+
+F_SCIENCE: Theoretical Science
+F_SCIENCE_DESC: <<|
+	The understanding of understanding. Lifelong study and application of
+	advanced math and simulations provides unending insight into the universe.
+>>
+F_SCIENCE_BLURB0: 1 [b][img=DesignationIcons::5;20/] Theoretical Insight[/b]
+F_SCIENCE_BLURB1: 1 Random Project from Another Field\n  ([i]1 [img=DesignationIcons::5;20/] Theoretical Insight[/i])
+
+RI_Wealth: Wealth Insight
+RI_Influence: Influence Insight
+RI_Labor: Labor Insight
+RI_Military: Military Insight
+RI_Ancient: Ancient Insight
+RI_Theoretical: Theoretical Insight
+RI_Energy: Energy Insight
+
+F_METALLURGY: Metallurgy
+F_METALLURGY_DESC: <<|
+	The study of acquisition, refinement, and utilization of raw resources.	
+>>
+F_METALLURGY_BLURB0: All Subsystem Health +10%
+F_METALLURGY_BLURB1: Factory Labor Production +1
+
+P_SMELTING_1: Low Gravity Smelting: [b]Armoring[/b]
+P_SMELTING_1_DESC: <<|
+	[i][color=#f33]Mutually exclusive with "Low Gravity Smelting:
+	[b]Industry[/b]". Choosing this project will disable the other.[/color][/i]
+
+	Armor Health +100%
+>>
+P_SMELTING_2: Low Gravity Smelting: [b]Industry[/b]
+P_SMELTING_2_DESC: <<|
+	[i][color=#f33]Mutually exclusive with "Low Gravity Smelting:
+	[b]Armoring[/b]". Choosing this project will disable the other.[/color][/i]
+
+	Factory Labor Production +4
+>>
+P_ARMOR_ENHANCE: Resistance Tuning
+P_ARMOR_ENHANCE_DESC: <<
+	Enhances the primary aspects of armors.
+	
+	High health armors gain 10% Health.
+	Resistance armors gain 20% resistance.
+	Armors which can block hits may block 20% larger hits.
+	
+	[i]When we have the choice between killing faster or dying slower, I would choose dying slower every time.[/i]
+>>
+P_ARMOR_ENHANCE_REPEAT: <<
+	Enhances the primary aspects of armors.
+	
+	High health armors gain 10% Health.
+	Resistance armors gain 20% resistance.
+	Armors which can block hits may block 20% larger hits.
+	
+	[i]The march of progress never stops.[/i]
+>>
+P_NEUTRONARMOR: Neutronium Armor
+P_NEUTRONARMOR_DESC: <<|
+	Unlocks [b]Neutronium Armor[/b]: expensive, high health armor.
+	
+	[i]The curious capability of certain materials to constrain traditionally free neutrons,
+	while undoubtedly useful for many applications, has found its first use in novel armor designs.[/i]
+>>
+
+F_THERMODYNAMICS: Thermodynamics
+F_THERMODYNAMICS_BLURB: Generator Supply Capacity +10%
+
+P_ANTIMATTERGEN: Antimatter Generator
+P_ANTIMATTERGEN_DESC: <<|
+	Unlocks [b]Antimatter Generator[/b]: expensive, dense power source.
+	
+	[i]Destruction drives us towards destruction.[/i]
+>>
+P_GRAVITYENGINE: Graviton Engine
+P_GRAVITYENGINE_DESC: <<|
+	Unlocks [b]Graviton Engine[/b]: expensive, efficient engine.
+	
+	[i]Never before have gravitons been produced so efficiently, or in such numbers,
+	so as to allow such massive propulsors.[/i]
+>>
+
+F_MILITARY: Military Science
+F_MILITARY_BLURB0: All Weapon Damage +10%
+F_MILITARY_BLURB1: Planet Support Capacity +128
+
+P_SHIPCOMPUTER: Control Computer
+P_SHIPCOMPUTER_DESC: <<|
+	Unlocks [b]Control Computer[/b]: space efficient control system.
+	
+	[i]Computers have long been capable enough to command our fleets.
+	The problem has been in keeping them from revolting.[/i]
+>>
+
+F_HYPERDYNAMICS: Hyperdynamics
+F_HYPERDYNAMICS_BLURB: Shield Health +10% [color=#f00]{N}[/color]
+P_HYPERDYNAMICS: Field: Hyperdynamics
+P_HYPERDYNAMICS_DESC: <<|
+	Unlocks research field: [b]Hyperdynamics[/b]
+	
+	Hyperdynamics unlocks and improves shields, as well granting access
+	to a variety of highly advanced technologies.
+>>
+P_HYPERLASER: Hyperdense Laser
+P_HYPERLASER_DESC: <<|
+	Unlocks [b]Hyperdense Laser[/b]: High power, short duration laser.
+	
+	[i]These energy densities border on what is physically possible without wasting it creating matter.[/i]
+>>
+
+F_SOCIOLOGY: Sociology
+F_SOCIOLOGY_BLURB: +1 Max Population on Level 3+ Worlds
+
+P_HOUSING: +$1 Max Population on Level 2 Worlds
+
+P_SOCIAL_RELATIONS_WELFARE: Social Relations: [b]Welfare[/b]
+P_SOCIAL_RELATIONS_WELFARE_DESC: <<|
+	[i][color=#f33]Mutually exclusive with "Social Relations:
+	[b]Happiness[/b]". Choosing this project will disable the other.[/color][/i]
+
+	Doubles the effect of spending money on welfare.
+>>
+P_SOCIAL_RELATIONS_HAPPY: Social Relations: [b]Happiness[/b]
+P_SOCIAL_RELATIONS_HAPPY_DESC: <<|
+	[i][color=#f33]Mutually exclusive with "Social Relations:
+	[b]Welfare[/b]". Choosing this project will disable the other.[/color][/i]
+
+	Planets become happy from coexisting with friendly planets.
+>>
+
+P_SOCIAL_CONTROL_WAR: Social Control: [b]Warmongering[/b]
+P_SOCIAL_CONTROL_WAR_DESC: <<|
+	[i][color=#f33]Mutually exclusive with "Social Control:
+	[b]Democracy[/b]". Choosing this project will disable the other.[/color][/i]
+
+	Increases influence generation while at war. Reduces influence generation
+	while not at war.
+>>
+P_SOCIAL_CONTROL_DEMOCRACY: Social Control: [b]Democracy[/b]
+P_SOCIAL_CONTROL_DEMOCRACY_DESC: <<|
+	[i][color=#f33]Mutually exclusive with "Social Control:
+	[b]Warmongering[/b]". Choosing this project will disable the other.[/color][/i]
+
+	Increases influence generation based on how much of the total galactic
+	population lives in your empire.
+>>
+
+P_INSPIRE_INSIGHT: Inspiration: [b]Great Minds[/b]
+P_INSPIRE_INSIGHT_DESC: <<|
+	[i][color=#f33]Mutually exclusive with "Inspiration:
+	[b]Great Orators[/b]". Choosing this project will disable the other.[/color][/i]
+	
+	Generates two random insights.
+	
+	[i]"The greatest minds in history are living today. I know them. I have seen them.
+	There is a great mind in all of us, and through your efforts, we will learn amazing things."[/i]
+>>
+P_INSPIRE_INFLUENCE: Inspiration: [b]Great Orators[/b]
+P_INSPIRE_INFLUENCE_DESC: <<|
+	[i][color=#f33]Mutually exclusive with "Inspiration:
+	[b]Great Minds[/b]". Choosing this project will disable the other.[/color][/i]
+	
+	Gives 10 influence and three random influence cards.
+	
+	[i]"Though we are empowered through our knowledge and our skills, we are also driven to
+	focus on ourselves. We must look to those who grant us guidance and a sense of greater purpose,
+	for together, we are more capable than a hundred fold are separate!"[/i]
+>>

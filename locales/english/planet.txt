@@ -1,0 +1,353 @@
+DEVELOPMENTS: Developments
+CONSTRUCTION: Construction
+SHIPS: Ships
+ORBITALS: Orbitals
+POPULATION: Population
+MAX_POPULATION: Maximum Population
+COLONIZE_WITH: Colonize with $1 (ETA $2 minutes)
+AUTO_COLONIZE: Colonize this
+CANCEL_AUTO_COLONIZE: Stop colonizing this
+COLONIZE_CONTINUE: Continue colonizing
+COLONIZE_CANCEL: Stop colonizing $1
+LEVEL: Level
+MANAGE: Manage
+ORBITAL_YARD: Orbital Construction Yard
+SHIPYARD: Shipyard
+RESEARCH_STATION: Research Station
+EXPORT_RESOURCE: Export $1 to $2
+EXPORT_RESOURCES: Export resources to $1
+QUEUE_EXPORT_RESOURCE: Queue export of $1 to $2
+STOP_EXPORT_RESOURCE: Stop exporting $1 to $2
+STOP_EXPORT_RES_QUEUE: Cancel queued export of $1 to $2
+IMPORT_RESOURCE: Import $1 from $2
+QUEUE_IMPORT_RESOURCE: Queue import of $1 from $2
+STOP_IMPORT_RESOURCE: Stop importing $1 from $2
+STOP_IMPORT_RES_QUEUE: Cancel queued import of $1 from $2
+RESOURCE_POP_REQUIRED: Requires at least 1B population to produce.
+RESOURCE_LEVEL_REQUIRED: Requires level $1 planet to produce.
+RESOURCE_EXPORTED_TO: Exporting to $1...
+RESOURCE_IMPORTED_FROM: Importing from $1...
+ORBITAL_SLOTS: Orbital Slots
+INCOME: Income
+REQ_FOR_LEVEL: Required for level $1:
+REQ_STOP_DECAY: Missing Resources! Decays back to level $1 in $2 unless needs are met:
+REQ_TYPE: Any $1:
+REQ_TYPE_UNIQUE: Any unique type of $1:
+REQ_LEVEL: Any Level $1 resource:
+REQ_LEVEL_UNIQUE: Any unique type of Level $1 resource:
+INSUFFICIENT_ORBITAL_SLOTS: Insufficient orbital slots to construct.
+WAIT_CONSTRUCT: Will not start construction until resolved.
+CONSTRUCTION_REQUIRES_LEVEL: Requires level $1 planet to construct.
+ABANDON: Abandon Planet
+ABANDON_ACCEPT: Abandon
+PROMPT_ABANDON: Abandon $1? The entire population will perish.
+BUILDING_CONSTRUCTING_PCT: Under construction... $1%
+BUILDING_DISABLED_POP: Disabled due to lack of population.
+BUILDINGS: Buildings
+AVAILABLE_RESOURCES: Resources:
+REQUIRED_RESOURCES: Required:
+RESOURCE_CLASS_Food: Food
+RESOURCE_CLASS_WaterType: Water
+WONDER_NOTIF: Wonder: $1
+WONDER_EVT: The $1 have constructed the $2.
+RENAME_NOTIF: Renamed: $1
+RENAME_EVT: The $1 have renamed $2 to [b]$3[/b].
+DEFENSE_PROJ_OPTION: Build defense for system $1.
+DEFENSE_PROJ_STOP_OPTION: Stop building defense for system $1.
+TERRAFORM: Terraform
+TERRAFORM_OPTION: Terraform...
+TERRAFORM_ITEM: $1 ($2, $3 Labor)
+BUILD_TERRAFORM: Terraform $2 on $1
+BUILD_DRY_DOCK: Dry Dock: $1
+EXPORT_LABOR: Export Labor to $1
+WORK_DRY_DOCK: Work on Dry Dock
+FINANCE_OPTION: Finance...
+FINANCE_DRY_DOCK: Finance Dry Dock: $1
+FINANCE: Finance
+RENAME_OPTION: Rename... (1 Influence)
+AUTO_IMPORT_OPTION: Auto-Import $1 Resource
+AUTO_IMPORT_TWO_OPTION: Auto-Import $1 and $2 Resources
+CANCEL_AUTO_IMPORT: Cancel Auto-Imports
+QUEUED_AUTO_IMPORT: Queued auto import...
+DESTROY_BUILDING: Destroy $1
+CANCEL_BUILDING: Cancel $1
+
+TT_MANAGE_PLANET: <<|
+	[b]Manage Planet[/b]
+
+	View detailed information about the planet's surface, resources and construction.
+>>
+
+TT_MANAGE_PLANET_SUPPORTS: <<|
+	[b]Manage Supports[/b]
+
+	Manage the groups of support ships currently assigned to the planet.
+>>
+
+COLONIZE: Colonize
+TT_COLONIZE: <<|
+	[b]Colonize[/b]
+
+	Send 1B population from the planet to another unoccupied planet to colonize it.
+>>
+TT_COLONIZE_THIS: <<|
+	[b]Colonize This[/b]
+
+	Send 1B population from one of your planets to this planet to colonize it.
+>>
+
+DEFENSE_TARGET: Build Defense
+TT_DEFENSE_TARGET: <<|
+	[b]Build Defense for...[/b]
+
+	Instead of building defense ships around the planet itself, build defense ships
+	for use in another target system you control.
+>>
+
+PLANET_POPULATION_TIP: <<|
+	[b]Population[/b]
+	
+	How many Billion people live on the planet. The more population a planet has, the higher its base income and pressure capacity.
+>>
+
+PLANET_INCOME_TIP: <<|
+	[b]Income[/b]
+	
+	The amount of money this planet makes or loses every budget cycle.
+>>
+
+PLANET_INFLUENCE_TIP: <<|
+	[b]Influence[/b]
+	
+	Generates influence for your empire.
+	Influence is used to affect other empires diplomatically.
+>>
+
+PLANET_ENERGY_TIP: <<|
+	[b]Energy[/b]
+	
+	Energy is used to activate artifacts found around the galaxy.
+>>
+
+PLANET_DEFENSE_TIP: <<|
+	[b]Defense[/b]
+	
+	Periodically builds free defense support ships around the planet, or planets in
+	whichever other system this planet is set to produce defense for.
+>>
+
+PLANET_LOYALTY_TIP: <<|
+	[b]Loyalty[/b]
+
+	Loyalty indicates how dedicated your subjects on this planet are.
+
+	Sieging a planet will gradually reduce its loyalty until it hits 0, after
+	which it will be captured by the sieging empire.
+
+	The more loyal a planet, the more influence it takes to annex.
+>>
+
+PLANET_PRESSURE_TIP: <<|
+	[b]Pressure[/b]
+
+	Planetary resources can provide pressure to their consuming planet.
+
+	Your civilian population will construct resource production buildings for
+	every pressure available to the planet.
+
+	Planets can only sustain up to a maximum capacity of pressure, dependent on
+	the planet level and total population. Pressure imported beyond the
+	pressure capacity will be used at reduced efficiency.
+
+	Exporting a planet's native resource will reduce its pressure capacity as
+	an additional cost.
+>>
+
+PLANET_LABOR_TIP: <<|
+	[b]Labor[/b]
+	
+	Labor affects the rate of construction at the planet.
+>>
+
+PLANET_RESEARCH_TIP: <<|
+	[b]Research[/b]
+	
+	Generates progress toward the next research point.
+	Research points are spent to unlock nodes in the research graph.
+>>
+
+PLANET_DESIGNATION_TIP: <<|
+	[b]Wonder[/b]
+	
+	Planets that reach Level 4 can choose to construct a wonder. This replaces
+	the planet's native resources and grants an empire-wide effect.
+
+	Choosing a wonder will lock in all the resources being exported to the
+	planet, making you unable to change their destinations.
+>>
+
+PLANET_WONDER_REQ: Wonder: Level 4 planet required...
+PLANET_WONDER_CHOOSE: Choose Wonder...
+
+PLANET_REQUIREMENTS_TIP: <<|
+	[b]Level Requirements[/b]
+	
+	Importing these types of resources to this planet will cause it
+	to level up.
+>>
+
+BLD_TT_SIZE: Size: $1x$2
+BLD_TT_COST: Base Cost: $1
+BLD_BASE: Base
+BLD_BASE_DESC: <<
+	Produces 1 defense. Uses 1 defense pressure;
+>>
+
+BLD_BAZAAR: Bazaar
+BLD_BAZAAR_DESC: <<
+	Upgrades from Market.
+	Makes §150k per budget cycle. Uses 2 money pressure.
+>>
+
+BLD_BROADCAST: Broadcast Center
+BLD_BROADCAST_DESC: <<
+	Upgrades from Media Center.
+	Grants 1.5 influence stake. Uses 2 influence pressure.
+>>
+
+BLD_CITY: City
+BLD_CITY_DESC: <<
+	Constructed for population to live in.
+>>
+
+BLD_ENTERPRISE: Enterprise
+BLD_ENTERPRISE_DESC: <<
+	Upgrades from Industry.
+	Generates 1.5 labor per minute. Uses 2 labor pressure.
+>>
+
+BLD_FACTORY: Factory
+BLD_FACTORY_DESC: <<
+	Generates 3 labor per minute.
+>>
+
+BLD_FTLSTORE: FTL Storage
+BLD_FTLSTORE_DESC: <<
+	A large storage chamber built inside a subspace isolation field to store FTL crystals.
+	
+	Stores 250 FTL resource.
+	Storage doubled when placed on a planet with native FTL crystals.
+>>
+
+BLD_FARM: Megafarm
+BLD_FARM_DESC: <<
+	Generates a basic unexportable food resource.
+>>
+
+BLD_HYDROGENATOR: Hydrogenator
+BLD_HYDROGENATOR_DESC: <<
+	Generates a basic unexportable water resource.
+>>
+
+BLD_GENERATOR: Generator
+BLD_GENERATOR_DESC: <<
+	Generates 6 energy/minute. Uses 1 energy pressure.
+>>
+
+BLD_INDUSTRY: Industry
+BLD_INDUSTRY_DESC: <<
+	Generates 1 labor per minute. Uses 1 labor pressure.
+>>
+
+BLD_LAUNCHPAD: Launch Pad
+BLD_LAUNCHPAD_DESC: <<
+	Upgrades from Base.
+	Produces 1.5 defense. Uses 2 defense pressure.
+>>
+
+BLD_MARKET: Market
+BLD_MARKET_DESC: <<
+	Makes §100k per budget cycle. Uses 1 money pressure.
+>>
+
+BLD_MEDIACENTER: Media Center
+BLD_MEDIACENTER_DESC: <<
+	Grants 1 influence stake. Uses 1 influence pressure.
+>>
+
+BLD_POWERPLANT: Power Plant
+BLD_POWERPLANT_DESC: <<
+	Upgrades from Generator.
+	Generates 9 energy/minute. Uses 2 energy pressure.
+>>
+
+BLD_RESEARCHCOMPLEX: Research Complex
+BLD_RESEARCHCOMPLEX_DESC: <<
+	Generates research points for the empire, and provides training and resources to civil scientists.
+
+	Gives 1 research generation.
+	Adds 1 research pressure.
+>>
+
+BLD_TECHCENTER: Tech Center
+BLD_TECHCENTER_DESC: <<
+	Upgrades from University.
+	Gives 1.5 research generation. Uses 2 research pressure.
+>>
+
+BLD_UNIVERSITY: University
+BLD_UNIVERSITY_DESC: <<
+	Gives 1 research generation. Uses 1 research pressure.
+>>
+
+
+PLANET_FULL_DESIGNATION: $1, Level $2 «$3»
+PLANET_FULL_NO_DESIGNATION: $1, Level $2
+PLANET_DESIGNATION: Level $2 «$3»
+PLANET_NO_DESIGNATION: Level $2
+
+PLANET_AUTO_DESIGNATE: Automatically Designate
+PLANET_AUTO_DESIGNATE_DESC: <<|
+	The planet will choose a reasonable designation on its own.
+>>
+
+DESIG_WONDER: Wonder.
+DESIG_PERMANENT: Permanent.
+DESIG_TRANSFORMS: Transforms native resources.
+DESIG_MINLEVEL: Level $1+.
+
+DESIG_SUPERNETWORK: Intelligence Supernetwork
+DESIG_SUPERNETWORK_DESC: <<|
+	Grants vision of everything. You can trade resources anywhere.
+>>
+
+DESIG_ACADEMY: Fleet Academy
+DESIG_ACADEMY_DESC: <<|
+	All fleets operate at 200% of base effectiveness.
+>>
+
+DESIG_PARLIAMENT: Galactic Parliament
+DESIG_PARLIAMENT_DESC: <<|
+	Any vote you start begins at +14 support.
+>>
+
+DESIG_REFINERY: Refinery Forge
+DESIG_REFINERY_DESC: <<|
+	All your orbitals start with two free wildcard affinities.
+>>
+
+DESIG_BASTION: Bastion of Patriotism
+ABL_PLANET_TAKEOVER: Takeover Planet
+DESIG_BASTION_DESC: <<|
+	Grants ability to slowly take over enemy planets.
+>>
+
+STATUS_HAPPY: Happy
+STATUS_HAPPY_DESC: <<|
+	Adds 1 production to all resources being produced on this planet.
+>>
+
+STATUS_VIRILE: Virile
+STATUS_VIRILE_DESC: <<|
+	Population is growing at twice the normal rate.
+>>

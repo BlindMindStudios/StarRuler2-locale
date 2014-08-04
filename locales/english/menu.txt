@@ -1,0 +1,156 @@
+START_GAME: Start Game
+GAME_SETTINGS: Game Settings
+CHANGE_MAP: Change Map
+SELECT_MAP: You select map now, yes?
+SYSTEM_COUNT: System Count:
+ADD_AI: Add AI
+MENU_EMPIRES: Empires
+MENU_GAME_SETTINGS: Game Settings
+MENU_GALAXIES: Galaxies
+MENU_GAMES: Games
+HANDICAP: Handicap
+
+MAIN_MENU: Main Menu
+PAUSED_MENU: Paused
+RESUME_GAME: Resume
+RETURN_TO_GAME: Return to Game
+NEW_GAME: New Game
+SAVE_GAME: Save Game
+LOAD_GAME: Load Game
+MULTIPLAYER: Multiplayer
+MP_JOIN: Join
+MENU_BACK: Back
+MENU_OPTIONS: Options
+QUIT_GAME: Quit
+OPEN_IRC: Open IRC Chat
+CLOSE_IRC: Disconnect IRC Chat
+IRC_NICKNAME: Nick: $1
+NICKNAME: Nickname:
+CHANGE_NICK: Change
+SAVE_NO_COMPAT: <<|
+	The save you are attempting to load is from an older version of the game,
+	and can unfortunately not be loaded.
+
+	The development team apologizes for the inconvenience.
+>>
+
+MP_OPTIONS: Multiplayer Options
+MP_HOST_OPTIONS: Host Options
+MP_HOST: Host
+MP_SERVER_NAME: Server Name
+MP_PORT: Port
+MP_HOST_LOAD: Host & Load
+MP_PUBLIC: Public Game
+MP_PUNCHTHROUGH: NAT Traversal
+MP_VERSION_MISMATCH: (INCOMPATIBLE VERSION)
+MP_ENTER_PASSWORD: Password Required
+MP_CHAT_INTRO: [i][color=#aaa]Press Shift+Return to re-open the chat window after closing it...[/color][/i]
+MP_NOT_READY: Ready Up
+MP_READY: Ready
+MP_PLAYER_READY: Player is ready to start the game.
+MP_PLAYER_NOT_READY: Player is not ready to start the game.
+MP_CONFIRM_NOT_READY: Not all players have indicated they are ready to start the game. Start the game anyway?
+MP_CANNOT_CONNECT: Unable to connect to server
+MP_WAITING_START: Waiting for host to start the game
+MP_WAITING_TRANSFER: Transfering Game
+MP_IRC_CHAT: Open IRC Chat Lobby
+MP_NO_GAMES: No active multiplayer games...
+INVITE_FRIEND: Invite Friend
+
+CHOOSE_MAP: Choose Map
+ADD_GALAXY: Add Galaxy
+
+SYSTEM_COUNT: System Count
+FLATTEN: Flatten
+
+TEX_QUAL_2: Sad
+TEX_QUAL_3: Medium
+TEX_QUAL_4: High
+TEX_QUAL_5: Ultra
+
+RESOLUTION: Resolution
+RES_DESKTOP: Desktop
+FULLSCREEN: Fullscreen
+
+NG_WARN_PEREMP: <<|
+	[b][color=#f00]Warning:[/color][/b] You are creating a large map with more than 25 systems per empire,
+	your gameplay experience may be negatively affected by the much slower pace of
+	the game.
+
+	We recommend playing the game with around 10-20 systems per empire for
+	optimal gameplay results.
+
+	[b]Proceed anyway?[/b]
+>>
+NG_WARN_OPTIMAL: <<|
+	[b][color=#f00]Warning:[/color][/b] You are creating a large map of more than 150 systems. Games with
+	this many systems may not run optimally on lower-end PCs, and may
+	experience graphics lag or slowdowns later into the game.
+
+	Additionally, your gameplay experience may be negatively affected by the
+	much slower pace of the game. We recommend playing the game with around
+	10-20 systems per empire for optimal gameplay results.
+
+	[b]Proceed anyway?[/b]
+>>
+NG_WARN_BAD: <<|
+	[b][color=#f00]Warning:[/color][/b] You are creating an extremely large map of more than 400 systems.
+	Games with this many systems will not run optimally on anything but the
+	highest end PCs, and will experience graphics lag or slowdowns later into
+	the game.
+
+	Additionally, your gameplay experience will be negatively affected by the
+	much slower pace of the game. We recommend playing the game with around
+	10-20 systems per empire for optimal gameplay results.
+
+	[b]Proceed anyway?[/b]
+>>
+NG_WARN_OHGOD: <<|
+	[b][color=#f00]Warning:[/color][/b] You are creating a ludicrously large map of more than 1000 systems.
+
+	Unless you are from [b]the fuuuuuture[/b] and are running Star Ruler 2 on
+	a 2038 model Core i42, you [b]will[/b] experience lag and slowdowns later
+	into the game.
+
+	Additionally, your gameplay experience [b]will[/b] be negatively affected by the
+	much, much slower pace of the game. We recommend playing the game with around
+	10-20 systems per empire for optimal gameplay results.
+
+	[b]Proceed anyway? (You're crazy)[/b]
+>>
+
+IRC_HELP: <<
+	Available Commands:
+
+	/msg <user> <message> - Send a private message.
+	/me <message> - Send an action message.
+	/join #<channel> - Join a different channel.
+	/part - Part from the current channel.
+	/close - Close the current channel/pm window.
+	/nick <new_nickname> - Change your nickname.
+
+	Commands that require extra privileges:
+
+	/topic <new_topic> - Change the topic in the current channel.
+	/mode <params> - Change a channel mode.
+	/umode <params> - Change a user mode.
+	/kick <nickname> - Kick a user from the channel.
+>>
+
+IRC_JOIN: [color=$3]$1[/color] has joined $2
+IRC_PART: [color=$3]$1[/color] has left $2
+IRC_QUIT: [color=$3]$1[/color] has quit
+IRC_ACTION: [color=$3]$1[/color] $2
+IRC_NICK: [color=$3]$1[/color] is now known as [color=$4]$2[/color]
+IRC_KICK: [color=$3]$1[/color] has kicked [color=$4]$2[/color]
+IRC_TOPIC: [color=$3]$1[/color] has changed the topic to '$2'
+IRC_TOPIC_IS: Topic for $1 is: $2
+IRC_MODE: [color=$3]$1[/color] sets mode $2
+IRC_UMODE: [color=$3]$1[/color] sets your user mode $2
+
+DISCONNECT_0: Connection timed out
+DISCONNECT_1: Connection error
+DISCONNECT_2: Connection closed
+DISCONNECT_3: Kicked by server
+DISCONNECT_4: Version mismatch
+DISCONNECT_5: Incorrect password

@@ -1,0 +1,5 @@
+MOVE_TO: Move To
+ATTACK: Attack
+PICK_UP: Pick Up
+RALLY_TO: Rally to $1
+STOP_RALLY: Clear Rally

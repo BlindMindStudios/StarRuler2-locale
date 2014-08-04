@@ -1,0 +1,43 @@
+ERROR_NOT_UNLOCKED: $1 not unlocked
+ERROR_MODULE_NOT_UNLOCKED: Module $1 not unlocked
+ERROR_NO_CORE: $1 requires a core
+ERROR_NEEDS_EXTERIOR_CORE: $1's Core should be exterior
+ERROR_REQUIRED_MODULE: $1 missing required module $2
+ERROR_UNIQUE_MODULE: Only one $2 allowed on $1
+ERROR_INSUFFICIENT_Crew: Insufficient Crew
+ERROR_INSUFFICIENT_Command: Insufficient Command
+ERROR_INSUFFICIENT_Power: Insufficient Power
+ERROR_DUPLICATE_DESIGN: Design with this name exists: renamed to '$1'.
+ERROR_INVALID_FILE: File is not a valid exported design.
+ERROR_INVALID_HULL: Cannot use $1 on this hull type.
+ERROR_MINIMUM_SIZE: '$1' Hull requires minimum size $2.
+ERROR_MAXIMUM_SIZE: '$1' Hull has a maximum size of $2.
+ERROR_HULL_NOT_IN_SHIPSET: Design's hull is not available to the current shipset.
+DESIGNS: Designs
+
+HULL_EDITOR: Hull Editor
+HULL_FILES: Files:
+HULL_HULLS: Hulls:
+HULL_EDITOR_HELP: Left click to activate hex.\nRight click to deactivate hex.\nMiddle click to toggle exterior.
+HULL_ID: ID:
+HULL_NAME: Name:
+HULL_BACKGROUND: Background:
+HULL_MODEL: Model:
+HULL_MATERIAL: Material:
+HULL_ICON: Icon Sheet:
+HULL_ICON_INDEX: Icon Index:
+HULL_HEX_SIZE: Hex Size:
+HULL_GRID_OFFSET: Grid Offset:
+HULL_BACKGROUND_SCALE: Background Scale:
+HULL_INTEGRITY: Hull Integrity:
+
+HULL_DELETE_FILE_CONFIRM: Are you sure you wish to delete hull file '$1'?
+HULL_DELETE_HULL_CONFIRM: Are you sure you wish to delete hull '$1'?
+HULL_CLEAR: Clear Hulls
+HULL_CONFIRM_CLEAR: Are you sure you wish to clear hull working data?
+
+IMPORT_ERRORS: The following errors occurred during import:
+IMPORT_INTO_CLASS: Import into Class:
+SAVED_CLASS: <Saved Class>
+EXPORT_DESIGN: Export
+DUPLICATE_DESIGN: Duplicate

@@ -1,0 +1,263 @@
+ORBITAL_REPACK: Pack up Orbital
+PROMPT_SCUTTLE: Destroy $1?
+ORB_TT_COST: Cost: $1, $2 Labor
+ORBITAL_MODULES: Modules
+TRADE: Trade
+OERR_SYSTEM: Cannot build orbitals outside systems.
+OERR_TRADE: Must build within trade borders.
+OERR_VISION: Cannot build outside vision.
+
+LAB_RESOURCES: Imported Resources:
+LAB_AVAIL_AFFINITIES: Available Affinities:
+
+ORB_REQ_AFFINITY: Requires [b]$1[/b] [img=$3;24/] $2 resource(s).
+ORB_REQ_RESOURCE: Requires [img=$2;24/] $1.
+
+TT_MANAGE_ORBITAL: <<|
+	[b]Manage Orbital[/b]
+
+	View and modify the modules installed on this orbital.
+>>
+
+TT_PACKUP_ORBITAL: <<|
+	[b]Pack Up Orbital[/b]
+
+	Pack the orbital back into a ship in order to move it around.
+>>
+
+SHIPYARD: Shipyard
+SHIPYARD_DESC: <<|
+	Can construct flagships and support ships.
+	
+	Importing labor-generating resources increases the
+	labor available for construction.
+>>
+
+SPACEPORT: Space Port
+SPACEPORT_DESC: <<|
+	Permits trade through its system.
+	
+	Able to sell most resources for money if other empires can trade with the system.
+>>
+
+RESEARCH_STATION: Research Station
+RESEARCH_STATION_DESC: <<|
+	Generates research points.
+
+	Importing research-generating resources increases
+	the amount of research generated.
+
+	Importing energy-generating resources increases
+	the research by a small amount.
+>>
+
+OBSERVATORY: Observatory
+OBSERVATORY_DESC: <<|
+	Uses a wide array of sensors to detect vessels and planets at great
+	distances.
+
+	Importing energy-generating resources increases the observatory's vision
+	range.
+>>
+
+DEFENSE_PLATFORM: Defense Platform
+DEFENSE_PLATFORM_DESC: <<|
+	An orbital gun platform with high defenses that fires long-range projectiles at attackers.
+
+	Importing defense-generating resources increases the amount of guns firing
+	from the platform.
+>>
+
+DRY_DOCK: Dry Dock
+DRY_DOCK_NAME: Dry Dock: $1
+
+FLING_BEACONS: Fling Beacons
+ORB_FLING_CORE: Fling Beacon
+ORB_FLING_CORE_BLURB: Adds fling capability to nearby ships.
+ORB_FLING_CORE_DESC: <<|
+	Allows use of fling-based FTL near the beacon.
+
+	Ships within 10,000 distance units of a fling beacon can be FTLed to
+	anywhere in the galaxy.
+>>
+
+ORB_GATE_CORE: Gate
+ORB_GATE_CORE_BLURB: Allows instant travel to any other gate.
+ORB_GATE_CORE_DESC: <<|
+	Allows instant travel to any other gate.
+
+	Gates cost 0.15 FTL per second to maintain.
+	Gates can be packed back into a constructor.
+	Unpacking a gate from a constructor costs 150 FTL.
+>>
+
+ORB_DEFENSE_CORE: Defense Core
+ORB_DEFENSE_CORE_BLURB: Increased HP, armor and weapons per import.
+ORB_DEFENSE_CORE_DESC: <<|
+	Equipped with a variety of weapons.
+
+	Every resource imported to the station grants 2500 health, 1250 armor and a number of extra weapons.
+>>
+
+ORB_TRADE_CORE: Trade Core
+ORB_TRADE_CORE_BLURB: Trade activity per import.
+ORB_TRADE_CORE_DESC: <<|
+	Produces freighters that travel to random nearby planets, delivering goods.
+	Goods make the destination happy for 3 minutes, and generates §50k for your empire.
+	When trading with a foreign empire, both empires generate an additional §50k.
+
+	Every resource imported to the station creates another freighter every 3 minutes.
+
+	Resources can be traded freely between systems containing trade cores as if
+	there existed a trade lane between them.
+>>
+
+ORB_CONSTRUCTION_CORE: Construction Core
+ORB_CONSTRUCTION_CORE_BLURB: Can use labor. Gains extra labor per import.
+ORB_CONSTRUCTION_CORE_DESC: <<|
+	Can construct ships, orbitals and mining bases with labor.
+
+	Starts with 3 Labor per minute. Each imported resource increases labor
+	generation by 1 per minute. Each imported resource increases labor
+	generation by 25%.
+
+	Planets can export their labor to this orbital for use.
+>>
+
+ORB_EMBASSY_CORE: Embassy Core
+ORB_EMBASSY_CORE_BLURB: Increases planet loyalty per import.
+ORB_EMBASSY_CORE_DESC: <<|
+	Increases the loyalty of all owned planets in the system by 3.
+	Each imported resource increases the loyalty bonus by 1.
+
+	Influence actions targeted in this system by any empire cost 3 less
+	influence to activate.
+
+	If this orbital is destroyed, the owner and all empires friendly to the
+	owner gain leverage against the empire that destroyed it.
+>>
+
+ORB_TRADE_CORE: Trade Core
+ORB_TRADE_CORE_BLURB: Allows trade, spreads Happiness.
+ORB_TRADE_CORE_DESC: <<|
+	Provides trade access to this orbital and its system.
+
+	Each imported resource spreads a Happy status to one additional nearby planet,
+	as well as one nearby planet owned by a friendly empire.
+>>
+
+ORB_LISTENING_POST: Listening Post
+ORB_LISTENING_POST_BLURB: Generates intelligence against nearby empires.
+ORB_LISTENING_POST_DESC: <<|
+	Generates Intelligence cards against random nearby empires every minute.
+
+	You may only have up to 3 Intelligence cards about a particular empire at one time.
+>>
+
+ORB_ARMOR_PLATING: Armor Plating
+ORB_ARMOR_PLATING_BLURB: +5000 Armor, +100% Resistance.
+ORB_ARMOR_PLATING_DESC: <<
+	Increases orbital armor by 5000.
+	Doubles armor damage resistance.
+>>
+
+ORB_DEFENSE_OUTPOST: Defense Outpost
+ORB_DEFENSE_OUTPOST_BLURB: Protects planets from capture. Gives support command.
+ORB_DEFENSE_OUTPOST_DESC: <<|
+	Protects all owned planets in the system this orbital is in from being captured.
+
+	Adds 500 support command to the orbital, letting it hold support ships.
+>>
+
+ORB_SOLAR_COMPLEX: Solar Complex
+ORB_SOLAR_COMPLEX_BLURB: Generates 18 Energy/minute.
+ORB_SOLAR_COMPLEX_DESC: <<
+	Increases Energy generation by 18 per minute.
+>>
+
+ORB_THINK_TANK: Think Tank
+ORB_THINK_TANK_BLURB: Generates an influence card every 3 minutes.
+ORB_THINK_TANK_DESC: <<
+	Generates a high-quality Name Planet, Name Flagship, Enhance, Cultivation or Negotiate card every 3 minutes.
+>>
+
+ORB_TRADE_DEPOT: Trade Depot
+ORB_TRADE_DEPOT_BLURB: Makes money for each friendly empires' planet.
+ORB_TRADE_DEPOT_DESC: <<|
+	Generates §150k per budget cycle for each planet in the system owned by
+	a friendly empire.
+
+	Friendly empires controlling planets in this system also gain §75k per
+	budget cycle for each of their planets.
+>>
+
+ORB_DRY_DOCK: Dry Dock
+ORB_DRY_DOCK_BLURB: Single-use flagship construction in space.
+ORB_DRY_DOCK: <<|
+	Can construct a flagship in space, letting other planets easily contribute
+	their labor to the construction.
+>>
+
+ORB_FTL_INTERDICTION: FTL Interdictor
+ORB_FTL_INTERDICTION_BLURB: Prevents other empires from using FTL in this system.
+ORB_FTL_INTERDICTION_DESC: <<|
+	[b]Other empires[/b] cannot activate FTL devices inside this system:
+
+	Ships using hyperdrives will drop out of FTL upon entering this system.
+
+	Gates and Fling Beacons situated inside this system are deactivated.
+
+	[b]Also:[/b]
+
+	No empire may open slipstreams to or from this system, [b]including yourself[/b].
+
+	[i]The interdictor takes 60 seconds to activate its effect after being enabled.[/i]
+>>
+
+ORB_HYPERFIELD_ACTUATOR: Hyperfield Actuator
+ORB_HYPERFIELD_ACTUATOR_BLURB: Generates 1 FTL/second.
+ORB_HYPERFIELD_ACTUATOR_DESC: <<|
+	Artificially generate FTL energy using the hyperfield.
+
+	Generates an income of 1 FTL per second.
+>>
+
+ORB_ARTILLERY: Interstellar Artillery
+ORB_ARTILLERY_BLURB: Extremely long-range artillery cannon.
+ORB_ARTILLERY_DESC: <<|
+	Operates an extremely long-range artillery cannon that can fire into nearby
+	systems and has an area-of-effect explosion.
+>>
+
+ORB_MINING_BAY: Mining Bay
+ORB_MINING_BAY_BLURB: Allows use of all asteroid resources.
+ORB_MINING_BAY_DESC: <<|
+	Asteroids within the system this orbital is in can have mining bases built
+	on them for all their available resources at the same time, instead of just
+	one of them.
+>>
+
+ORB_REMNANT_DEFENSE_CORE: Remnant Station
+
+ORB_REMNANT_ENERGY_CORE: Reactor Core
+ORB_REMNANT_ENERGY_CORE_BLURB: Produces large amounts of energy.
+ORB_REMNANT_ENERGY_CORE_DESC: <<|
+	Produces 36 energy per minute.
+>>
+
+ORB_ANCIENT_EMBASSY: Ancient Embassy
+ORB_ANCIENT_EMBASSY_BLURB: A marvel of engineering, respected by all.
+ORB_ANCIENT_EMBASSY_DESC: <<|
+	Increases the loyalty of all owned planets in the system by 5.
+	Influence actions targeted in this system by any empire cost 5 less
+	influence to activate.
+
+	If this orbital is destroyed, the owner and all empires friendly to the
+	owner gain [b]major[/b] leverage against the empire that destroyed it.
+
+	Protects all owned planets in the system this orbital is in from being captured.
+
+	Has 500 support command, letting it hold support ships.
+
+	Can trade freely with trade cores.
+>>

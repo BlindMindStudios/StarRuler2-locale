@@ -1,0 +1,556 @@
+TUTORIAL: Tutorial
+TUT_PLAYER_EMP: Terran Empire
+TUT_ENEMY_EMP: Xu'sio
+TUT_FLAGSHIP_NAME: Superion
+
+
+TUT_INTRO_TITLE: 3876 CE: The Terran Empire
+TUT_INTRO_TEXT: <<|
+	"A glorious age dawns in the empire's fourth millennium!
+	
+	The discovery and colonization of the New Galaxy is well underway and
+	proceeding smoothly, attracting people from all over the empire to settle
+	on rich frontier worlds and try to improve their lot.
+
+	Or so the newslinks say..."
+>>
+TUT_INTRO2_TITLE: 3876 CE: The Terran Empire
+TUT_INTRO2_TEXT: <<|
+	"In truth, the frontier is a cesspool of outlaws, petty criminals, and
+	lawyers, and the empire is frequently forced to send fleets to maintain
+	order - Fleets sent under the guise of protecting settlements in unclaimed
+	space from the Xu'sio alien menance.
+
+	Of course, this enforced lawfulness only lasts as long as the duration of
+	the fleet's deployment, the colonies quickly reverting to their brutish
+	ways of robbery, murder and class action lawsuits.
+	
+	Most EarthFleet commanders had given up on the prospect of reforming the
+	frontier entirely..."
+>>
+TUT_INTRO3_TITLE: 3876 CE: The Terran Empire
+TUT_INTRO3_TEXT: <<|
+	"But not Commodore Hople of the proud 119th fleet.
+
+	No, our commander had wanted change and stability on the frontier, and was
+	prepared to take a radical approach. The Commodore had flown a shuttle down
+	to the planet's largest city to discuss plans and terms with the settlers.
+
+	Commodore Hople had promptly died of dysentery.
+
+	Unfortunately, this left me in charge of the fleet's mission."
+>>
+
+TUT_CAM_TITLE: Controlling the Camera
+TUT_CAM_TEXT: <<|
+	Familiarize yourself with the command console's viewscreen. Commanding your
+	forces might prove difficult if you cannot see them.
+	
+	[i]If the tutorial is in the way at any time, you may drag it around by its top bar.[/i]
+>>
+TUT_CAM_ACT1_TITLE: Look Around
+TUT_CAM_ACT1_TEXT: Move the cursor to the [color=#0f0]edge of the screen[/color] or use [color=#0f0]WASD[/color].
+TUT_CAM_ACT2_TITLE: Zoom In and Out
+TUT_CAM_ACT2_TEXT: Scroll with the [color=#0f0]mouse wheel[/color] or hold [b]both mouse buttons[/b] and [b]drag[/b].
+TUT_CAM_ACT3_TITLE: Rotate the View
+TUT_CAM_ACT3_TEXT: Hold the [color=#0f0]right mouse button[/color] and [color=#0f0]drag[/color].
+
+TUT_TIME_TITLE: Controlling Time
+TUT_TIME_TEXT: <<|
+	In the top left corner of the screen while viewing the galaxy, there are time controls.
+	
+	You may slow or speed up the game from 1/10 to 10x normal speed.
+	
+	You may also pause and resume at any time.
+>>
+
+TUT_SCAN_TITLE: Driving them Out
+TUT_SCAN_TEXT: <<|
+	The flagship's long-range sensors have picked up a Xu'sio FTL gate being
+	flown into the system, protected by a two small defense fleets.
+
+	Destroy the gate and prevent it from deploying more enemy assault fleets!
+>>
+TUT_SCAN_ACT1_TITLE: Select your Fleet
+TUT_SCAN_ACT1_TEXT: [color=#0f0]Left click[/color] the flagship to select the fleet.
+TUT_SCAN_ACT2_TITLE: Destroy the Enemy Fleet
+TUT_SCAN_ACT2_TEXT: [color=#0f0]Right click[/color] an enemy fleet and select [color=#0f0#]Attack[/color].
+TUT_SCAN_ACT3_TITLE: Destroy the Enemy Gate
+TUT_SCAN_ACT3_TEXT: [color=#0f0]Attack[/color] and destroy all enemy fleets and the enemy FTL Gate.
+
+TUT_FTL_TITLE: Returning to Base
+TUT_FTL_TEXT: <<|
+	The colony we're protecting is situated in a neighbouring system, [b]Lihls[/b].
+	It's about time we get over there and boss them around a little.
+	
+	We should use our flagship's hyperdrives to FTL there, rather than spending
+	an eternity crossing the void in sublight.
+>>
+TUT_FTL2_TITLE: Returning to Base
+TUT_FTL2_TEXT: <<|
+	Use of all methods of FTL travel is limited by the availability of
+	[color=#00c0ff][img=ResourceIcon::3;20/] FTL Energy[/color]. This energy is
+	harvested through use of special tuning crystals, found on only a few
+	planets in the galaxy, and then superluminally transmitted to the ships
+	authorized to use it.
+
+	The further away you try to jump, the more energy it costs. Try ordering
+	your fleet to use their hyperdrives, draining your stored ftl energy.
+>>
+TUT_FTL2_ACT1_TITLE: FTL to Lihls
+TUT_FTL2_ACT1_TEXT: <<|
+	With your fleet selected, press the '$1' key or click the hyperdrive button
+	in the bottom left to order an ftl jump.
+>>
+
+TUT_ARRIVE_TITLE: Captain's Log
+TUT_ARRIVE_TEXT: <<|
+	"Arriving at the colony, we held a brief funeral ceremony for our commodore
+	- now posthumously promoted to Rear Admiral. The local undertaker had done
+	a good job covering the charred laser wound on his forehead.
+
+	It was decided that the fleet would continue to support the settlement and
+	its expansion into the local area of space until the Terran Empire
+	officially claimed the region."
+>>
+
+TUT_RES_TITLE: Resources
+TUT_RES_TEXT: <<|
+	Most planets in the galaxy contain the natural resources to produce
+	a single particular type of resource in quantities large enough for
+	a sustained export industry.
+
+	Resources range from food and water, to supercarbons and uranium, to FTL
+	crystals. Not every resource can be produced right away, and some resources
+	require a higher [b]level[/b] planet in order to produce.
+>>
+
+TUT_LEVEL_TITLE: Expanding and Developing
+TUT_LEVEL_TEXT: <<|
+	Every settled planet has a [b]level[/b], ranging from level 0 to level 4.
+	Planet levels indicate the amount of infrastructure, population and
+	development a planet possesses, and higher level planets are better in many
+	ways.
+
+	In order to level up a planet, it requires access to more and more
+	resources, imported from different planets. The most basic of resource
+	requirements are [b]Food and Water[/b].
+>>
+TUT_LEVEL2_TITLE: Expanding and Developing
+TUT_LEVEL2_TEXT: <<|
+	When you export a resource, the original planet no longer has access to
+	that resource for its own use.
+
+	Because planets require resources from other planets to level up, not every
+	planet can be a high-level powerhouse. It is important to carefully choose
+	which planets to send resources to, and which higher level resources to
+	start producing.
+
+	In our case, we want to level up Spacewood to level 2 to gain extra income
+	and population.
+>>
+
+TUT_EXPAND_TITLE: Colonizing and Exporting
+TUT_EXPAND_TEXT: <<|
+	Unlike most planets, Spacewood has access to [b]3[/b] native resources:
+	Water, Meat and Native Gold.
+	
+	To sustain a planet at Level 1, it requires a [b]Food[/b] and
+	a [b]Water[/b]. This makes Spacewood a rich world that can natively sustain
+	level 1 without requiring imports. In order to reach [b]Level 2[/b], we need to
+	use the Native Gold and another Food.
+>>
+TUT_EXPAND_ACT1_TITLE: Colonize a Food
+TUT_EXPAND_ACT1_TEXT: <<|
+	[b]Select[/b] Spacewood, then right click one of the Food planets in the system
+	and select the colonization option.
+>>
+TUT_EXPAND_ACT2_TITLE: Import the Food
+TUT_EXPAND_ACT2_TEXT: <<|
+	[b]Select[/b] the planet you colonized, then [b]right-click[/b] Spacewood
+	and click the export option.
+>>
+
+TUT_EXPAND_SUCC_TITLE: Success!
+TUT_EXPAND_SUCC_TEXT: <<|
+	Congratulations! You succesfully developed Spacewood to a Level 2 world,
+	increasing its maximum population.
+
+	When you select a planet, you can see its current level and the required
+	imports to level it up on the information panel in the bottom left.
+
+	Keep in mind that resources can only be imported and exported within the
+	same [b]Trade Region[/b], indicated by the grey borders. Your trade border
+	will expand as you colonize more systems.
+>>
+
+TUT_BUDGET_TITLE: Budget Cycles
+TUT_BUDGET_TEXT: <<|
+	Building, purchasing and maintaining things costs
+	[b][color=#d1cb6a][img=ResourceIcon::0;20/] Money[/color][/b].
+
+	Money, like most resources, is produced by your civilian population and
+	infrastructure. The higher a planet's population, the more money it makes.
+>>
+TUT_BUDGET2_TITLE: Budget Cycles
+TUT_BUDGET2_TEXT: <<|
+	Your income is budgeted along 3-minute [b]Budget Cycles[/b]. Every cycle,
+	your budget is re-calculated and you will gain use of any money you netted,
+	to spend over the next 3 minutes.
+
+	Any money not spent at the end of a budget cycle will instead be spent on
+	one of the welfare options you can choose in the resource bar.
+	
+	It is not possible to save money from one budget cycle to the next, but
+	borrowing money as an advance from an upcoming cycle is possible, at
+	a hefty markup.
+>>
+
+TUT_BUILD_TITLE: Building a Scout
+TUT_BUILD_TEXT: <<|
+	We should build a scout to check out what's going on in Xaste, another
+	system neighbouring Spacewood. The enemy may be trying to sneak in another
+	FTL gate.
+>>
+TUT_BUILD_ACT1_TITLE: Manage the Planet
+TUT_BUILD_ACT1_TEXT: <<|
+	Open the planet management screen on Spacewood by [b]double-clicking[/b]
+	it, or clicking the 'Manage Planet' button in the bottom left.
+>>
+TUT_BUILD_ACT2_TITLE: Construct a Scout
+TUT_BUILD_ACT2_TEXT: <<|
+	Click the "Scout (16)" ship design from the ship construction list on the
+	right to start construction.
+>>
+
+TUT_BUILD2_TITLE: Reinforcing a Fleet
+TUT_BUILD2_TEXT: <<|
+	Note how the Scout design indicated it would cost [img=ResourceIcon::0;20/]
+	§40k / §69k. The first number indicates its [b]Build Cost[/b] is §40k,
+	which you will need to spend immediately from your available budget. The
+	second number is its [b]Maintenance Cost[/b], the §69k will be subtracted
+	as a maintenance cost from each subsequent budget.
+
+	While we wait for our Scout to finish constructing, lets order some
+	additional [b]Support Ships[/b] for our original Titan's fleet.
+>>
+TUT_BUILD2_ACT1_TITLE: Exit Planet Management
+TUT_BUILD2_ACT1_TEXT: Close the planet management screen by [b]right-clicking[/b].
+TUT_BUILD2_ACT2_TITLE: Manage the Fleet
+TUT_BUILD2_ACT2_TEXT: Open the fleet management panel on your Titan by [b]double-clicking[/b] it.
+TUT_BUILD2_ACT3_TITLE: Order Beamships
+TUT_BUILD2_ACT3_TEXT: Click [b]'Add Support Group'[/b] and order 10 Additional [b]Beamships[/b] to be added to the Titan's fleet.
+TUT_BUILD2_ACT4_TITLE: Finish Scout Construction
+TUT_BUILD2_ACT4_TEXT: Wait for Spacewood to finish constructing a Scout. Support ships can be constructed at the same time as larger projects.
+
+TUT_SCOUT_TITLE: Scouting Xaste
+TUT_SCOUT_TEXT: <<|
+	Great! The fleet will automatically order its queued support groups from
+	any nearby planets with labor generation. Different flagships can support
+	differing amounts of supports, as indicated by the [b]"Support Capacity"[/b]
+	indicator above the supports list.
+
+	While our fleet is being reinforced, we'll want to send our scout to take
+	a peek at the enemy.
+>>
+TUT_SCOUT_ACT1_TITLE: Scout Xaste
+TUT_SCOUT_ACT1_TEXT: <<|
+	Send your newly constructed scout to the Xaste system. Use its hyperdrive
+	if you want to.
+>>
+
+TUT_CONQ_TITLE: Conquering Xaste
+TUT_CONQ_TEXT: <<|
+	Our scout has detected an enemy colony in the Xaste system, occupying
+	a Phasite planet. Phasite is a level 0 resource that gives Research.
+	
+	Since there don't seem to be any major defense fleets around, we should
+	send in our fleet to take the planet by force: Kill the planet's own
+	defense ships, then lay siege to it with your fleet to reduce its loyalty.
+	When its loyalty is completely drained, the planet will be yours!
+>>
+TUT_CONQ_ACT1_TITLE: Jump Titan into Xaste
+TUT_CONQ_ACT1_TEXT: Jump your Titan fleet into the Xaste system using its hyperdrives.
+TUT_CONQ_ACT2_TITLE: Eliminate Defenses
+TUT_CONQ_ACT2_TEXT: Move your fleet to Xaste IV and eliminate the defense ships in orbit.
+TUT_CONQ_ACT3_TITLE: Capture Planet
+TUT_CONQ_ACT3_TEXT: Select your fleet, then [b]right-click[/b] Xaste IV and select the "Capture" option. Wait for your fleet to finish capturing the planet.
+
+TUT_CAPT_TITLE: Victory!
+TUT_CAPT_TEXT: <<|
+	The enemy planet has succumbed to your fleet's siege! The colony is now yours to command.
+
+	In order to use the Phasite it is producing and start generating research, export it to Spacewood.
+>>
+TUT_CAPT_ACT1_TITLE: Export Phasite
+TUT_CAPT_ACT1_TEXT: Export Xaste IV's Phasite to Spacewood.
+
+TUT_PRES_TITLE: Resources and Pressures
+TUT_PRES_TEXT: <<|
+	In addition to planets requiring particular types of resources to level up,
+	resources can provide their consuming planet with [b]Pressure[/b].
+	
+	Civilian population on the planet will automatically develop [b]Civilian
+	Buildings[/b] on the planet's surface to produce the type of pressure being
+	imported (one of Money, Influence, Energy, Research, Defense, or Labor).
+
+	Planets can only support a limited amount of pressure, dependent on their
+	total population. Importing more pressure than a planets capacity will
+	result in lost production efficiency.
+>>
+
+TUT_BLD_TITLE: Imperial Buildings
+TUT_BLD_TEXT: <<|
+	Although most of your production will be from civilian infrastructure, it
+	is possible to spend parts of your budget on constructing [b]Imperial
+	Buildings[/b] on planet surfaces.
+
+	These buildings generally cost a lot of money to build and maintain, but
+	can give benefits that you would not otherwise be able to get.
+>>
+TUT_BLD_ACT1_TITLE: Manage Spacewood
+TUT_BLD_ACT1_TEXT: [b]Double-click[/b] Spacewood in order to open its planet management screen.
+TUT_BLD_ACT2_TITLE: Open Buildings List
+TUT_BLD_ACT2_TEXT: Open the imperial buildings list by clicking the [b]Buildings[/b] button on the right.
+TUT_BLD_ACT3_TITLE: Construct a Research Complex
+TUT_BLD_ACT3_TEXT: Speed up your research by selecting [b]Research Complex[/b] and placing it on the surface on the left.
+
+TUT_RSC_TITLE: Researching Fields
+TUT_RSC_TEXT: <<|
+	Research points you generate can be put into any of a number of [b]Research
+	Fields[/b], in order to level them up. By leveling up research fields, you
+	gain passive benefits to various parts of your empire, as well as being
+	able to gain special research projects and unlocks.
+
+	The rightmost part of the resource bar underneath the tab bar displays the
+	current field being researched, and the progress until the next level.
+>>
+TUT_RSC_ACT1_TITLE: View Research
+TUT_RSC_ACT1_TEXT: Switch to the [b]Research Tab[/b] in the tab bar.
+TUT_RSC_ACT2_TITLE: Switch to Military Science
+TUT_RSC_ACT2_TEXT: Switch your active research to [b]Military Science[/b] by clicking it.
+TUT_RSC_ACT3_TITLE: Level up Military Science
+TUT_RSC_ACT3_TEXT: Research Military Science to Level 1, gaining its benefits.
+
+TUT_INS_TITLE: Research Insights
+TUT_INS_TEXT: <<|
+	As you level up fields, you will gain access to special [b]Research
+	Projects[/b]. Researching projects can give you various special benefits.
+	
+	A lot of research projects require you to spend [b]Insight[/b] to unlock
+	them. As you level up fields, you will randomly gain particular types of
+	Insight. Theoretical Insights can be used to satisfy requirements for any
+	non-Ancient type of insight.
+>>
+TUT_INS_ACT1_TITLE: Unlock Control Computer
+TUT_INS_ACT1_TEXT: Use the Military Insight you just gained in order to research the [b]Control Computer[/b] project.
+TUT_INS_ACT2_TITLE: Upgrade Metallurgy
+TUT_INS_ACT2_TEXT: Use your remaining Labor Insight to upgrade your Metallurgy technology and increase your ship's health.
+
+TUT_DSG_TITLE: Ship Designs
+TUT_DSG_TEXT: <<|
+	Every ship you build, flagship or support ship, is based on a design. In
+	order to build ships equipped with our recently unlocked Control Computer,
+	we need to change one of our designs to use it.
+
+	Designs consist of a number of hexes on a blueprint, and subsystems placed
+	on those hexes. It is up to you to determine how large a subsystem is by
+	'painting' it on the blueprint, ranging from creating tiny 1-hex sized
+	laser turrets to giant spinal lasers covering most of the internals of the
+	ship.
+>>
+TUT_DSG_ACT1_TITLE: Open Heavy Carrier
+TUT_DSG_ACT1_TEXT: From the designs tab, [b]double-click[/b] the Heavy Carrier design in order to edit it.
+TUT_DSG_ACT2_TITLE: Remove Crew Facitilies
+TUT_DSG_ACT2_TEXT: Remove the three separate crew facility subsystems (with bridges) from the design by [b]right-clicking[/b] them.
+TUT_DSG_ACT3_TITLE: Add Control Computer
+TUT_DSG_ACT3_TEXT: Add a 1-hex control computer on the ship to provide command.
+TUT_DSG_ACT4_TITLE: Add Fusion Generators
+TUT_DSG_ACT4_TEXT: Fill up the remaining empty space by adding 2 Fusion Reactor hexes, to sufficient power for our control computer.
+TUT_DSG_ACT5_TITLE: Save the Design
+TUT_DSG_ACT5_TEXT: Click the [b]Save[/b] button in the top right to save your changes to the "Heavy Carrier" design.
+
+TUT_FLT_TITLE: Constructing a New Fleet
+TUT_FLT_TEXT: <<|
+	We can deploy our newly modified flagship design by constructing a fleet
+	from Spacewood. We'll want to give it some support ships to increase the
+	fleet's firepower.
+>>
+TUT_FLT_ACT1_TITLE: Manage Spacewood
+TUT_FLT_ACT1_TEXT: [b]Double-click[/b] Spacewood in order to open its planet management screen.
+TUT_FLT_ACT2_TITLE: Build Heavy Carrier
+TUT_FLT_ACT2_TEXT: Click "Heavy Carrier" from the ships list on the right.
+TUT_FLT_ACT3_TITLE: Build Beamships
+TUT_FLT_ACT3_TEXT: Click the Heavy Carrier in the construction queue to highlight it, then click the [b]Beamship[/b] design to add 10 Beamships to the fleet.
+TUT_FLT_ACT4_TITLE: Build more Supports
+TUT_FLT_ACT4_TEXT: Add some more support ships, Beamships, Gunships or otherwise, to the fleet under construction.
+TUT_FLT_ACT5_TITLE: Finish Construction
+TUT_FLT_ACT5_TEXT: Notice that support ships are constructed in parallel to the flagship while the fleet finishes constructing.
+
+TUT_ENG_TITLE: Energy and Artifacts
+TUT_ENG_TEXT: <<|
+	Particular resources in your empire will produce [b]Energy[/b]. This
+	represents massive quantities of stored energy that you can transmit and
+	use to activate ancient remnant devices, scattered across the galaxy.
+
+	We detected a [b]Power Cell[/b] in the Xaste system, which we can equip to
+	upgrade our new fleet by spending energy.
+>>
+TUT_ENG_ACT1_TITLE: Activate Artifact
+TUT_ENG_ACT1_TEXT: Select the Power Cell and click the equip button on the bottom left, or select the artifact from the quickbar in the top right.
+TUT_ENG_ACT2_TITLE: Equip to Fleet
+TUT_ENG_ACT2_TEXT: Click your newly constructed fleet to spend 500 Energy and equip the Power Cell. This increases its combat strength.
+
+TUT_INF_TITLE: Diplomatic Actions
+TUT_INF_TEXT: <<|
+	You can conduct diplomacy by spending [b]Influence[/b] points, generated on
+	your planets by particular resources found throughout the galaxy. These
+	points are used to purchase and activate [b]Diplomatic Actions[/b].
+>>
+TUT_INF2_TITLE: The Influence Stack
+TUT_INF2_TEXT: <<|
+	All empires purchase their [b]Diplomatic Actions[/b] from a shared list on
+	the diplomacy tab, called the [b]"Influence Stack"[/b]. At regular
+	intervals, new cards are added to the right side of the stack, and cards
+	will drop off and disappear from the left side.
+
+	Diplomatic actions become cheaper to purchase the longer they spend in the
+	influence stack, but be careful of waiting too long to buy attractive cards
+	- other empires may snatch them up first!
+>>
+TUT_INF3_TITLE: Purchasing an Action
+TUT_INF3_TEXT: <<|
+	We want to see what our enemy, the Xu'sio is up to in this region.
+	Fortunately, there is a [b]Spy[/b] card on the influence stack right now,
+	which we can use to gain vision over their activities.
+>>
+TUT_INF3_ACT1_TITLE: Purchase Spy
+TUT_INF3_ACT1_TEXT: From the diplomacy tab, click the "Spy (Xu'sio)" action in the influence stack, then click the [b]Purchase[/b] button.
+TUT_INF3_ACT2_TITLE: Activate Spy
+TUT_INF3_ACT2_TEXT: Click the "Spy (Xu'sio)" action in your list of available actions, then click the [b]Activate[/b] button.
+TUT_INF4_TITLE: Spying
+TUT_INF4_TEXT: <<|
+	Notice how the "Spy" effect was added to the list of currently active
+	influence effects. Long-term diplomatic effects usually require an
+	[b]Influence Upkeep[/b].
+
+	In this case, your "Spy" effect is reducing your influence point generation
+	by 20% until it expires or is dismissed.
+>>
+
+TUT_SPY_TITLE: Enemy System Spotted!
+TUT_SPY_TEXT: <<|
+	Our spying has spotted an enemy system nearby, we should take a look at it
+	on our galaxy screen.
+>>
+TUT_SPY_ACT1_TITLE: View Yingmow
+TUT_SPY_ACT1_TEXT: Find the system our Spy action revealed on the map.
+
+TUT_ANNEX_TITLE: Annex Yingmow
+TUT_ANNEX_TEXT: <<|
+	The Terran Empire is a great empire, and has tremendous influence in the
+	galactic senate. This is good for us, as we can expend this influence to
+	[b]Annex[/b] the Yingmow system diplomatically.
+>>
+TUT_ANNEX_ACT1_TITLE: Activate Annex System
+TUT_ANNEX_ACT1_TEXT: Activate the [b]Annex System[/b] card you have, then select the Yingmow system by clicking its star.
+
+TUT_VOTE_TITLE: Influence Votes
+TUT_VOTE_TEXT: <<|
+	Certain diplomatic actions require you to pass [b]Votes[/b] in the galactic
+	senate in order for them to take effect. Annexing a system is one of these votes.
+
+	All votes have a current [b]Support Level[/b], indicating the sum of all
+	their support reduced by their opposition. Most of the time, a vote will
+	start at +1 support.
+
+	Empires can pay influence to play [b]Support Cards[/b] into a vote,
+	increasing or reducing the support level or adding various special effects.
+>>
+TUT_VOTE2_TITLE: Passing a Vote
+TUT_VOTE2_TEXT: <<|
+	While an influence vote, or "Proposition", has a positive support level,
+	its [b]Vote Timer[/b] will count upwards. When the vote timer reaches
+	3 minutes of positive support, the vote [b]Passes[/b].
+
+	When the support level is negative, the [b]Vote Timer[/b] will count down.
+	When it reaches negative 3 minutes, the vote will [b]Fail[/b].
+
+	Influence votes are a diplomatic tug-of-war that any empire in the galactic
+	senate can influence the result of.
+>>
+TUT_VOTE3_TITLE: Supporting a Vote
+TUT_VOTE3_TEXT: <<|
+	The Xu'sio have used one of their "Rhetoric" actions to gather opposition
+	to your annex vote in the Senate. Quick, use one of your own actions to get
+	the [b]Support Level[/b] back in the green before the vote goes down to
+	[b][color=#f00]-3 minutes[/color][/b] and fails.
+>>
+TUT_VOTE3_ACT1_TITLE: Use "Negotiate"
+TUT_VOTE3_ACT1_TEXT: Click one of your [b]Negotiate[/b] cards and press the [b]Play in Support[/b] button to influence the vote.
+TUT_VOTE3_ACT2_TITLE: Win the Vote
+TUT_VOTE3_ACT2_TEXT: Respond to enemy support cards by playing your own negotiates and win the vote by getting to [b][color=#0f0]+3 minutes[/color][/b].
+
+TUT_ANNEX2_TITLE: Annexation Complete!
+TUT_ANNEX2_TEXT: <<|
+	By convincing the Galactic Senate that the Yingmow system belongs to you,
+	you've successfully [b]Annexed[/b] it. The colonized planets in the system
+	are now yours!
+
+	Unfortunately, sources within the Terran Empire have informed us of a large
+	Xu'sio military movement towards the Yingmow system, so we should prepare
+	our defenses to repel them.
+>>
+
+TUT_DEFCORE_TITLE: Build Defense Station
+TUT_DEFCORE_TEXT: <<|
+	We should construct a defense orbital in the Yingmow system as our first line of defense.
+>>
+TUT_DEFCORE_ACT1_TITLE: Manage Spacewood
+TUT_DEFCORE_ACT1_TEXT: [b]Double-click[/b] Spacewood in order to open its planet management screen.
+TUT_DEFCORE_ACT2_TITLE: Open Orbitals List
+TUT_DEFCORE_ACT2_TEXT: Open the orbitals list by clicking the [b]Orbitals[/b] button on the right.
+TUT_DEFCORE_ACT3_TITLE: Construct a Defense Core
+TUT_DEFCORE_ACT3_TEXT: Click "Defense Core" in the orbitals list.
+TUT_DEFCORE_ACT4_TITLE: Place Orbital
+TUT_DEFCORE_ACT4_TEXT: Place the orbital by clicking in any location in the Yingmow system.
+
+TUT_DEFPROJ_TITLE: Defense Generation
+TUT_DEFPROJ_TEXT: <<|
+	The Spacewood locals have informed us that they've set up a means of
+	creating defense ships to protect themselves. Planets with [b]Defense
+	Generation[/b] will periodically spawn support ships in orbit to protect
+	the planet from invaders.
+
+	Planets with defense can also be ordered to build defenses for other
+	systems, causing the generated support ships to spawn in orbit of planets
+	in the targeted system instead.
+>>
+TUT_DEFPROJ_ACT1_TITLE: Build Defense for Yingmow
+TUT_DEFPROJ_ACT1_TEXT: With Spacewood selected, [b]right-click[/b] the Yingmow Star, then select "Build defense for system Yingmow."
+TUT_DEFPROJ_ACT2_TITLE: Move Heavy Carrier
+TUT_DEFPROJ_ACT2_TEXT: While we wait for our defense orbital and ships to finish construction, move your Heavy Carrier fleet to Yingmow.
+
+TUT_DEF_TITLE: Hold the Line!
+TUT_DEF_TEXT: <<|
+	When you're ready to defend against the invading Xu'sio savages, press the "FIGHT!" button.
+>>
+ENTER_COMBAT: FIGHT!
+TUT_DEF2_TITLE: War!
+TUT_DEF2_TEXT: The enemy fleets have invaded our newly conquered system. We must repel them at all cost!
+TUT_DEF2_ACT1_TITLE: Defend the Yingmow System
+TUT_DEF2_ACT1_TEXT: Defeat all invading fleets.
+
+TUT_FINAL_TITLE: Congratulations!
+TUT_FINAL_TEXT: <<|
+	You've managed to drive the enemy out of this sector of space, and expanded
+	your own foothold into it at the same time, well done!
+
+	[i]This is the end of the tutorial, feel free to continue experimenting
+	with your empire before starting a real game against AI or Human
+	Opponents.[/i]
+
+	You can check the in-game [b]Wiki[/b] for more information on the game and
+	its mechanics, or feel free to join the in-game official Star Ruler [b]IRC
+	Channel[/b] to talk to fellow players or bug one of the resident SR Developers!
+>>

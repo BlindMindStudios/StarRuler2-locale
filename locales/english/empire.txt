@@ -1,0 +1,238 @@
+PORTRAIT: Portrait
+RACE_NAME: Race Name
+FTL_METHOD: FTL Method
+SHIPSET: Shipset
+
+TT_DIFF: [font=Medium]Difficulty:[/font]
+DIFF_PASSIVE: [img=HappyFace;40][b][color=#0f0]Passive[/color][/b]\n[i]Will not declare war on human-controlled empires.[/i][/img]
+DIFF_EASY: [img=StatusPeace;40][b]Easy[/b]\n[i]An easy opponent to start with.[/i][/img]
+DIFF_NORMAL: [img=StatusWar;40][b]Normal[/b]\n[i]A moderate challenge.[/i][/img]
+DIFF_HARD: [img=StatusCeaseFire;40][b]Hard[/b]\n[i]Unlocks the full abilities of the AI.[/i][/img]
+DIFF_MURDEROUS: [img=AttributeIcons::3;40][b][color=#ff9000]Murderous[/color][/b]\n[i]Attempts to destroy human-controlled empires above everything else.[/i][/img]
+DIFF_SAVAGE: [img=VoteIcons::3;40][b][color=#f00]Savage[/color][/b]\n[i]Abuses [b]cheats[/b] and free resources to kill all humans.[/i][/img]
+
+CUSTOMIZE_RACE: Customize Race...
+RACE_OVERVIEW: Overview
+RACE_PROFILE: Profile
+TRAITS: Traits
+NO_TRAITS: No traits chosen...
+CONFLICTS: Conflicts:
+
+RACE_POINTS_POS: +$1 point(s)
+RACE_POINTS_NEG: $1 point(s)
+RACE_POINTS_NEU: 0 points
+
+RACE_POINTS_AVAIL_POS: $1 point(s) available
+RACE_POINTS_AVAIL_NEG: $1 point(s) required
+
+TRAIT_CAT_Government: Government
+TRAIT_CAT_Foundation: Foundation
+TRAIT_CAT_FTL: FTL
+TRAIT_CAT_Personality: Personality
+TRAIT_CAT_Biology: Biology
+TRAIT_CAT_Military: Military
+TRAIT_CAT_Tendency: Tendency
+
+TRAIT_POOR: Poor
+TRAIT_POOR_DESC: <<|
+	Start the game with §$1 less base income.
+>>
+
+TRAIT_INDUSTRIOUS: Industrious
+TRAIT_INDUSTRIOUS_DESC: <<|
+	The homeworld starts with $1 extra labor generation.
+>>
+
+TRAIT_FTLCACHE: FTL Cache
+TRAIT_FTLCACHE_DESC: <<|
+	Start with $1 FTL energy, but no generation.
+>>
+
+TRAIT_PLANTATION: Plantation
+TRAIT_PLANTATION_DESC: <<|
+	Start with an extra Grain on your homeworld.
+>>
+
+TRAIT_CUNNING: Cunning
+TRAIT_CUNNING_DESC: <<|
+	Start with an extra $1 random influence cards.
+>>
+
+TRAIT_CRUDE: Crude
+TRAIT_CRUDE_DESC: <<|
+	All ships cost $1% more money to construct.
+>>
+
+TRAIT_INEFFICIENT: Inefficient
+TRAIT_INEFFICIENT_DESC: <<|
+	All weapons drain $1x supply when firing.
+>>
+
+TRAIT_EMPIRE: Government: Empire
+TRAIT_EMPIRE_DESC: <<|
+	Traditional imperial rule. Start with 10x Negotiate, 1x Annex Planet.
+>>
+
+TRAIT_COMMUNISM: Government: Communism
+TRAIT_COMMUNISM_DESC: <<|
+	State-controlled industry and development. Start with 2x Spy, 1x Cultivation.
+>>
+
+TRAIT_THEOCRACY: Government: Theocracy
+TRAIT_THEOCRACY_DESC: <<|
+	Church doctrine above all. Start with 2x Negotiate, 3x Rhetoric, 2x Protect System.
+>>
+
+TRAIT_CAPITALISM: Government: Capitalism
+TRAIT_CAPITALISM_DESC: <<|
+	A corporate oligarchy owns most assets. Start with 1 Random Card, 2x Bribe, 4x Random Leverage.
+>>
+
+TRAIT_MERITOCRACY: Government: Meritocracy
+TRAIT_MERITOCRACY_DESC: <<|
+	Power to the most productive citizens. Start with 5x Negotiate (*), 1x Open Forum, 1x Investigate, 2x Gift, 2x Enhance.
+>>
+
+TRAIT_ANARCHY: Government: Anarchy
+TRAIT_ANARCHY_DESC: <<|
+	A total lack of structural government. Start without any influence cards.
+>>
+
+TRAIT_HYPERDRIVE: Hyperdrive
+TRAIT_HYPERDRIVE_DESC: <<|
+	Outfit your ships with hyperdrive engines to FTL long distances through hyperspace.
+>>
+
+TRAIT_FLING: Fling Beacons
+TRAIT_FLING_DESC: <<|
+	Build enormous beacons capable of flinging ships away from them at vast speeds.
+>>
+
+TRAIT_GATE: Gates
+TRAIT_GATE_DESC: <<|
+	Gate orbitals establish stable wormholes and let ships move from any gate to any other gate.
+>>
+
+TRAIT_SLIPSTREAM: Slipstream
+TRAIT_SLIPSTREAM_DESC: <<|
+	Specialized generator ships rip tears in time and space so ships can instantly pass between them.
+>>
+
+TRAIT_ANCIENT_VESSEL: Ancient Vessel
+TRAIT_ANCIENT_VESSEL_DESC: <<|
+	This proud vessel has long flown over our planet. Now, we shall reclaim it.
+	Start with a Remnant Flagship.
+>>
+
+TRAIT_MANIFEST_DESTINY: Manifest Destiny
+TRAIT_MANIFEST_DESTINY_DESC: <<|
+	The worlds of the galaxy are ours to command.
+	Use 25% less supply when performing a siege on an enemy world.
+>>
+
+TRAIT_MILITARY_INDUSTRIAL_COMPLEX: Military Industrial Complex
+TRAIT_MILITARY_INDUSTRIAL_COMPLEX_DESC: <<|
+	We have long held standing armies; this continues to be the case. Start with 50 Labor
+	in free support ships.
+>>
+
+TRAIT_FORTIFIED: Fortified
+TRAIT_FORTIFIED_DESC: <<|
+	Your Homeworld starts with a native Pekelm.
+>>
+
+TRAIT_PYROMANIA: Pyromania
+TRAIT_PYROMANIA_DESC: <<|
+	Missile-based weapons deal 25% more damage. Damage from fires aboard your ships is doubled.
+>>
+
+TRAIT_VIRILE: Virile
+TRAIT_VIRILE_DESC: <<|
+	The population on your homeworld grows twice as fast.
+>>
+
+TRAIT_SEDENTARY: Sedentary
+TRAIT_SEDENTARY_DESC: <<|
+	Building construction is 30% slower. Applies to civilian as well as imperial infrastructure.
+>>
+
+TRAIT_SUBLIGHT: Sublight
+TRAIT_SUBLIGHT_DESC: <<|
+	We have not discovered any means to break the lightspeed barrier. No FTL drive, FTL generation, or FTL storage.
+>>
+
+TRAIT_PIOUS: Tendency: Pious
+TRAIT_PIOUS_DESC: <<|
+	Abilities: Incapacitate, Press the Attack, Warchest Contributions, Pilgrimage.
+>>
+
+TRAIT_SPACE_PROGRAM: Space Program
+TRAIT_SPACE_PROGRAM_DESC: <<|
+	We have examined our surroundings for decades. Nearby systems are pre-scouted at the start of the game.
+>>
+
+TRAIT_REVOLUTIONARIES: Revolutionaries
+TRAIT_REVOLUTIONARIES_DESC: <<|
+	They shall take our lives before they take our empire! Planets under siege generate support ships.
+>>
+
+TRAIT_EMPATHIC: Empathic
+TRAIT_EMPATHIC_DESC: <<|
+	We wield our ability to sense emotion as a warrior wields a sword. The support values of Leverage and Negotiate cards are doubled when you play them.
+>>
+
+TRAIT_CHARISMATIC: Charismatic
+TRAIT_CHARISMATIC_DESC: <<|
+	Our strength of will provides a powerful shield against our opponents. Propositions you start begin with 3 extra Support.
+>>
+
+TRAIT_SOCIAL_PARANOIA: Social Paranoia
+TRAIT_SOCIAL_PARANOIA_DESC: <<|
+	Our social paranoia tends to work against us with other races. Propositions you start begin with 3 less Support.
+>>
+
+TRAIT_EUPHORIC: Euphoric
+TRAIT_EUPHORIC_DESC: <<|
+	We ride on an endless wave of euphoria, together. All Level 2+ planets are Happy.
+>>
+
+TRAIT_GENEROUS: Generous
+TRAIT_GENEROUS_DESC: <<|
+	Our generosity is a powerful ally for our cause. Empires you are allied with receive half the benefit of your Welfare option.
+>>
+
+TRAIT_RED_TAPE: Red Tape
+TRAIT_RED_TAPE_DESC: <<|
+	The jewels of our political influence often get buried under the weight of our administration's red tape. Each six minutes you hold a card reduces that card's quality by 1.
+>>
+
+TRAIT_WAR_MINDED: War Minded
+TRAIT_WAR_MINDED_DESC: <<|
+	We have little interest in galactic politics. Support and Vote cards cost 1 extra Influence to play.
+>>
+
+TRAIT_PATENT_PENDING: Patent Pending
+TRAIT_PATENT_PENDING_DESC: <<|
+	They shall come to fear the theft of our ideas. When you complete a research Project gain a Leverage card for each Empire which has also completed that research.
+>>
+
+TRAIT_SEQUESTERED_SOCIETY: Sequestered Society
+TRAIT_SEQUESTERED_SOCIETY_DESC: <<|
+	We have lived a quiet life so far but now is the time to reach for the stars. Your homeworld begins with all its tiles fully developed.
+>>
+
+TRAIT_DWARF_PLANET: Dwarf Planet
+TRAIT_DWARF_PLANET_DESC: <<|
+	We may have outgrown our cradle but an infinite number of worlds await us in the heavens. Your homeworld is a Small (8x5) Planet.
+>>
+
+TRAIT_ENORMOUS_PLANET: Enormous Planet
+TRAIT_ENORMOUS_PLANET_DESC: <<|
+	Ours is a titan against which all other worlds are measured.  Your homeworld is a Large (20x15) Planet.
+>>
+
+V_WON_TITLE: Glorious Victory!
+V_WON_TEXT: You have achieved [color=#0f0]victory![/color] All your enemies' rotten planets lie barren, now no more than dead hunks of rock.
+
+V_LOST_TITLE: Game Over: You lose!
+V_LOST_TEXT: You have [color=#f00]lost[/color]! All of your once proud planets lie barren, now no more than dead hunks of rock.

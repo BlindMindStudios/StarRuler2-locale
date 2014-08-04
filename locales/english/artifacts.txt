@@ -1,0 +1,81 @@
+ART_COMET: Comet
+ABL_GENERATE_WATER: Generate Water
+ABL_GENERATE_WATER_DESC: <<|
+	Adds a native water resource on the targeted planet.
+>>
+
+ART_COMMAND_COMPUTER: Command Computer
+ABL_EXPAND_FLEET: Equip Command Computer
+ABL_EXPAND_FLEET_DESC: <<|
+	Expand the targeted fleet's support capacity by 500
+	
+	An equipped flagship has a high chance to drop the computer when destroyed.
+>>
+STATUS_COMMAND_COMPUTER: Command Computer
+STATUS_COMMAND_COMPUTER_DESC: <<|
+	Carrying Command Computer artifact.
+
+	Fleet support capacity increased by 500.
+	May drop when flagship is destroyed.
+>>
+
+ART_POWER_CELL: Power Cell
+ABL_OVERCHARGE_FLEET: Equip Power Cell
+ABL_OVERCHARGE_FLEET_DESC: <<|
+	Increase the targeted fleet's effectiveness by 50%.
+	
+	A single cell can be equipped per fleet.
+	An equipped flagship has a high chance to drop the cell when destroyed.
+>>
+STATUS_POWER_CELL: Power Cell
+STATUS_POWER_CELL_DESC: <<|
+	Carrying Power Cell artifact.
+
+	Fleet Effectiveness increased by 50%.
+	May drop when flagship is destroyed.
+>>
+
+ART_NATURE_DEVICE: Arcology
+ABL_DEVELOP_PLANET: Develop Planet
+ABL_DEVELOP_PLANET_DESC: <<|
+	Increase the maximum population on the targeted planet by 10.
+>>
+
+ART_TELESCOPE: Telescope
+ABL_TELESCOPE: Use Telescope
+ABL_TELESCOPE_DESC: <<|
+	Grants vision over the targeted system and all systems adjacent to it for
+	5 minutes.
+
+	Unlimited uses.
+>>
+
+ART_BUSTER_MACHINE: Buster Machine
+ABL_BUST_PLANET: Bust Planet
+ABL_BUST_PLANET_DESC: <<|
+	Destroy target level 0 planet, leaving behind several asteroids.
+>>
+NOTIFY_BUST_PLANET: The [color=$2]$1[/color] have activated a [b]Buster Machine[/b] and blown [color=$4]$3[/color] to bits!
+
+ART_SPY_PROBE: Espionage Probe
+ABL_GAIN_LEVERAGE: Gain Leverage
+ABL_GAIN_LEVERAGE_DESC: <<|
+	Gain leverage cards against all empires that control planets in the
+	targeted system.
+>>
+
+ART_ANCIENT_EMBASSY: Ancient Embassy
+ABL_ANCIENT_EMBASSY: Reactivate Embassy
+ABL_ANCIENT_EMBASSY_DESC: <<|
+	Place an Ancient Embassy orbital at the targeted location.
+>>
+
+ART_GENESIS_DEVICE: Genesis Device
+ABL_GENESIS_DEVICE: Terraform Planet
+ABL_GENESIS_DEVICE_DESC: <<|
+	Instantly terraform target owned planet to a random Level 2 resource.
+	
+	Removes all current native resources.
+>>
+
+ART_MIND_CONTROL: Mind Control Device

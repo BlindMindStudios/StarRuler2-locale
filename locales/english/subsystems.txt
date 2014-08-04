@@ -1,0 +1,89 @@
+CREWCONTROL_NAME: Crew Facilities
+CREWCONTROL_DESC: <<
+	Provides a bridge, crew quarters, and other facilities for a crew to command a vessel.
+	
+	Slowly repairs the vessel.
+	Ship is destroyed if no control facilities remain.
+>>
+
+SHIPCOMPUTER_NAME: Control Computer
+SHIPCOMPUTER_DESC: <<
+	An autonomous computer capable of controlling numerous ship systems.
+	
+	Supports many independent subsystems.
+	Requires power.
+	Ship is destroyed if no control facilities remain.
+>>
+
+SUPPLYMODULE_NAME: Supply Storage
+SUPPLYMODULE_DESC: Provides extra supplies and ammunition for combat and sieging planets.
+
+SUPPORTCAPMODULE_NAME: Support Command
+SUPPORTCAPMODULE_DESC: Provides infrastructure for commanding additional support ships.
+
+PLATEARMOR_NAME: Plate Armor
+PLATEARMOR_DESC: <<
+	Heavy, interlocked plates of metal which protect the ship from damage.
+	
+	High HP
+	Cheap to build
+	
+	Effective against similarly sized vessels.
+>>
+
+ABLATIVEARMOR_NAME: Ablative Armor
+ABLATIVEARMOR_DESC: <<
+	A stiff metal foam designed to absorb damage by ablating away.
+	
+	Reduces incoming damage.
+	
+	Effective against many small hits.
+>>
+
+REACTIVEARMOR_NAME: Reactive Armor
+REACTIVEARMOR_DESC: <<
+	A sheet of independent explosives that detonate nearly instantly in response to incoming weapon fire.
+	
+	Slightly higher HP.
+	Heavy hits are weakened to some cap.
+	
+	Effective against massive hits.
+>>
+
+NEUTRONARMOR_NAME: Neutronium Armor
+NEUTRONARMOR_DESC: <<
+	Microscopic pellets of neutronium-doped metal are mixed with standard plate armor.
+	
+	Massive HP.
+	Massive.
+	Very expensive.
+	Resists armor piercing weapons.
+	
+	Effective against most opponents.
+>>
+
+ROCKETENGINE_NAME: Rocket Engine
+ROCKETENGINE_DESC: <<
+	Expels large amounts of mass at high speeds to produce thrust.
+	
+	Very High Thrust.
+	High Maintenance.
+>>
+
+IONENGINE_NAME: Ion Engine
+IONENGINE_DESC: <<
+	Propels small amounts of fuel at extremely high speeds.
+	
+	Low Thrust.
+	Requires Power.
+>>
+
+GRAVITYENGINE_NAME: Graviton Engine
+GRAVITYENGINE_DESC: <<
+	A dense artificial gravity wave allows seemingly reactionless engines to propel spacecraft.
+	
+	Higher Thrust.
+	Expensive.
+	Can be placed internally.
+	Has high power needs.
+>>
