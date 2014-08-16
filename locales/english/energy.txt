@@ -117,6 +117,8 @@ NTRG_REGION: Must target region.
 NTRG_TERRAFORM: Must be able to terraform.
 NTRG_NOT_NATURAL: Cannot target natural artifact.
 NTRG_NATURAL: Must target natural artifact.
+NTRG_OWN_SYSTEM: Must own all planets.
+NTRG_CONTACT: Must be in contact with other empires.
 
 ABL_ENSLAVE: Enslave
 ABL_ENSLAVE_DESC: <<|

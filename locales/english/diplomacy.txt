@@ -57,9 +57,35 @@ CARD_DESC_WEIGHT: Weight:
 CARD_PURCHASE_MONEY: Purchase Cost:
 CARD_PURCHASE_INFLUENCE: Purchase Cost:
 CARD_PLAY_MONEY: Play Cost:
+CARD_PLAY_ENERGY: Energy Cost:
 INFLUENCE_POPULATION: Population
+NO_MET_EMPIRES: No alien races have been discovered...
+NOTIF_MET_EMPIRE: You have made first contact with the $1 in the $2 system.
 VOTES_FOR: $1 for
 VOTES_AGAINST: $1 against
+OFFER_FOR: Make Offer\nfor Support
+OFFER_FOR_TITLE: Make Offer for Support
+OFFER_FOR_TEXT: Make an offer for another empire to add [b][color=#0f0]support[/color][/b] to this vote in exchange.
+OFFER_AGAINST: Make offer\nfor Opposition
+OFFER_AGAINST_TITLE: Make Offer for Opposition
+OFFER_AGAINST_TEXT: Make an offer for another empire to add [b][color=#f00]opposition[/color][/b] to this vote in exchange.
+OFFER: Offer
+OFFER_MONEY: Offer Money
+OFFER_ENERGY: Offer Energy
+OFFER_CARD: Offer Card
+OFFER_FLEET: Offer Fleet
+OFFER_PLANET: Offer Planet
+OFFER_ARTIFACT: Offer Artifact
+OFFER_REQ_SUPPORT: Requested Support Votes
+OFFER_REQ_OPPOSE: Requested Oppose Votes
+OFFER_FOR_BTN: [center]Claim ([b][color=#0f0]$3 / $2 support[/color][/b])[/center]
+OFFER_AGAINST_BTN: [center]Claim ([b][color=#f00]$3 / $2 opposition[/color][/b])[/center]
+OFFER_TT: An offer of $1.
+OFFER_TT_OBJ: $1 was offered.\n\n[b]Click[/b] to zoom to view it in the galaxy.
+LOG_OFFER_FOR: * The $1 has offered $2 for any empire that adds at least [color=#0f0][b]$3 support[/b][/color].
+LOG_OFFER_AGAINST: * The $1 has offered $2 for any empire that adds at least [color=#f00][b]$3 opposition[/b][/color].
+LOG_CLAIM_OFFER_FOR: * The $1 has claimed the $4's offer of $2 for their continued [color=#0f0][b]support[/b][/color].
+LOG_CLAIM_OFFER_AGAINST: * The $1 has claimed the $4's offer $2 for their continued [color=#f00][b]opposition[/b][/color].
 EFFECT_CONFIRM_DISMISS: <<|
 	Are you sure you wish to dismiss this influence effect?
 
@@ -404,6 +430,22 @@ CARD_NAMEPLANET_DESC: <<|
 >>
 NAMEPLANET_NOTIFY: The $1 have gloriously named [b]$3[/b].
 
+CARD_NAMESYSTEM: Name System
+CARD_NAMESYSTEM_DESC: <<|
+	To truly mark this territory as our own, we have to give it a suitable
+	name. A name that inspires courage into the hearts of the warriors we task
+	to defend it.
+
+	[i]Renames a system you control fully. Your fleets gain a +20% efficiency
+	/ combat strength boost when fighting in a system you named.[/i]
+>>
+NAMESYSTEM_NOTIFY: The $1 have triumphantly named the [b]$3[/b] System.
+STATUS_SYSTEM_MORALE: Morale Boost
+STATUS_SYSTEM_MORALE_DESC: <<|
+	This fleet is receiving a morale boost from the system it is in. While in
+	this system, it will fight at +20% efficiency and combat strength.
+>>
+
 CARD_NAMEFLAGSHIP: Name Flagship
 CARD_NAMEFLAGSHIP_DESC: <<|
 	Flagships are the backbone of the war effort, inspiring the hearts and
@@ -506,9 +548,20 @@ CARD_PROMISES_DESC: <<|
 	our political pull in the future, but this seems a small price to pay for
 	their overwhelming endorsements.
 
-	[i]Reduces your empire's total influence generation by 40% for the next
-	3 minutes. Each additional quality increases the weight given by 3, as well
-	as the influence upkeep by 15%.[/i]
+	[i]Adds weight in support or opposition of a vote. For the next 5 minutes,
+	all support cards you play into votes cost 1 additional influence to play.[/i]
+>>
+
+CARD_ASSURANCES: Assurances
+CARD_ASSURANCES_LOG_Y: * The $1 makes [b][color=#00faff]Assurances[/color][/b] to add [color=#0f0]$2 support[/color].
+CARD_ASSURANCES_LOG_N: * The $1 makes [b][color=#00faff]Assurances[/color][/b] to add [color=#f00]$2 opposition[/color].
+CARD_ASSURANCES_DESC: <<|
+	Making assurances of future goodwill, we can pull more important figures to
+	our cause. We will need to make good on these assurances in future
+	endeavors. however.
+
+	[i]Adds weight in support or opposition of a vote. For the next 10 minutes,
+	all cards you buy from Influence Peddling cost 1 extra influence to buy.[/i]
 >>
 
 CARD_CLAIM_ARTIFACT: Claim Artifact
@@ -595,3 +648,40 @@ CARD_DENOUNCE_DESC: <<|
 	when played.[/i]
 >>
 DENOUNCE_NOTIFY: The $1 have denounced the $3!
+
+CARD_ANCIENT_KNOWLEDGE: Ancient Knowledge
+CARD_ANCIENT_KNOWLEDGE_DESC: <<|
+	Gain the upper hand in the public mind by revealing benevolent Ancient
+	Knowledge, carefully kept secret until now. Other parties may start to use
+	this knowledge as well afterwards, however.
+
+	[i]Adds support or opposition to a vote based on the amount of empires
+	present. All other empires present receive a 0 cost, 1 weight, "Ancient
+	Intuition" card.[/i]
+>>
+CARD_ANCIENT_KNOWLEDGE_LOG_Y: * The $1 reveals [color=#f88][b]Ancient Knowledge[/b][/color] to add [color=#0f0]$2 support[/color].
+CARD_ANCIENT_KNOWLEDGE_LOG_N: * The $1 reveals [color=#f88][b]Ancient Knowledge[/b][/color] to add [color=#f00]$2 opposition[/color].
+
+CARD_ANCIENT_INTUITION: Ancient Intuition
+CARD_ANCIENT_INTUITION_DESC: <<|
+	Further insight into previously revealed Ancient Knowledge can sway public
+	opinion towards our cause.
+
+	[i]Adds 1 weight to either side of the vote.[/i]
+>>
+CARD_ANCIENT_INTUITION_LOG_Y: * The $1 ponders [color=#e780ff][b]Ancient Intuition[/b][/color] to add [color=#0f0]$2 support[/color].
+CARD_ANCIENT_INTUITION_LOG_N: * The $1 ponders [color=#e780ff][b]Ancient Intuition[/b][/color] to add [color=#f00]$2 opposition[/color].
+
+CARD_ENERGY_CLASH: Energy Clash
+CARD_ENERGY_CLASH_LOG_Y: * The $1 instigates an [color=#42b4bd][b]Energy Clash[/b][/color] to add [color=#0f0]$2 support[/color].
+CARD_ENERGY_CLASH_LOG_N: * The $1 instigates an [color=#42b4bd][b]Energy Clash[/b][/color] to add [color=#f00]$2 opposition[/color].
+CARD_ENERGY_CLASH_DESC: <<|
+	If there's one thing the general population can always use more of, it's
+	Energy. Energy runs households, businesses and cities, and releasing
+	a significant part of our empire's strategic Energy reserve can easily sway
+	some opinions in our favour.
+
+	[i]Adds weight to either side of the vote. Costs stored energy to play.
+	Each time an Energy Clash is played into a vote, each subsequent play costs
+	more Energy.[/i]
+>>

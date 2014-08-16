@@ -38,6 +38,7 @@ MP_OPTIONS: Multiplayer Options
 MP_HOST_OPTIONS: Host Options
 MP_HOST: Host
 MP_SERVER_NAME: Server Name
+MP_IP: IP
 MP_PORT: Port
 MP_HOST_LOAD: Host & Load
 MP_PUBLIC: Public Game
@@ -54,6 +55,7 @@ MP_CANNOT_CONNECT: Unable to connect to server
 MP_WAITING_START: Waiting for host to start the game
 MP_WAITING_TRANSFER: Transfering Game
 MP_IRC_CHAT: Open IRC Chat Lobby
+MP_JOIN_IP: Join via IP
 MP_NO_GAMES: No active multiplayer games...
 INVITE_FRIEND: Invite Friend
 MP_CONNECT_EVENT: $1 has connected to the game.

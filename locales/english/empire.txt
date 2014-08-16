@@ -2,6 +2,7 @@ PORTRAIT: Portrait
 RACE_NAME: Race Name
 FTL_METHOD: FTL Method
 SHIPSET: Shipset
+WEAPON_SKIN: Weapon Skin
 
 TT_DIFF: [font=Medium]Difficulty:[/font]
 DIFF_PASSIVE: [img=HappyFace;40][b][color=#0f0]Passive[/color][/b]\n[i]Will not declare war on human-controlled empires.[/i][/img]
@@ -70,22 +71,30 @@ TRAIT_INEFFICIENT_DESC: <<|
 
 TRAIT_EMPIRE: Government: Empire
 TRAIT_EMPIRE_DESC: <<|
-	Traditional imperial rule. Start with 10x Negotiate, 1x Annex Planet.
+	[b][color=#a06911]Extra nearby Asteroids[/color][/b].
+	[b][color=#f00]Fleet:[/color][/b] Heavy Carrier with support.
+	[b][color=#0087c7]Cards:[/color][/b] 8x Negotiate, 1x Name Flagship, 1x Name Planet.
 >>
 
 TRAIT_COMMUNISM: Government: Communism
 TRAIT_COMMUNISM_DESC: <<|
-	State-controlled industry and development. Start with 2x Spy, 1x Cultivation.
+	[b][color=#42b4bd]500 Energy[/color][/b].
+	[b][color=#f00]Fleet:[/color][/b] 2x Dreadnaught.
+	[b][color=#0087c7]Cards:[/color][/b] 1x Negotiate, 1x Investigate, 1x Cultivation, 1x United Research Center, 1x Enhance, 1x Sabotage.
 >>
 
 TRAIT_THEOCRACY: Government: Theocracy
 TRAIT_THEOCRACY_DESC: <<|
-	Church doctrine above all. Start with 2x Negotiate, 3x Rhetoric, 2x Protect System.
+	[b][color=#00c0ff]250 FTL[/color][/b].
+	[b][color=#f00]Fleet:[/color][/b] 2x Scout, 1x Dreadnaught, Homeworld Defense.
+	[b][color=#0087c7]Cards:[/color][/b] 1x Promises, 1x Ancient Knowledge, 2x Protect System, 1x Host Galactic Senate.
 >>
 
 TRAIT_CAPITALISM: Government: Capitalism
 TRAIT_CAPITALISM_DESC: <<|
-	A corporate oligarchy owns most assets. Start with 1 Random Card, 2x Bribe, 4x Random Leverage.
+	[b][color=#d1cb6a]§300k Special Funds[/color][/b].
+	[b][color=#f00]Fleet:[/color][/b] Heavy Carrier.
+	[b][color=#0087c7]Cards:[/color][/b] 4x Leverage, 2x Attach Rider, 3x Patriotic Surge, 2x Gift.
 >>
 
 TRAIT_MERITOCRACY: Government: Meritocracy

@@ -48,14 +48,6 @@ WELFARE_LABOR: <<
 	Converts each $1 of unspent budget to labor on the homeworld.
 >>
 
-ENERGY_CHARGE_TT: <<|
-	Generate an energy charge by spending [b]$1 Energy[/b].
-
-	Each energy charge held increases your maximum energy storage but slightly
-	reduces your energy income. Certain abilities are improved by holding
-	charges or can expend charges for benefits.
->>
-
 GTT_MONEY: <<
 	[font=Medium]Money[/font]
 	[i]Every budget cycle of 3 minutes generates new money to spend. Any money not spent after the budget cycle ends is put into [img=$4;20/] welfare.[/i]
@@ -73,6 +65,14 @@ GTT_BONUS_MONEY: <<|
 	spent.[/i]
 >>
 
+GTT_DEBT_PENALTY: <<|
+	[font=Subtitle][color=#f00][b]Debt Growth Penalty:[/b] [right]$1[/right][/color][/font]
+
+	[i]Being in debt reduces population growth rate on all your planets. The
+	more you are in debt relative to your total income, the lower your
+	population growth.[/i]
+>>
+
 GTT_INFLUENCE: <<
 	[font=Medium]Influence[/font]
 	[i]Influence points are used to trigger diplomatic actions and win galactic senate votes. If storing more points than your optimal storage cap (based on your total generation), your generation rate will be decreased.[/i]
@@ -85,10 +85,11 @@ GTT_INFLUENCE: <<
 
 GTT_ENERGY: <<
 	[font=Medium]Energy[/font]
-	[i]Energy is used to activate abilities on artifacts found across the galaxy.[/i]
+	[i]Energy is used to activate abilities on artifacts found across the galaxy. The more Energy you are currently storing, the more your generation rate is reduced.[/i]
 
 	Available Energy: [right]$1[/right]
 	Generation Rate: [right]$2[/right]
+	Storage Penalty: [right]$3[/right]
 >>
 
 GTT_FTL: <<
@@ -386,7 +387,7 @@ ILLINIUM_DESC: <<
 
 KALSUNIM: Kalsunim
 KALSUNIM_DESC: <<
-	All base labor income on the consuming planet also increases defense by the same amount.
+	Labor generation on the consuming planet also increases Defense.
 >>
 
 DRUGS: Drugs

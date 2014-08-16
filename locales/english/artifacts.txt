@@ -1,7 +1,9 @@
 ART_COMET: Comet
 ABL_GENERATE_WATER: Generate Water
 ABL_GENERATE_WATER_DESC: <<|
-	Adds a native water resource on the targeted planet.
+	Adds a water resource to the targeted planet.
+	
+	The water cannot be exported or bound to other waters.
 >>
 
 ART_COMMAND_COMPUTER: Command Computer
@@ -45,9 +47,7 @@ ART_TELESCOPE: Telescope
 ABL_TELESCOPE: Use Telescope
 ABL_TELESCOPE_DESC: <<|
 	Grants vision over the targeted system and all systems adjacent to it for
-	5 minutes.
-
-	Unlimited uses.
+	15 minutes.
 >>
 
 ART_BUSTER_MACHINE: Buster Machine
