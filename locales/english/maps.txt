@@ -1,5 +1,8 @@
 SPIRAL_GALAXY: Spiral Galaxy
 SPIRAL_GALAXY_DESC: A galaxy with multiple arms in a spiral pattern.
 
-DISC_GALAXY: Disc Galaxy
-DISC_GALAXY_DESC: A galaxy spread across an even disc.
+CORKSCREW_GALAXY: Corkscrew Galaxy
+CORKSCREW_GALAXY_DESC: Stars twisting down in a single strip.
+
+CLUSTERS_MAP: Clusters
+CLUSTERS_MAP_DESC: Several smaller clusters connected by narrow corridors.

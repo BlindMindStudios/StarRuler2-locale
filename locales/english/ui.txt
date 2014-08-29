@@ -87,6 +87,7 @@ PLAY_EMPIRE: Play Empire
 
 FREE_RESOURCES: Unused Resources
 DISABLED_RESOURCES: Disabled Resources
+NO_POP_RESOURCES: Insufficient Population to Produce
 DECAYING_PLANETS: Decaying Planets
 LABOR_PLANETS: Planets/Orbitals with Labor
 DEFENSE_PLANETS: Planets with Defense
@@ -98,6 +99,7 @@ ALL_FLEETS: All Fleets
 COMBAT_FLEETS: Fleets in Combat
 FLEETS_LOW_SUPPLY: Fleets on Low Supply
 AVAIL_ARTIFACTS: Available Artifacts
+COLONIZE_SAFE_PLANETS: Sufficient Population to Colonize
 
 GO_RESOURCE: $1
 GO_RESOURCE_TYPE: Find Resource

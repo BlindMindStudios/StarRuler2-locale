@@ -306,7 +306,6 @@ EXPLOSIVES_DESC: <<
 
 HADOCITE: Hadocite
 HADOCITE_DESC: <<
-	Adds a devastating Wave Motion Beam when exported to an orbital.
 >>
 
 PLUTONIUM: Plutonium
@@ -370,7 +369,7 @@ ANTIMATTER_DESC: <<|
 
 EXOTIC_MATTER: Exotic Matter
 EXOTIC_MATTER_DESC: <<
-	Removes all building maintenance on the consuming planet.
+	Reduce building maintenance by up to §1M.
 
 	Buildings on the consuming planet do not take any time to build.
 >>
@@ -446,9 +445,7 @@ ASTEROID_DEFENSE_DESC: <<
 
 ASTEROID_AFFINITY: Morphic Materials
 ASTEROID_AFFINITY_DESC: <<
-	When exported to an orbital, grants one wildcard affinity.
-
-	When exported to a planet, adds 2 pressure of the consuming planet's native resource.
+	Adds 2 pressure of the consuming planet's native resource.
 >>
 
 SOYLENT1: Soylent Teal

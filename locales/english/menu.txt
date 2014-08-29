@@ -1,8 +1,5 @@
 START_GAME: Start Game
 GAME_SETTINGS: Game Settings
-CHANGE_MAP: Change Map
-SELECT_MAP: You select map now, yes?
-SYSTEM_COUNT: System Count:
 ADD_AI: Add AI
 MENU_EMPIRES: Empires
 MENU_GAME_SETTINGS: Game Settings
@@ -63,10 +60,15 @@ MP_DISCONNECT_EVENT: $1 has disconnected.
 MP_PLAY_EVENT: $1 is now playing as the $2 empire.
 MP_SPECTATING_EVENT: $1 is now spectating.
 
-CHOOSE_MAP: Choose Map
+CHOOSE_MAP: Choose Map...
 ADD_GALAXY: Add Galaxy
+SYSTEM_COUNT: Systems
+SYSTEM_SPACING: Spacing
+CONNECT_ENDS: Loop with Wormhole
+TEAM: Team
+TEAM_TEXT: Team $1
+NO_TEAM: No Team
 
-SYSTEM_COUNT: System Count
 FLATTEN: Flatten
 
 TEX_QUAL_2: Sad

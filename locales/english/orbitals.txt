@@ -261,3 +261,66 @@ ORB_ANCIENT_EMBASSY_DESC: <<|
 
 	Can trade freely with trade cores.
 >>
+
+ORB_SHIPYARD: Shipyard
+ORB_SHIPYARD_BLURB: Can build ships, import labor from planets.
+ORB_SHIPYARD_DESC: <<|
+	A massive orbital shipyard capable of constructing fleets in space.
+
+	Has 3 innate Labor generation per minute. Planets can export their own
+	labor to shipyards within trade range at a 75% reduced rate.
+
+	Gains Labor from Metallurgy factory research at a 75% reduced rate.
+>>
+ORB_ARTILLERY_PLATFORM: Artillery Platform
+ORB_ARTILLERY_PLATFORM_BLURB: Long-range artillery cannon.
+ORB_ARTILLERY_PLATFORM_DESC: <<|
+	An independent orbital artillery cannon, capable of firing at enemies
+	throughout the system.
+>>
+ORB_DEFENSE_PLATFORM: Defense Platform
+ORB_DEFENSE_PLATFORM_BLURB: Defense platform with short range weaponry.
+ORB_DEFENSE_PLATFORM_DESC: <<|
+	An orbital defense platform outfitted with an arsenal of short-range
+	weaponry to defend its vicinity.
+>>
+ORB_TRADE_OUTPOST: Trade Outpost
+ORB_TRADE_OUTPOST_BLURB: Allows trade through its system.
+ORB_TRADE_OUTPOST_DESC: <<|
+	A small trade and refueling outpost that allows your civilian ships to
+	travel through the system it is in.
+>>
+ORB_TRADE_STATION: Commerce Station
+ORB_TRADE_STATION_BLURB: Allows global trade to other commerce stations.
+ORB_TRADE_STATION_DESC: <<|
+	A large and bustling station of commerce allows global resource trade
+	between it and any other Commerce Stations you control.
+>>
+ORB_SUPPLY_DEPOT: Supply Depot
+ORB_SUPPLY_DEPOT_BLURB: Increases the rate of resupply in the system.
+ORB_SUPPLY_DEPOT_DESC: <<|
+	Infrastructure specially set up to resupply fleets at an accelerated rate.
+
+	All fleets in the system the Supply Depot is in resupply much faster.
+>>
+STATUS_FAST_RESUPPLY: Receiving Supplies
+STATUS_FAST_RESUPPLY_DESC: <<|
+	Is receiving supplies from a Supply Depot in the system. Regenerating
+	supplies at a significantly increased rate while not in combat.
+>>
+ORB_FTL_JAMMER: FTL Jammer
+ORB_FTL_JAMMER_BLURB: Prevents hostile empires from engaging their FTL drives.
+ORB_FTL_JAMMER_DESC: <<|
+	An array of precise hyperfield excitors calibrated to specific frequencies
+	can block the use of particular makes of FTL drive.
+
+	Empires you are at war with cannot use their FTL inside this system.
+
+	[b][color=#00c0ff]Costs 0.25 FTL per second to maintain.[/color][/b]
+>>
+ORB_SCAFFOLDING: Scaffolding
+ORB_SCAFFOLDING_BLURB: An orbital hull is under construction here.
+ORB_SCAFFOLDING_DESC: <<|
+	An orbital is under construction at this location.
+>>
+NAME_SCAFFOLDING: $1 (Scaffolding)

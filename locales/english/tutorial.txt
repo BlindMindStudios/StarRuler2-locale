@@ -173,8 +173,9 @@ TUT_EXPAND_ACT2_TEXT: <<|
 
 TUT_EXPAND_SUCC_TITLE: Success!
 TUT_EXPAND_SUCC_TEXT: <<|
-	Congratulations! You succesfully developed Spacewood to a Level 2 world,
-	increasing its maximum population.
+	Congratulations! You provided Spacewood with the resources needed for it to
+	become a Level 2 world. Once its population grows to the 6 Billion required
+	for Level 2, it will level up.
 
 	When you select a planet, you can see its current level and the required
 	imports to level it up on the information panel in the bottom left.
@@ -510,10 +511,10 @@ TUT_DEFCORE_ACT1_TITLE: Manage Spacewood
 TUT_DEFCORE_ACT1_TEXT: [b]Double-click[/b] Spacewood in order to open its planet management screen.
 TUT_DEFCORE_ACT2_TITLE: Open Orbitals List
 TUT_DEFCORE_ACT2_TEXT: Open the orbitals list by clicking the [b]Orbitals[/b] button on the right.
-TUT_DEFCORE_ACT3_TITLE: Construct a Defense Core
-TUT_DEFCORE_ACT3_TEXT: Click "Defense Core" in the orbitals list.
+TUT_DEFCORE_ACT3_TITLE: Construct a Defense Platform
+TUT_DEFCORE_ACT3_TEXT: Click "Defense Platform" in the orbitals list.
 TUT_DEFCORE_ACT4_TITLE: Place Orbital
-TUT_DEFCORE_ACT4_TEXT: Place the orbital by clicking in any location in the Yingmow system.
+TUT_DEFCORE_ACT4_TEXT: Place the orbital by clicking on any location in the Yingmow system.
 
 TUT_DEFPROJ_TITLE: Defense Generation
 TUT_DEFPROJ_TEXT: <<|

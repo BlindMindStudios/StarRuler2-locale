@@ -13,6 +13,7 @@ ERROR_INVALID_HULL: Cannot use $1 on this hull type.
 ERROR_MINIMUM_SIZE: '$1' Hull requires minimum size $2.
 ERROR_MAXIMUM_SIZE: '$1' Hull has a maximum size of $2.
 ERROR_HULL_NOT_IN_SHIPSET: Design's hull is not available to the current shipset.
+ERROR_NEED_CONTROL: At least 1 Command required.
 DESIGNS: Designs
 
 HULL_EDITOR: Hull Editor

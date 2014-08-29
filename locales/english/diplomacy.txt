@@ -22,6 +22,50 @@ EMPIRE_STRENGTH: $1 strength
 EMPIRE_PLANETS: $1 planets
 ACTIVE_VOTES: Active Propositions
 ACTIVE_INFLUENCE_EFFECTS: Active Effects
+ACTIVE_TREATIES: Treaties
+SIGNED_BY: Signed by
+INVITED_TO: Invitations to sign
+SURRENDER_NAME: [b][color=#f00]Subjugation[/color][/b] of the $1
+SURRENDER_OFFER: [b][color=#f00]Surrender Offer[/color][/b] of the $1
+SURRENDER_DEMAND: [b][color=#f00]Demand for Surrender[/color][/b] of the $1
+SURRENDER_OPTION: Offer your Unconditional Surrender
+DEMAND_SURRENDER_OPTION: Demand their Surrender
+OFFER_SUBJUGATE_OPTION: Offer your Subjugation to them
+DEMAND_SUBJUGATE_OPTION: Demand their Subjugation to you
+SURRENDER_PROMPT: <<|
+	If your offer of surrender and subjugation to the $1 is accepted, you will
+	become a Vassal empire and no longer be able to make or participate in
+	treaties.  Your parent empire will decide what empires to go to war with,
+	and you will be unable to fully win the game - only achieving [b]Lesser
+	Victory[/b] when your parent empire wins the game. This status is
+	permanent.
+
+	Are you sure you wish to offer your unconditional subjugation?
+>>
+PERMANENT_PROMPT: <<|
+	The treaty you are about to sign is permanent, and can never be negated.
+
+	Are you sure you wish to sign this permanent treaty?
+>>
+NOTIF_VASSAL: The $2 is now a Vassal of the $3.
+VASSAL_TEXT: $1's Vassal
+PARENT_VASSAL_TEXT: [b][color=#0f0]Your Master[/color][/b]
+PROPOSE_TREATY: Propose new Treaty...
+NO_SIGNATORIES: [i][color=#aaa]No signatories yet...[/color][/i]
+JOIN_TREATY: Sign Treaty
+DECLINE_TREATY: Decline Treaty
+LEAVE_TREATY: Abandon Treaty
+DISMISS_TREATY: Retract Treaty
+INVITE_TO_TREATY: Invite to sign the [b]$1[/b]
+TREATY_NAME_GEN: Treaty of $1
+PROPOSE: Propose
+TREATY_DESC: Propose a new treaty with the selected clauses. Other empires can be invited as additional signatories after the treaty is created.
+NOTIF_TREATY_INVITE: The $2 has invited you to sign the [b]$5$1[/b].
+NOTIF_TREATY_INVITE_OTHER: The $2 has invited the $3 to sign the [b]$5$1[/b].
+NOTIF_TREATY_LEAVE: The $2 has abandoned the [b]$5$1[/b].
+NOTIF_TREATY_DISMISS: The $2 has retracted the [b]$5$1[/b].
+NOTIF_TREATY_DECLINE: The $2 has declined to sign the [b]$5$1[/b].
+NOTIF_TREATY_JOIN: The $2 has signed the [b]$5$1[/b].
 ELECT_VOTE: Run for Senate Leader
 UNIFY_VOTE: Reach for Galactic Unification
 SAY_LABEL: Say:
@@ -199,6 +243,7 @@ VOTES_NAY: $1 Opposition
 
 NO_VOTES: No currently active propositions...
 NO_EFFECTS: No currently active effects...
+NO_TREATIES: No current treaties...
 
 VOTE_LEAVE: Leave Negotiations
 PROMPT_LEAVE: <<|
@@ -684,4 +729,39 @@ CARD_ENERGY_CLASH_DESC: <<|
 	[i]Adds weight to either side of the vote. Costs stored energy to play.
 	Each time an Energy Clash is played into a vote, each subsequent play costs
 	more Energy.[/i]
+>>
+
+CLAUSE_VISION: Share Vision
+CLAUSE_VISION_DESC: <<|
+	All empires that have signed this treaty will share intelligence, giving
+	each other vision over their fleets and planets.
+>>
+
+CLAUSE_TRADE: Trade Agreement
+CLAUSE_TRADE_DESC: <<|
+	Empires that have signed this treaty allow mutual civilian trade through
+	each other's systems, letting them export resources through other
+	signatories' territories.
+>>
+
+CLAUSE_ALLIANCE: Alliance
+CLAUSE_ALLIANCE_DESC: <<|
+	Signatory empires declare to work together and not fight amongst each other.
+
+	Cannot declare war on other signatories while part of this treaty.
+>>
+
+CLAUSE_CONST: Permanent
+CLAUSE_CONST_DESC: <<|
+	This treaty is permanent and cannot be broken or altered in any way.
+>>
+
+CLAUSE_SUBJUGATE: Subjugation
+CLAUSE_SUBJUGATE_DESC: <<|
+	Subjugated empires become Vassals of their parent empires. Vassal empires
+	cannot independently sign treaties, and are at war only with empires their
+	parent empire is at war with.
+
+	An empire, once it has become a Vassal, cannot ever win the game, but can
+	only achieve [b]Lesser Victory[/b] by helping their parent achieve victory.
 >>
