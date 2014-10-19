@@ -1,32 +1,16 @@
 PROJECT: Project
 PROJECTS: Projects
 LABEL_NAME: Name:
-LABEL_UNLOCKS: Next Level:
 REQUIRES_INSIGHT: Costs
 RESEARCH_PROJECT: Research
 PROJECT_COMPLETED: [i]Completed[/i]
 AVAIL_INSIGHTS: Available Insights
-NO_INSIGHTS: No available insights... You will gain a random insight every $1 technology levels.
-NO_PROJECTS: No available projects... Level up technology fields to gain projects.
-
-RES_UPGRADE: Upgrade
-RES_UPGRADE_TT: <<|
-	Spend a [b]$1[/b] in order to gain an extra instance of its basic level-up
-	benefits.
->>
-
-RES_ENDORSE: Endorse
-RES_ENDORSE_TT: <<|
-	Spend a [b]$1[/b] in order to reduce its research cost by one level.
->>
-
-F_SCIENCE: Theoretical Science
-F_SCIENCE_DESC: <<|
-	The understanding of understanding. Lifelong study and application of
-	advanced math and simulations provides unending insight into the universe.
->>
-F_SCIENCE_BLURB0: 1 [b][img=DesignationIcons::5;20/] Theoretical Insight[/b]
-F_SCIENCE_BLURB1: 1 Random Project from Another Field\n  ([i]1 [img=DesignationIcons::5;20/] Theoretical Insight[/i])
+NO_INSIGHTS: No available insights...
+NO_PROJECTS: No available projects...
+FIELD_LEVELUP: Every Level Up
+NEXT_PROJECT: Upcoming Projects/Unlocks
+PROGRESS: Progress
+AT_LEVEL: At
 
 RI_Wealth: Wealth Insight
 RI_Influence: Influence Insight
@@ -36,6 +20,17 @@ RI_Ancient: Ancient Insight
 RI_Theoretical: Theoretical Insight
 RI_Energy: Energy Insight
 
+GAIN_RANDOM_INSIGHT: Gain  [img=DesignationIcons::24;20/]: [offset=80]Research [color=#8c4ec9f][b]$2[/b][/color] more technology levels.[/offset]
+GAIN_LABOR_INSIGHT: Gain  [img=DesignationIcons::4;20/]: [offset=80]Construct [color=#f00]Forge[/color] building.[/offset]
+
+F_SCIENCE: Theoretical Science
+F_SCIENCE_DESC: <<|
+	The understanding of understanding. Lifelong study and application of
+	advanced math and simulations provides unending insight into the universe.
+>>
+F_SCIENCE_BLURB0: Gain 1 [b][img=DesignationIcons::5;20/] Theoretical Insight[/b]\n[offset=10][i]Theoretical insights act as wildcard insights and can be used on any project.[/i][/offset]
+
+
 F_METALLURGY: Metallurgy
 F_METALLURGY_DESC: <<|
 	The study of acquisition, refinement, and utilization of raw resources.	
@@ -44,6 +39,7 @@ F_METALLURGY_BLURB0: All Subsystem Health +10%
 F_METALLURGY_BLURB1: Factory Labor Production +1
 
 P_SMELTING_1: Low Gravity Smelting: [b]Armoring[/b]
+P_SMELTING_1_BLURB: Armor Health +100%
 P_SMELTING_1_DESC: <<|
 	[i][color=#f33]Mutually exclusive with "Low Gravity Smelting:
 	[b]Industry[/b]". Choosing this project will disable the other.[/color][/i]
@@ -51,6 +47,7 @@ P_SMELTING_1_DESC: <<|
 	Armor Health +100%
 >>
 P_SMELTING_2: Low Gravity Smelting: [b]Industry[/b]
+P_SMELTING_2_BLURB: Factory Labor Production +4
 P_SMELTING_2_DESC: <<|
 	[i][color=#f33]Mutually exclusive with "Low Gravity Smelting:
 	[b]Armoring[/b]". Choosing this project will disable the other.[/color][/i]

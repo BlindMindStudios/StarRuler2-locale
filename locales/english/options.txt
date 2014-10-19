@@ -1,6 +1,7 @@
 OPT_GAME: Game
 OPT_GALAXY_BG: Show Galaxy in Overlay Background
 OPT_ICONIFY_NOTIFICATIONS: Iconify Notifications
+OPT_MAX_NOTIFICATIONS: Max Visible
 OPT_AUTOPAUSE: Automatically Pause When Viewing Other Tabs
 
 OPT_KEYBINDS: Keybinds
@@ -90,12 +91,15 @@ KB_FTL: FTL Selected Ships
 KB_HOLD_POSITION: Hold Position
 KB_PIN: Pin Object
 KB_PIN_FLOATING: Pin Object Floating
+KB_PING: Ping Allies
+KB_PING_ALL: Ping All Empires
 
 KB_OPTIONS_MENU: Open Options Menu
 
 OPT_GRAPHICS: Graphics
 OPT_TEX_QUALITY: Texture Quality*
 OPT_RESOLUTION: Resolution*
+OPT_RES_ENTRY: $1x$2 $3Hz
 OPT_FULLSCREEN: Fullscreen*
 OPT_RESTART: * Option requires program restart to take effect.
 

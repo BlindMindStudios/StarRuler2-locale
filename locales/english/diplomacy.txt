@@ -120,6 +120,12 @@ OFFER_CARD: Offer Card
 OFFER_FLEET: Offer Fleet
 OFFER_PLANET: Offer Planet
 OFFER_ARTIFACT: Offer Artifact
+DONATE_MONEY: Donate Money
+DONATE_ENERGY: Donate Energy
+DONATE_CARD: Donate Card
+DONATE_FLEET: Donate Fleet
+DONATE_PLANET: Donate Planet
+DONATE_ARTIFACT: Donate Artifact
 OFFER_REQ_SUPPORT: Requested Support Votes
 OFFER_REQ_OPPOSE: Requested Oppose Votes
 OFFER_FOR_BTN: [center]Claim ([b][color=#0f0]$3 / $2 support[/color][/b])[/center]
@@ -130,12 +136,24 @@ LOG_OFFER_FOR: * The $1 has offered $2 for any empire that adds at least [color=
 LOG_OFFER_AGAINST: * The $1 has offered $2 for any empire that adds at least [color=#f00][b]$3 opposition[/b][/color].
 LOG_CLAIM_OFFER_FOR: * The $1 has claimed the $4's offer of $2 for their continued [color=#0f0][b]support[/b][/color].
 LOG_CLAIM_OFFER_AGAINST: * The $1 has claimed the $4's offer $2 for their continued [color=#f00][b]opposition[/b][/color].
+DONATE: Donate
+DONATE_OPTION: Make Donation
+DONATE_TEXT: Make a generous donation of goods or currencies to another empire.
+NOTIF_DONATION: The $1 has donated $2 to you.
 EFFECT_CONFIRM_DISMISS: <<|
 	Are you sure you wish to dismiss this influence effect?
 
 	You will no longer have to pay any influence upkeep, but the effect will
 	stop working immediately. This cannot be undone.
 >>
+EDICT_FROM_MASTER: Edict from the $1: $2
+TT_EDICT_FROM_MASTER: Your master, the $1, have set a general edict:\n\n$2
+EDICT_TO_VASSALS: Edict to Vassals: $2
+TT_EDICT_TO_VASSALS: You have set a general edict for your vassals:\n\n$2
+EDICT_CONQUER_OPTION: Edict to Vassals: [b][color=#f00]Conquer[/color][/b]
+EDICT_CLEAR_OPTION: Clear Edict
+EDICT_1: [color=#f00][b]Conquer the $1[/b][/color]
+TT_EDICT_1: Conquer the $1. For every world captured and every flagship destroyed, gain a small resource reward.
 
 INFLUENCE_TT_ACTION: <<|
 	This is a diplomatic [b]action[/b]. After being purchased, it can be used at will,
@@ -648,10 +666,9 @@ CARD_UNITED_RESEARCH_DESC: <<|
 
 	[i]If the vote started by this action passes, the targeted planet will
 	become the host for the united research center. This adds bonus research
-	generation to the planet based on its level, and lets you gain an Insight
-	every 3 research levels instead of 4. Every time a different site is
-	selected, the cost of this card and its research generation benefit
-	increases.[/i]
+	generation to the planet based on its level, and increases the rate at
+	which you gain random insights. Every time a different site is selected,
+	the cost of this card and its research generation benefit increases.[/i]
 >>
 VAR_RESEARCH_INCOME: Research Gen.
 VOTE_UNITED_RESEARCH: Host United Research Center on $1
@@ -660,7 +677,7 @@ STATUS_UNITED_RESEARCH_DESC: <<|
 	This planet is hosting the galactic united research center.
 	
 	The planet is gaining bonus research generation per level and increases the
-	rate at which you gain Insights.
+	rate at which you gain random insights.
 >>
 
 CARD_GALAXY_MALL: Mall of the Galaxy
@@ -764,4 +781,12 @@ CLAUSE_SUBJUGATE_DESC: <<|
 
 	An empire, once it has become a Vassal, cannot ever win the game, but can
 	only achieve [b]Lesser Victory[/b] by helping their parent achieve victory.
+>>
+
+CLAUSE_MUTUAL_DEFENSE: Mutual Defense
+CLAUSE_MUTUAL_DEFENSE_DESC: <<|
+	Empires that have signed this treaty promise to help and protect other
+	empires in the treaty.
+	
+	If any signatory empire goes to war, all signatories are automatically at war as well.
 >>

@@ -11,6 +11,22 @@ CONSTRUCTOR_CONSTRUCT: Construct $1
 CONSTRUCTOR_CONSTRUCT_COST: Construct $1 ($2)
 SUPPLY: Supply
 STRENGTH: Strength
+REBUY_GHOSTS: Rebuy ($1)
+TT_REBUY_GHOSTS: <<
+	Replace all remembered dead support ships by buying new ones. The fleet will need to be moved to a system with labor facilities before the ships are actually constructed.
+>>
+CLEAR_GHOSTS: Clear Dead
+TT_CLEAR_GHOSTS: <<
+	Clear all remembered dead support ships from the fleet.
+>>
+AUTO_FILL_SUPPORTS: Auto Fill
+TT_AUTO_FILL_SUPPORTS: <<
+	When checked, the fleet will automatically pick up support ships from nearby planets to replenish its strength.
+>>
+AUTO_BUY_SUPPORTS: Auto Buy
+TT_AUTO_BUY_SUPPORTS: <<
+	When checked, the fleet will automatically buy new support ships when in systems with labor facilities, until the fleet is full.
+>>
 REFRESH_SUPPORTS: Refresh Support Fleet from $1
 ABILITY_TRIGGER: Ability: $1
 ABILITY_ENERGY: " (energy: $1)"
@@ -36,18 +52,51 @@ STATUS_BLOCKADED: Blockaded!
 STATUS_BLOCKADED_DESC: <<|
 	Some of the civilian trade ships carrying this planet's imports were shot down. As a result, the planet produces 1 less of a random empire resource for each stack of "Blockaded!".
 >>
+PICKUP_PROTECTING: Protecting
+PICKUP_UNPROTECTED: Unprotected
+VERB_PICKUP: Pick Up $1
+VERB_ACTIVATE: Activate $1
 
 PICKUP_RESEARCH: Research Data
-PICKUP_RESEARCH_DESC: Gives 30 research progress points.
+PICKUP_RESEARCH_DESC: Gain research points when picked up.
 
 PICKUP_INFLUENCE: Influential Knowledge
-PICKUP_INFLUENCE_DESC: Gives 5 free influence points.
+PICKUP_INFLUENCE_DESC: Gain some influence points when picked up.
 
 PICKUP_DRYDOCK: Ancient Shipyard
-PICKUP_DRYDOCK_DESC: Gives 120 research progress points and contains 3 unfinished ancient vessels.
+PICKUP_DRYDOCK_DESC: Gain 120 research points and contains 3 unfinished ancient vessels.
 
 PICKUP_ASTEROID: Mining Base
-PICKUP_ASTEROID_DESC: Creates an asteroid mining base owned by you.
+PICKUP_ASTEROID_DESC: An activatable resource mining base ready to be used.
+
+PICKUP_ENERGY: Energy Cache
+PICKUP_ENERGY_DESC: Gain some stored energy when picked up.
+
+PICKUP_CARD: Luxury Tokens
+PICKUP_CARD_DESC: Gain 3 Negotiate cards when picked up.
+
+PICKUP_ANCIENT_KNOWLEDGE: Ancient Knowledge
+PICKUP_ANCIENT_KNOWLEDGE_DESC: Gain an "Ancient Knowledge" card when picked up.
+
+PICKUP_INSIGHT: R&D Storage
+PICKUP_INSIGHT_DESC: Gain a Theoretical Insight when picked up.
+
+HOLD_POSITION: Hold Position
+HOLD_POSITION_DESC: Do not chase hostile fleets.
+AREA_BOUND: Engage Nearby Enemies
+AREA_BOUND_DESC: Chase after hostile fleets in the direct vicinity.
+
+BEH_CLOSE_IN: Close in on Enemies
+BEH_CLOSE_IN_DESC: Move to weapons range when attacking enemies.
+BEH_KEEP_DISTANCE: Keep Distance
+BEH_KEEP_DISTANCE_DESC: Move to weapons range and try to keep distance.
+
+ENG_FLAGSHIP_MIN: Flagship Closest Range
+ENG_FLAGSHIP_MIN_DESC: Move to the shortest flagship weapon's range.
+ENG_FLAGSHIP_MAX: Flagship Furthest Range
+ENG_FLAGSHIP_MAX_DESC: Move to the furthest flagship weapon's range.
+ENG_SUPPORT_MIN: Support Closest Range
+ENG_SUPPORT_MIN_DESC: Move to the closest support weapon's range.
 
 ABL_FULLBURST: Full Burst
 ABL_MISSILE_STORM: Missile Storm

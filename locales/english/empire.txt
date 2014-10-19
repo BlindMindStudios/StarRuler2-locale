@@ -94,7 +94,7 @@ TRAIT_CAPITALISM: Government: Capitalism
 TRAIT_CAPITALISM_DESC: <<|
 	[b][color=#d1cb6a]§300k Special Funds[/color][/b].
 	[b][color=#f00]Fleet:[/color][/b] Heavy Carrier.
-	[b][color=#0087c7]Cards:[/color][/b] 4x Leverage, 2x Attach Rider, 3x Patriotic Surge, 2x Gift.
+	[b][color=#0087c7]Cards:[/color][/b] 4x Leverage, 2x Attach Rider, 1x Patriotic Surge, 2x Gift.
 >>
 
 TRAIT_MERITOCRACY: Government: Meritocracy
@@ -241,7 +241,23 @@ TRAIT_ENORMOUS_PLANET_DESC: <<|
 >>
 
 V_WON_TITLE: Glorious Victory!
-V_WON_TEXT: You have achieved [color=#0f0]victory![/color] All your enemies' rotten planets lie barren, now no more than dead hunks of rock.
+V_WON_TEXT: You have achieved [color=#0f0]victory![/color] All the lesser races bow in front of the mighty $2!
 
-V_LOST_TITLE: Game Over: You lose!
-V_LOST_TEXT: You have [color=#f00]lost[/color]! All of your once proud planets lie barren, now no more than dead hunks of rock.
+V_LESSER_TITLE: Lesser Victory...
+V_LESSER_TEXT: As a vassal empire, you've helped the $1 reach for the stars. Your race survives and even prospers, but will never again have hopes of galactic dominance...
+
+V_LOST_TITLE: Defeat!
+V_LOST_TEXT: <<|
+	You have [color=#f00]lost[/color]! Your quest for galactic dominance has left your race in shambles, exterminated and enslaved under the $1's dominion.
+>>
+
+V_SUBJUGATED: Vassal of the $1
+V_RANKINGS: Rankings
+
+STAT_PLANETS: Planets
+STAT_SHIPS: Flagships
+STAT_STRENGTH: Military
+STAT_BUDGET: Budget
+STAT_ENERGY: Energy
+STAT_INFLUENCE: Influence
+STAT_POINTS: Points

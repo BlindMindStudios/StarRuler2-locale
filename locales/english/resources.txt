@@ -65,12 +65,14 @@ GTT_BONUS_MONEY: <<|
 	spent.[/i]
 >>
 
-GTT_DEBT_PENALTY: <<|
-	[font=Subtitle][color=#f00][b]Debt Growth Penalty:[/b] [right]$1[/right][/color][/font]
+GTT_DEBT_PENALTY: <<
+	[color=#f00][b]Debt Growth Penalty:[/b] [right]$1[/right][/color]
+	[i]Being in debt reduces population growth rate on all your planets.[/i]
+>>
 
-	[i]Being in debt reduces population growth rate on all your planets. The
-	more you are in debt relative to your total income, the lower your
-	population growth.[/i]
+GTT_FLEET_PENALTY: <<
+	[color=#f00][b]Debt Fleet Strength Penalty:[/b] [right]$1[/right][/color]
+	[i]Being in massive debt reduces the strength of all your fleets.[/i]
 >>
 
 GTT_INFLUENCE: <<
@@ -121,6 +123,25 @@ RESOURCE_DEFENSE: Defense
 RESOURCE_LABOR: Labor
 LOYALTY: Loyalty
 
+PRESSURE_Money: <<|
+	Generates budget income for the empire.
+>>
+PRESSURE_Influence: <<|
+	Generates influence income and capacity.
+>>
+PRESSURE_Defense: <<|
+	Generates free support ships at the consuming planet.
+>>
+PRESSURE_Labor: <<|
+	Increases the rate of ship and orbital construction.
+>>
+PRESSURE_Energy: <<|
+	Generates energy necessary to activate artifacts.
+>>
+PRESSURE_Research: <<|
+	Produces progress toward the active research field.
+>>
+
 MONEY_TYPE_0: Misc.
 MONEY_TYPE_1: Construction
 MONEY_TYPE_2: Orbitals
@@ -131,6 +152,7 @@ MONEY_TYPE_6: Planet Income
 MONEY_TYPE_7: Colonizers
 MONEY_TYPE_8: Handicap
 MONEY_TYPE_9: Trade
+MONEY_TYPE_10: Vassals
 
 MOD_SPEED: Speed
 MOD_TIME: Time
@@ -147,37 +169,37 @@ EFFECT_POPRESEARCH: Generating research per $1 billion people.
 
 WATER: Water
 WATER_DESC: <<|
-	Native water bonds with additional imported waters to create various new
-	resources, dependent on the amount of water being imported.
+	Native water bonds with additional waters to create other resources.
 >>
 
 GRAIN: Grain (Food)
 GRAIN_EFFECT: Pop. Growth
 GRAIN_DESC: <<
-	[b]Boosts the native resource with:[/b]
-	[offset=30]1 Overpopulation[/offset]
+	Adds 1 Overpopulation.
 >>
 
 MEAT: Meat (Food)
 MEAT_EFFECT: Building Construction
 MEAT_DESC: <<
-	[b]Boosts the native resource with:[/b]
-	[offset=30]Reduce building maintenance by up to §100k.[/offset]
+	Reduces building maintenance by up to §100k.
 >>
 
 FRUIT: Fruit (Food)
 FRUIT_EFFECT: Undeveloped Maint.
 
-FRUIT_DESC: <<
-	[b]Boosts the native resource with:[/b]
-	[offset=30]+20% Extra pressure given.[/offset]
+FRUIT_DESC: <<|
+	The native resource of the consuming planet produces +20% extra pressure.
 >>
 
 FISH: Fish (Food)
 FISH_EFFECT: Developed Tiles
 FISH_DESC: <<
-	[b]Boosts the native resource with:[/b]
-	[offset=30]Increases lifetime of consumed temporary resources by 30%.[/offset]
+	Increases lifetime of consumed temporary resources by 30%.
+>>
+
+HYPER_OATS: Nillin Wheat (Food)
+HYPER_OATS_DESC: <<
+	Counts as two food resources for planet level requirements.
 >>
 
 ALUMINUM: Aluminum
@@ -199,9 +221,7 @@ COAL_DESC: <<
 
 SALTS: Salts (Food)
 SALTS_DESC: <<
-	Can be used as food.
-
-	Adds pressure to the production of all resources.
+	Can be used as food. Adds pressure to the production of all resources.
 >>
 
 PHASITE: Phasite
@@ -216,7 +236,7 @@ FULRATE_DESC: <<
 
 GEMS: Gems
 GEMS_DESC: <<
-	Whenever gems are delivered to a planet by a civilian trade ship, that planet becomes Happy for 3 minutes.
+	The consuming planet becomes happy when civilian traders deliver gems.
 >>
 
 PEKELM: Pekelm
@@ -234,8 +254,7 @@ SPICE_DESC: <<
 UNOBTANIUM: Unobtanium
 UNOBTANIUM_EFFECT: Morph:\n[right]Awaiting Import...[/right]
 UNOBTANIUM_DESC: <<
-	Cannot be exported.
-	Can morph into a copy of any resource you control.
+	Cannot be exported. Can morph into a copy of any resource you control.
 >>
 ABL_MORPH_UNOBTANIUM: Morph Unobtanium
 ABL_MORPH_UNOBTANIUM_DESC: <<|
@@ -253,13 +272,13 @@ ELECTRONICS_DESC: <<
 GLASS: Glass
 GLASS_EFFECT: Energy
 GLASS_DESC: <<
-	+1 Energy
+	Gives 1 free Energy generation.
 >>
 
 NATIVE_GOLD: Native Gold
 NATIVE_GOLD_EFFECT: Influence
 NATIVE_GOLD_DESC: <<
-	+1 Influence.
+	Gives 1 free Influence generation.
 >>
 
 DEUTERIUM: Deuterium
@@ -297,7 +316,7 @@ TITANIUM_DESC: <<
 
 LOCAL_ASTEROID_FIELD: Local Asteroid Field
 LOCAL_ASTEROID_FIELD_DESC: <<
-	Cannot be exported.
+	Cannot be exported. Civilian labor generation is increased by 50%.
 >>
 
 EXPLOSIVES: Explosives
@@ -356,22 +375,17 @@ SUPERCARBONS_DESC: <<
 HYDROCONDUCTORS: Hydroconductors
 HYDROCONDUCTORS_EFFECT: Duplicate Effects
 HYDROCONDUCTORS_DESC: <<|
-	All resource effects on the consuming planet are duplicated and apply
-	twice.
+	All resource effects on the consuming planet are duplicated.
 >>
 
 ANTIMATTER: Antimatter
 ANTIMATTER_DESC: <<|
-	Adds 2048 support capacity to the consuming planet or orbital.
-
-	Support ships operate at 400% of normal effectiveness.
+	Adds 2048 support capacity. Support ships in orbit operate at 400% effectiveness.
 >>
 
 EXOTIC_MATTER: Exotic Matter
 EXOTIC_MATTER_DESC: <<
-	Reduce building maintenance by up to §1M.
-
-	Buildings on the consuming planet do not take any time to build.
+	Reduces building maintenance by up to §1M. Buildings construct instantly.
 >>
 
 CORINIUM: Corinium
@@ -392,22 +406,41 @@ KALSUNIM_DESC: <<
 DRUGS: Drugs
 DRUGS_EFFECT: [b]1[/b] Negated Requirement
 DRUGS_DESC: <<|
-	Can act as a substitute for any one resource needed as a level up
-	requirement. Effect only works once per planet.
+	Can replace any single resource requirement. Once per planet.
 >>
 
 FTL_CRYSTALS: FTL Crystals
 FTL_CRYSTALS_EFFECT: FTL Generation
 FTL_CRYSTALS_DESC: <<|
-	Generates 1 FTL per second.
+	Generates 1 FTL per second. Cannot be used to level up planets.
+>>
 
-	Cannot be used to level up planets.
+UNIQUE_RESEARCH: Errite
+UNIQUE_RESEARCH_DESC: <<|
+	[b]Unique[/b]. Produces 10 [img=ResourceIcon::4;20/] [color=#8c4ec9]Research[/color] pressure.
+>>
+
+UNIQUE_INFLUENCE: Irite
+UNIQUE_INFLUENCE_DESC: <<|
+	[b]Unique[/b]. Produces 10 [img=ResourceIcon::1;20/] [color=#0087c7]Influence[/color] pressure.
+>>
+
+UNIQUE_DEFENSE: Kallite
+UNIQUE_DEFENSE_DESC: <<|
+	[b]Unique[/b]. Produces 10 [img=ResourceIcon::5;20/] [color=#af7926]Defense[/color] pressure.
+>>
+
+UNIQUE_ENERGY: Rulite
+UNIQUE_ENERGY_DESC: <<|
+	[b]Unique[/b]. Produces 10 [img=ResourceIcon::2;20/] [color=#42b4bd]Energy[/color] pressure.
 >>
 
 
-ASTEROID_FTL: FTL Pellets
+ASTEROID_FTL: FTL Shards
 ASTEROID_FTL_DESC: <<|
 	Generates 0.5 FTL per second.
+	
+	Does not need to be exported.
 >>
 
 ASTEROID_GROWTH: Economic Materials

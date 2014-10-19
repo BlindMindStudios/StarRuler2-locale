@@ -1,9 +1,28 @@
-CREWCONTROL_NAME: Crew Facilities
+SC_Control: [vspace=-14][img=Bridge;42x42/][/vspace]  [color=#2fd6b3]Control[/color]
+SC_Weapons: [img=HexagonSubsystems::6;42x21/]  [color=#f9464d]Weapons[/color]
+SC_Propulsion: [hspace=-10/][vspace=-56][img=RocketEngine;84x84/][/vspace][hspace=-32/]  [color=#f9e146]Propulsion[/color]
+SC_Armor: [vspace=-14][img=PlateArmor;42x42/][/vspace]  [color=#a9a9a9]Armor[/color]
+SC_FTL: [img=HexagonSubsystems::10;42x21;#f00/]  [color=#67a7ad]FTL[/color]
+SC_Modifiers: [img=HexagonSubsystems::0;42x21;#cf00ff/]  [color=#eda1ff]Modifiers[/color]
+SC_Support: [vspace=-14][img=SupportCommand;42x42/][/vspace]  [color=#eda1ff]Support[/color]
+SC_Misc: Misc
+
+CREWCONTROL_NAME: Bridge and Crew
 CREWCONTROL_DESC: <<
-	Provides a bridge, crew quarters, and other facilities for a crew to command a vessel.
-	
-	Slowly repairs the vessel.
-	Ship is destroyed if no control facilities remain.
+	A bridge, crew quarters, and other facilities for a crew to command a vessel.
+
+	[img=ActionBarIcons::0;22;#00ff80]Provides [b][color=#00ff80]Control[/color][/b] to operate other subsystems.[/img]
+	[img=Plus]Slowly repairs the vessel.[/img]
+	[img=Minus]Ship is destroyed if no control remains.[/img]
+>>
+
+CREWDECK_NAME: Crew Deck
+CREWDECK_DESC: <<
+	Provides a minimal deck and facilities for the crew to command the support ship.
+
+	[img=ActionBarIcons::0;22;#00ff80]Provides [b][color=#00ff80]Control[/color][/b] to operate other subsystems.[/img]
+	[img=Plus]Slowly repairs the vessel.[/img]
+	[img=Minus]Ship is destroyed if no control remains.[/img]
 >>
 
 SHIPCOMPUTER_NAME: Control Computer
@@ -16,50 +35,125 @@ SHIPCOMPUTER_DESC: <<
 >>
 
 SUPPLYMODULE_NAME: Supply Storage
-SUPPLYMODULE_DESC: Provides extra supplies and ammunition for combat and sieging planets.
+SUPPLYMODULE_DESC: <<
+	Stores supplies and ammunition for use in combat and sieging planets.
+
+	[img=AttributeIcons::4;22]Provides [b][color=#fefc61]Supply Capacity[/color][/b].[/img]
+	[img=Minus]Destroyed supply storage hexes leak supplies over time.[/img]
+>>
 
 SUPPORTCAPMODULE_NAME: Support Command
-SUPPORTCAPMODULE_DESC: Provides infrastructure for commanding additional support ships.
+SUPPORTCAPMODULE_DESC: <<
+	Technical infrastructure for commanding a fleet of support ships.
+
+	[img=ActionBarIcons::2;22]Provides [b][color=#00cffe]Support Command[/color][/b].[/img]
+	[img=Minus]May lose control over support ships when destroyed.[/img]
+>>
+
+FISSIONGEN_NAME: Fission Generator
+FISSIONGEN_DESC: <<
+	A power generator based on atomic fission.
+
+	[img=ResourceIcon::2;22]Provides [b][color=#42b4bd]Power[/color][/b] to operate other subsystems.[/img]
+	[img=AttributeIcons::4;22]Provides a [b][color=#0f0]high[/color] [color=#fefc61]Resupply Rate[/color][/b].[/img]
+	[img=Minus]Losing required power generation in combat reduces the ship's overall effectiveness.[/img]
+>>
+
+FUSIONGEN_NAME: Fusion Generator
+FUSIONGEN_DESC: <<
+	Generates power through nuclear fusion.
+
+	[img=ResourceIcon::2;22]Provides a [b][color=#0f0]large[/color][/b] amount of [b][color=#42b4bd]Power[/color][/b] to operate other subsystems.[/img]
+	[img=AttributeIcons::4;22]Provides a [b]moderate [color=#fefc61]Resupply Rate[/color][/b].[/img]
+	[img=Minus]Losing required power generation in combat reduces the ship's overall effectiveness.[/img]
+>>
+
+AMGEN_NAME: Antimatter Generator
+AMGEN_DESC: <<
+	A sustained matter-antimatter annihilation reaction provides continuous power for th eship.
+
+	[img=ResourceIcon::2;22]Provides a [b][color=#0f0]very large[/color][/b] amount of [b][color=#42b4bd]Power[/color][/b] to operate other subsystems.[/img]
+	[img=AttributeIcons::4;22]Provides a [b][color=#0f0]very high[/color] [color=#fefc61]Resupply Rate[/color][/b].[/img]
+	[img=Plus]No maintenance cost.[/img]
+	[img=Minus]High construction cost.[/img]
+	[img=Minus]Losing required power generation in combat reduces the ship's overall effectiveness.[/img]
+>>
+
+RAILBATTERY_NAME: Railgun Battery
+RAILBATTERY_DESC: <<
+	A battery of magnetic cannons that fire relatively small projectiles at immense velocities.
+	
+	[img=Plus]Rapid fire rate.[/img]
+	[img=Minus]Inaccurate projectiles.[/img]
+	[img=Minus]Limited turret firing arc.[/img]
+>>
+
+RAILGUN_NAME: Railgun
+RAILGUN_DESC: <<
+	A magnetic cannon that fires relatively small projectiles at immense velocities.
+	
+	[img=Plus]High damage per hit.[/img]
+	[img=Minus]Inaccurate projectiles.[/img]
+	[img=Minus]Limited turret firing arc.[/img]
+>>
+
+LASER_NAME: Laser
+LASER_DESC: <<
+	A highly focused beam of light inflicts damage by burning holes through ship subsections.
+	
+	[img=Plus]Accurate and instant beam lock-on.[/img]
+	[img=Plus]Low [b][color=#fefc61]supply cost[/color][/b].[/img]
+	[img=Minus]Ineffective against armor.[/img]
+	[img=Minus]Very limited turret firing arc.[/img]
+>>
+
+MISSILELAUNCHER_NAME: Missile Launcher
+MISSILELAUNCHER_DESC: <<
+	Missiles loaded with explosives and sufficient propellant are lowered out of the ship and locked onto their primary target.
+	
+	[img=Plus]High [b][color=#ff8080]damage[/color][/b].[/img]
+	[img=Plus]No firing arc limitations.[/img]
+	[img=Plus]Very effective at piercing armor.[/img]
+	[img=Minus]Slow fire rate.[/img]
+	[img=Minus]Very high [b][color=#fefc61]supply cost[/color][/b].[/img]
+>>
 
 PLATEARMOR_NAME: Plate Armor
 PLATEARMOR_DESC: <<
-	Heavy, interlocked plates of metal which protect the ship from damage.
+	Heavy, interlocked plates of metal that protect the ship from damage.
 	
-	High HP
-	Cheap to build
-	
-	Effective against similarly sized vessels.
+	[img=Plus]High [b][color=#80ff80]health[/color][/b].[/img]
+	[img=Plus]Increases the [b][color=#80ff80]health[/color][/b] of surrounding hexes.[/img]
+	[img=Plus]Resists and reduces incoming damage.[/img]
+	[img=Minus]Heavy.[/img]
 >>
 
 ABLATIVEARMOR_NAME: Ablative Armor
 ABLATIVEARMOR_DESC: <<
 	A stiff metal foam designed to absorb damage by ablating away.
 	
-	Reduces incoming damage.
-	
-	Effective against many small hits.
+	[img=Plus]High [b][color=#c6c33a]damage resistance[/color][/b].[/img]
+	[img=Plus]Increases the [b][color=#80ff80]health[/color][/b] of surrounding hexes.[/img]
+	[img=MenuIcons::3;20]Effective against many small hits.[/img]
 >>
 
 REACTIVEARMOR_NAME: Reactive Armor
 REACTIVEARMOR_DESC: <<
 	A sheet of independent explosives that detonate nearly instantly in response to incoming weapon fire.
-	
-	Slightly higher HP.
-	Heavy hits are weakened to some cap.
-	
-	Effective against massive hits.
+
+	[img=Plus]Damage hits exceeding the [b][color=#c33ac6]damage threshold[/color][/b] are reduced significantly.[/img]
+	[img=Plus]Increases the [b][color=#80ff80]health[/color][/b] of surrounding hexes.[/img]
+	[img=MenuIcons::3;20]Effective against massive single hits.[/img]
 >>
 
 NEUTRONARMOR_NAME: Neutronium Armor
 NEUTRONARMOR_DESC: <<
 	Microscopic pellets of neutronium-doped metal are mixed with standard plate armor.
 	
-	Massive HP.
-	Massive.
-	Very expensive.
-	Resists armor piercing weapons.
-	
-	Effective against most opponents.
+	[img=Plus]Very high [b][color=#80ff80]health[/color][/b].[/img]
+	[img=Plus]Increases the [b][color=#80ff80]health[/color][/b] of surrounding hexes.[/img]
+	[img=Minus]Extremely heavy.[/img]
+	[img=Minus]Expensive build cost.[/img]
 >>
 
 ROCKETENGINE_NAME: Rocket Engine
@@ -86,4 +180,35 @@ GRAVITYENGINE_DESC: <<
 	Expensive.
 	Can be placed internally.
 	Has high power needs.
+>>
+
+BULKHEAD_NAME: Bulkhead
+BULKHEAD_DESC: <<
+	Reinforced plating on the walls of a subsystem makes its internals significantly more resistant to incoming damage.
+
+	[img=Plus;22;#cf00ff]Can be placed on non-armor subsystems that have cores or turrets. Cannot be placed on bridges or core-less subsystems.[/img]
+	[img=Plus]Increases the health of all hexes of the subsystem.[/img]
+	[img=Minus]Increases the build cost of the subsystem.[/img]
+	[i][color=#aaa]Placing more than one bulkhead on a subsystem will continue to increase the health of all its hexes, but will skyrocket its build cost.[/color][/i]
+>>
+
+TARGETINGSENSOR_NAME: Targeting Sensor
+TARGETINGSENSOR_DESC: <<
+	Sophisticated targeting and tracking sensors allow a weapon to more accurately find its destination, increasing its effective range.
+
+	[img=Plus;22;#cf00ff]Can be placed on weapon subsystems.[/img]
+	[img=Plus]Increases the [b][color=#80ffea]range[/color][/b] of the weapon.[/img]
+	[img=Minus]Increases the build and maintenance cost of the weapon.[/img]
+	[img=Minus]Increases the [b][color=#fefc61]supply cost[/color][/b] of firing the weapon.[/img]
+	[i][color=#aaa]Placing more than one targeting sensor on a weapon will continue to increase its range, but will also skyrocket its costs.[/color][/i]
+>>
+
+SUPPORTSUPPLY_NAME: Supply Crate
+SUPPORTSUPPLY_DESC: <<
+	A secondary supply storage facility may be placed on particular support ships, increasing the amount of ammunition and general combat materials available to the fleet.
+
+	[img=AttributeIcons::4;22]Provides [b][color=#fefc61]Supply Capacity[/color][/b] to the fleet.[/img]
+	[img=Minus]Adds maintenance cost to the support ships.[/img]
+	[img=Minus]Destroyed supply storage hexes leak supplies over time.[/img]
+	[img=MenuIcons::3;20;#f00][i][color=#aaa]Support ships with maintenance costs will not be created by Defense.[/color][/i][/img]
 >>

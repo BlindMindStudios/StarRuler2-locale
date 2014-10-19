@@ -34,16 +34,17 @@ STOP_IMPORT_RESOURCE: Stop importing $1 from $2
 STOP_IMPORT_RES_QUEUE: Cancel queued import of $1 from $2
 RESOURCE_POP_REQUIRED: Requires at least [b]$1 Billion[/b] population to produce.
 RESOURCE_LEVEL_REQUIRED: Requires level $1 planet to produce.
+RESOURCE_TIER_DESC: [b]Tier $1[/b] [img=$2;18/] resource: requires level $1 planet to produce.
 RESOURCE_EXPORTED_TO: Exporting to $1...
 RESOURCE_IMPORTED_FROM: Importing from $1...
 ORBITAL_SLOTS: Orbital Slots
 INCOME: Income
 REQ_FOR_LEVEL: Required for level $1:
-POP_REQ: [img=ResourceIcon::8;20/] [color=#ff9000][b]$1+[/b] pop.[/color]
+POP_REQ: [img=ResourceIcon::8;20/] [color=#ff9000][b]$1[/b]+ population[/color]
 REQ_STOP_DECAY: Missing Resources! Decays back to level $1 in $2 unless needs are met:
-REQ_TYPE: Any $1:
+REQ_TYPE: [font=Subtitle]Any [b]$1[/b] [img=$2;26/] Resource[/font]
 REQ_TYPE_UNIQUE: Any unique type of $1:
-REQ_LEVEL: Any Level $1 resource:
+REQ_LEVEL: [font=Subtitle]Any [b]Tier $1[/b] [img=$2;26/] Resource[/font]
 REQ_LEVEL_UNIQUE: Any unique type of Level $1 resource:
 INSUFFICIENT_ORBITAL_SLOTS: Insufficient orbital slots to construct.
 WAIT_CONSTRUCT: Will not start construction until resolved.
@@ -55,7 +56,7 @@ BUILDING_CONSTRUCTING_PCT: Under construction... $1%
 BUILDING_DISABLED_POP: Disabled due to lack of population.
 BUILDINGS: Buildings
 AVAILABLE_RESOURCES: Resources:
-REQUIRED_RESOURCES: Required:
+REQUIRED_RESOURCES: Required for Lv$1
 RESOURCE_CLASS_Food: Food
 RESOURCE_CLASS_WaterType: Water
 WONDER_NOTIF: Wonder: $1
@@ -312,6 +313,21 @@ BLD_UNIVERSITY_DESC: <<
 >>
 
 
+BLD_FORGE: Forge
+BLD_FORGE_DESC: <<|
+	Increases labor generation by 25%.
+
+	The more forges you construct, the larger and more expensive subsequent forges become.
+>>
+BLD_FORGE_DESC_INSIGHT: <<|
+	Increases labor generation by 25%.
+
+	[b]The first forge you construct grants a [img=DesignationIcons::4;22/] Labor Insight[/b]
+
+	The more forges you construct, the larger and more expensive subsequent forges become.
+>>
+
+
 PLANET_FULL_DESIGNATION: $1, Level $2 «$3»
 PLANET_FULL_NO_DESIGNATION: $1, Level $2
 PLANET_DESIGNATION: Level $2 «$3»
@@ -361,4 +377,81 @@ STATUS_HAPPY_DESC: <<|
 STATUS_VIRILE: Virile
 STATUS_VIRILE_DESC: <<|
 	Population is growing at twice the normal rate.
+>>
+
+COND_NATIVE_FISH: Native Fish
+COND_NATIVE_FISH_DESC: <<
+	Delicious, but extremely perishable aquatic lifeforms. Unexportable.
+>>
+NATIVE_FISH: Native Fish
+NATIVE_FISH_DESC: <<
+	Increases lifetime of consumed temporary resources by 30%.
+
+	Cannot be exported.
+>>
+
+COND_EXTRA_MONEY: Precious Metal Deposits
+COND_EXTRA_MONEY_DESC: <<|
+	This planet's resource gives [b]1 extra [img=ResourceIcon::0;20/] [color=#d1cb6aff]Money[/color] pressure[/b].
+>>
+
+COND_EXTRA_RESEARCH: Exotic Atmosphere
+COND_EXTRA_RESEARCH_DESC: <<|
+	This planet's resource gives [b]1 extra [img=ResourceIcon::4;20/] [color=#8c4ec9]Research[/color] pressure[/b].
+>>
+
+COND_EXTRA_INFLUENCE: Tropical Paradise
+COND_EXTRA_INFLUENCE_DESC: <<|
+	This planet's resource gives [b]1 extra [img=ResourceIcon::1;20/] [color=#0087c7]Influence[/color] pressure[/b].
+>>
+
+COND_EXTRA_LABOR: Low Gravity
+COND_EXTRA_LABOR_DESC: <<|
+	This planet's resource gives [b]1 extra [img=ResourceIcon::6;20/] [color=#b1b4b6]Labor[/color] pressure[/b].
+>>
+
+COND_EXTRA_DEFENSE: Volatile Minerals
+COND_EXTRA_DEFENSE_DESC: <<|
+	This planet's resource gives [b]1 extra [img=ResourceIcon::5;20/] [color=#af7926]Defense[/color] pressure[/b].
+>>
+
+COND_EXTRA_ENERGY: Geothermal Vents
+COND_EXTRA_ENERGY_DESC: <<|
+	This planet's resource gives [b]1 extra [img=ResourceIcon::2;20/] [color=#42b4bd]Energy[/color] pressure[/b].
+>>
+
+COND_ANCIENT_CANNON: Ancient Planetary Defense
+COND_ANCIENT_CANNON_DESC: <<|
+	An ancient planetary cannon sits on the surface, deactivated but operational.
+>>
+BLD_ANCIENT_CANNON: Ancient Planetary Defense
+BLD_ANCIENT_CANNON_DESC: <<|
+	An ancient planetary cannon, found on this planet and activated.
+
+	The cannon is deactivated if there are enemy fleets sieging the planet, and
+	all the planet's orbital defenses are destroyed.
+>>
+
+COND_ANCIENT_RUINS: Ancient Ruins
+COND_ANCIENT_RUINS_DESC: <<|
+	When first colonized, gain a number of free research points.
+>>
+BLD_ANCIENT_RUINS: Ancient Ruins
+BLD_ANCIENT_RUINS_DESC: <<|
+	The ancient ruins of a military outpost constructed by an advanced race eons ago.
+>>
+
+COND_HIGH_YIELD: High Yield Resource
+COND_HIGH_YIELD_DESC: <<|
+	The resource gives double its normal pressure, but lowers pressure cap by 3.
+>>
+
+COND_NOXIOUS_ATMOSPHERE: Noxious Atmosphere
+COND_NOXIOUS_ATMOSPHERE_DESC: <<|
+	Reduces maximum population by 1.
+>>
+
+COND_SPARSE: Sparse Resource
+COND_SPARSE_DESC: <<|
+	The resource gives half its pressure, but requires one fewer Tier 1 [img=ResourceClassIcons::0;18/] to level.
 >>

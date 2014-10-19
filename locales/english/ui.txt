@@ -55,11 +55,39 @@ DESIGN_SIZE_INPUT: Size:
 DESIGN_HULL_INPUT: Hull:
 MINSIZE_SUPPORT: Size $1+, Support
 MINSIZE_FLAGSHIP: Size $1+, Flagship
+MINSIZE_STATION: Size $1+, Station
+DESIGN_FLAGSHIP: Flagship
+DESIGN_SUPPORT: Support Ship
+DESIGN_STATION: Station
 
-DESIGN_PAINT_TOOL: Paint Tool\nCan be used to move modules.\nHold alt to quick-eyedrop.
-DESIGN_MOVE_TOOL: Move Hex Tool\nHold shift to move subsystems.\nHold control to duplicate.
-DESIGN_DROP_TOOL: Eyedropper Tool
-DESIGN_CLEAR: Clear Design
+DESIGN_SHOW_ARCS: Toggle whether to show weapon turret [b]Firing Arcs[/b] at all times.
+DESIGN_SHOW_HULL: Toggle whether to show the hull model your design is approximated to under the blueprint.
+DESIGN_CENTER: Center the design on the grid.
+DESIGN_UNDO: Undo last change. ($1)
+DESIGN_REDO: Redo last undone change. ($1)
+DESIGN_PAINT_TOOL: <<
+	[b]Paint Tool ($1)[/b]
+	[color=#0f0]Hold left click to paint hexes to the selected subsystem type.[/color]
+	[color=#f00]Hold right click to remove subsystems from hexes.[/color]
+	Modifiers, cores and turrets can be moved by left click dragging.
+
+	[i]Hold control while left clicking to create a new core instead of adding to an existing subsystem.  [/i]
+
+	[i]Hold alt or middle click to quick-eyedrop.[/i]
+>>
+DESIGN_MOVE_TOOL: <<
+	[b]Move Tool ($1)[/b]
+	Move the currently selected hex.
+
+	[i]Hold shift to move the entire subsystem.[/i]
+
+	[i]Hold control to duplicate the dragged subsystem.[/i]
+>>
+DESIGN_DROP_TOOL: <<
+	[b]Eyedropper Tool ($1)[/b]
+	Left click to select the subsystem type of the clicked hex.
+>>
+DESIGN_CLEAR: Clear the contents of the design. Can be undone.
 
 GRAPHICS_EDITOR: Graphics Editor
 MODULES: Modules

@@ -1,20 +1,26 @@
-ERROR_NOT_UNLOCKED: $1 not unlocked
-ERROR_MODULE_NOT_UNLOCKED: Module $1 not unlocked
-ERROR_NO_CORE: $1 requires a core
-ERROR_NEEDS_EXTERIOR_CORE: $1's Core should be exterior
-ERROR_REQUIRED_MODULE: $1 missing required module $2
-ERROR_UNIQUE_MODULE: Only one $2 allowed on $1
-ERROR_INSUFFICIENT_Crew: Insufficient Crew
-ERROR_INSUFFICIENT_Command: Insufficient Command
-ERROR_INSUFFICIENT_Power: Insufficient Power
+ERROR_NOT_UNLOCKED: $1 not unlocked.
+ERROR_MODULE_NOT_UNLOCKED: Module $1 not unlocked.
+ERROR_NO_CORE: $1 requires a core.
+ERROR_NEEDS_EXTERIOR_CORE: $1's Core should be exterior.
+ERROR_REQUIRED_MODULE: $1 missing required module $2.
+ERROR_UNIQUE_MODULE: Only one $2 allowed on $1.
+ERROR_INSUFFICIENT_Crew: Insufficient Crew.
+ERROR_INSUFFICIENT_Command: Insufficient Control.
+ERROR_INSUFFICIENT_Power: Insufficient Power.
 ERROR_DUPLICATE_DESIGN: Design with this name exists: renamed to '$1'.
 ERROR_INVALID_FILE: File is not a valid exported design.
 ERROR_INVALID_HULL: Cannot use $1 on this hull type.
 ERROR_MINIMUM_SIZE: '$1' Hull requires minimum size $2.
 ERROR_MAXIMUM_SIZE: '$1' Hull has a maximum size of $2.
 ERROR_HULL_NOT_IN_SHIPSET: Design's hull is not available to the current shipset.
-ERROR_NEED_CONTROL: At least 1 Command required.
+ERROR_NEED_CONTROL: At least 1 Control required.
+ERROR_HEX_LIMIT_ARC: $1 turret must point outwards.
+ERROR_FACE_BACKWARDS: $1 exhaust must face backwards.
+ERROR_NOT_CONNECTED: Design must be a connected whole.
 DESIGNS: Designs
+DSG_INSERT_NAME: Enter a name for the design...
+
+TIP_ROTATE: You can rotate a turret's facing by using the scroll wheel.
 
 HULL_EDITOR: Hull Editor
 HULL_FILES: Files:
@@ -31,6 +37,9 @@ HULL_HEX_SIZE: Hex Size:
 HULL_GRID_OFFSET: Grid Offset:
 HULL_BACKGROUND_SCALE: Background Scale:
 HULL_INTEGRITY: Hull Integrity:
+SUBSYS_CORE: Core
+SUBSYS_AT: " at "
+SUBSYS_HEX: "Hex "
 
 HULL_DELETE_FILE_CONFIRM: Are you sure you wish to delete hull file '$1'?
 HULL_DELETE_HULL_CONFIRM: Are you sure you wish to delete hull '$1'?
@@ -59,3 +68,64 @@ SHOW_OBSOLETE: Show Obsolete
 TT_SHOW_OBSOLETE: Toggle whether to show designs that have been marked as obsolete.
 TT_SUPPORT_DESIGN: This design uses a support ship hull. Support ships cannot move independently and can only act as part of a larger fleet, centered around a flagship or planet.
 TT_FLAGSHIP_DESIGN: This design uses a flagship hull. Flagships can move and act independently, and may be able to provide command for a support fleet. The amount of support ships a flagship can have is dependent on how much "Support Command" is in its design.
+TT_STATION_DESIGN: This design uses a station hull. Stations cannot move, but can be built remotely as orbitals.
+
+S_HP: Total Health
+S_HexHP: Health
+STT_HP: The sum hitpoints of all hexes on the design.
+
+S_REPAIR: Repair / Second
+STT_REPAIR: The amount of hitpoints the ship can repair per second. Reduced to 25% of the normal rate during combat.
+
+S_DPS: Damage / Second
+STT_DPS: Total damage per second (DPS) dealt by the ship in combat, when undamaged.
+
+S_SUPPLYCAP: Supply Capacity
+STT_SUPPLYCAP: The total amount of supply this flagship can store.
+
+S_SUPPORTCAP: Support Command
+STT_SUPPORTCAP: The sum size of support ships this flagship has the capacity to command.
+
+S_ACCEL: Acceleration
+STT_ACCEL: The maximum acceleration the ship can maintain in transit.
+
+S_THRUST: Thrust
+STT_THRUST: Maximum amount of sublight thrust the ship's engines are capable of generating.
+
+S_MASS: Mass
+STT_MASS: Total mass of the ship.
+
+S_SUPPLYREGEN: Resupply Rate
+STT_SUPPLYREGEN: Amount of supply regenerated per second in uncontested space.
+
+S_SUPPLYUSE: Combat Supply Use
+STT_SUPPLYUSE: Amount of supply used by this ship per second while firing all weapons in combat.
+
+S_POWER: Power
+STT_POWER: Amount of power generated and used up by the subsystems on the ship.
+
+S_CONTROL: Control
+STT_CONTROL: Amount of control generated and used up by the subsystems on the ship.
+
+S_HYPERDRIVESPEED: Hyperdrive Speed
+STT_HYPERDRIVESPEED: The speed this ship is capable of maintaining while traveling through hyperspace when undamaged.
+
+S_SLIPSTREAMTIME: Slipstream Time
+STT_SLIPSTREAMTIME: The duration any slipstream tears created by this ship stay open.
+
+S_DPS_SMALL: DPS
+S_DAMAGE: Damage
+S_BEAMDPS: Beam DPS
+S_DURATION: Duration
+S_COOLDOWN: Cooldown
+S_RELOAD: Reload
+S_RANGE: Range
+S_SPEED: Speed
+S_PROJ_DR: Projectile DR
+S_BEAM_DR: Beam DR
+S_EXPL_DR: Explosive DR
+S_DR: Damage Resistance
+S_DamageThreshold: Damage Threshold
+S_SUPPLYCOST: Supply Cost
+S_BUILDCOST: Cost
+S_LABORCOST: Labor Cost

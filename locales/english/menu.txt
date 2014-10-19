@@ -10,11 +10,14 @@ HANDICAP: Handicap
 MAIN_MENU: Main Menu
 PAUSED_MENU: Paused
 RESUME_GAME: Resume
+END_GAME: End Game
 RETURN_TO_GAME: Return to Game
 NEW_GAME: New Game
+CAMPAIGN: Campaign
 SAVE_GAME: Save Game
 LOAD_GAME: Load Game
 MULTIPLAYER: Multiplayer
+DISCONNECT: Disconnect
 MP_JOIN: Join
 MENU_BACK: Back
 MENU_OPTIONS: Options
@@ -59,6 +62,16 @@ MP_CONNECT_EVENT: $1 has connected to the game.
 MP_DISCONNECT_EVENT: $1 has disconnected.
 MP_PLAY_EVENT: $1 is now playing as the $2 empire.
 MP_SPECTATING_EVENT: $1 is now spectating.
+MP_CHEATS_ENABLED: Cheats have been turned [color=#0f0]on[/color].
+MP_CHEATS_DISABLED: Cheats have been turned [color=#f00]off[/color].
+MP_QUEUE: Queue for Match
+MP_QUEUE_ACTIVE: In Queue...
+MP_QUEUE_ACTIVE_PLAYERS: In Queue... ($1 Players)
+MP_QUEUE_READY: Match Ready
+MP_QUEUE_ACCEPT: Accept
+MP_QUEUE_REJECT: Decline
+MP_QUEUE_LEAVE: Leave Queue
+MP_QUEUE_WAITING: Waiting for players ($1/$2)
 
 CHOOSE_MAP: Choose Map...
 ADD_GALAXY: Add Galaxy
@@ -68,6 +81,26 @@ CONNECT_ENDS: Loop with Wormhole
 TEAM: Team
 TEAM_TEXT: Team $1
 NO_TEAM: No Team
+
+NG_GAME_OPTIONS: Game Options
+
+NG_UNIVERSE_GENERATION: Universe Generation
+NG_ANOMALY_OCCURANCE: Anomaly Occurance
+NG_REMNANT_OCCURANCE: Remnant Occurance
+NG_ASTEROID_OCCURANCE: Asteroid Occurance
+NG_UNIQUE_SYSTEM_OCCURANCE: Unique System Occurance
+NG_UNIQUE_RESOURCE_OCCURANCE: Unique Resource Occurance
+NG_PLANET_FREQUENCY: Planet Frequency
+NG_ARTIFACT_FREQUENCY: Artifact Frequency
+NG_SYSTEM_SIZE: System Size
+NG_RESET: Reset Page to Defaults
+NG_EMPIRE_OPTIONS: Empire Options
+NG_ENABLE_CIVILIAN_TRADE: Enable Civilian Trade Ships
+NG_VICTORY_OPTIONS: Victory Options
+NG_TIME_LIMIT: Time Limit
+NGTT_TIME_LIMIT: <<|
+	Set a time limit for the game. After the indicated amount of minutes have expired, the empire with the most points is declared the winner.
+>>
 
 FLATTEN: Flatten
 
@@ -171,5 +204,8 @@ DISCONNECT_5: Incorrect password
 
 SANDBOX: Designs Sandbox
 PROMPT_QUIT: Are you sure you want to quit the game? All unsaved progress will be lost.
+PROMPT_END: Are you sure you want to end the game? All unsaved progress will be lost.
+PROMPT_START_NEW: Are you sure you want to end your current game and start a new one? All unsaved progress will be lost.
+PROMPT_DISCONNECT: Are you sure you want to disconnect?
 PROMPT_TUTORIAL: Starting the tutorial now will end your current game. All unsaved progress will be lost. Proceed?
 PROMPT_SANDBOX: Loading the designs sandbox now will end your current game. All unsaved progress will be lost. Proceed?

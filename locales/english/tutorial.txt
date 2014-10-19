@@ -133,8 +133,7 @@ TUT_LEVEL_TEXT: <<|
 	ways.
 
 	In order to level up a planet, it requires access to more and more
-	resources, imported from different planets. The most basic of resource
-	requirements are [b]Food and Water[/b].
+	resources, imported from different planets. For example, level 1 planets require [b][img=ResourceClassIcons::3;22/] Food and [img=ResourceClassIcons::4;22/] Water[/b].
 >>
 TUT_LEVEL2_TITLE: Expanding and Developing
 TUT_LEVEL2_TEXT: <<|
@@ -152,23 +151,47 @@ TUT_LEVEL2_TEXT: <<|
 
 TUT_EXPAND_TITLE: Colonizing and Exporting
 TUT_EXPAND_TEXT: <<|
-	Unlike most planets, Spacewood has access to [b]3[/b] native resources:
-	Water, Meat and Native Gold.
+	To reach [b]Level 2[/b], Spacewood requires a [b][img=ResourceClassIcons::0;22/] Level 1[/b]
+	(such as [template=resource_ref;NativeGold/]) and another Food (such as [template=resource_ref;Grain/]).
 	
-	To sustain a planet at Level 1, it requires a [b]Food[/b] and
-	a [b]Water[/b]. This makes Spacewood a rich world that can natively sustain
-	level 1 without requiring imports. In order to reach [b]Level 2[/b], we need to
-	use the Native Gold and another Food.
+	[b]Select[/b] Spacewood and [b]right-click[/b] a planet you wish to colonize, and choose 'Colonize with Spacewood.'
+	You may also [b]right-click[/b] the planet on its own and choose 'Colonize This,' which will automatically choose a planet to colonize with.
 >>
-TUT_EXPAND_ACT1_TITLE: Colonize a Food
+TUT_EXPAND_ACT1_TITLE: Colonize planets with a Food and Level 1 resource
 TUT_EXPAND_ACT1_TEXT: <<|
-	[b]Select[/b] Spacewood, then right click one of the Food planets in the system
-	and select the colonization option.
+	Colonize a [b][img=ResourceClassIcons::0;22/] Level 1[/b] resource planet and a [b][img=ResourceClassIcons::3;22/] Food[/b] planet.
 >>
-TUT_EXPAND_ACT2_TITLE: Import the Food
-TUT_EXPAND_ACT2_TEXT: <<|
-	[b]Select[/b] the planet you colonized, then [b]right-click[/b] Spacewood
-	and click the export option.
+
+TUT_IMPORT1_TITLE: Colonizing and Exporting
+TUT_IMPORT1_TEXT: <<|
+	Now that you have a planet with a level 1 resource available, you must import[b][img=ResourceClassIcons::3;22/] Food[/b] and [b][img=ResourceClassIcons::4;22/] Water[/b]
+	to it to make use of its native resource.
+	
+	Colonize planets with the necessary resources and export them to this planet. [b]Select[/b] each planet you colonize and [b]right-click[/b] the level 1 resource planet, then choose 'export.'
+	You may also [b]right-click[/b] a planet and tell it to [b]Auto-Import[/b] the necessary resources to level up.
+>>
+TUT_IMPORT1_ACT1_TITLE: Level up the Level 1 resource planet
+TUT_IMPORT1_ACT1_TEXT: <<|
+	Colonize a source of [b][img=ResourceClassIcons::3;22/] Food[/b] and [b][img=ResourceClassIcons::4;22/] Water[/b],
+	and export them to the level 1 planet.
+
+	Keep in mind that resources can only be imported and exported within the
+	same [b]Trade Region[/b], indicated by the grey borders. Your trade border
+	will expand as you colonize more systems.
+>>
+
+TUT_IMPORT2_TITLE: Colonizing and Exporting
+TUT_IMPORT2_TEXT: <<|
+	Export a[b][img=ResourceClassIcons::0;22/] Level 1[/b] resource and another [b][img=ResourceClassIcons::3;22/] Food[/b] to Spacewood
+	so it can level up to level 2.
+	
+	Each planet may only export to a single planet at a time, so colonize any additional planets you may require.
+	
+	Planets must build up enough population to use higher level resources, so your level 1 planet may take some time to be ready to export.
+>>
+TUT_IMPORT2_ACT1_TITLE: Level Spacewood to level 2
+TUT_IMPORT2_ACT1_TEXT: <<|
+	Acquire and export the necessary resources to level Spacewood to level 2.
 >>
 
 TUT_EXPAND_SUCC_TITLE: Success!
@@ -179,10 +202,6 @@ TUT_EXPAND_SUCC_TEXT: <<|
 
 	When you select a planet, you can see its current level and the required
 	imports to level it up on the information panel in the bottom left.
-
-	Keep in mind that resources can only be imported and exported within the
-	same [b]Trade Region[/b], indicated by the grey borders. Your trade border
-	will expand as you colonize more systems.
 >>
 
 TUT_BUDGET_TITLE: Budget Cycles
@@ -345,8 +364,6 @@ TUT_INS_TEXT: <<|
 >>
 TUT_INS_ACT1_TITLE: Unlock Control Computer
 TUT_INS_ACT1_TEXT: Use the Military Insight you just gained in order to research the [b]Control Computer[/b] project.
-TUT_INS_ACT2_TITLE: Upgrade Metallurgy
-TUT_INS_ACT2_TEXT: Use your remaining Labor Insight to upgrade your Metallurgy technology and increase your ship's health.
 
 TUT_DSG_TITLE: Ship Designs
 TUT_DSG_TEXT: <<|
@@ -361,13 +378,13 @@ TUT_DSG_TEXT: <<|
 	ship.
 >>
 TUT_DSG_ACT1_TITLE: Open Heavy Carrier
-TUT_DSG_ACT1_TEXT: From the designs tab, [b]double-click[/b] the Heavy Carrier design in order to edit it.
+TUT_DSG_ACT1_TEXT: From the designs tab, [b]click[/b] the Heavy Carrier design in order to edit it.
 TUT_DSG_ACT2_TITLE: Remove Crew Facitilies
-TUT_DSG_ACT2_TEXT: Remove the three separate crew facility subsystems (with bridges) from the design by [b]right-clicking[/b] them.
+TUT_DSG_ACT2_TEXT: Remove the three Bridge and Crew hexes from the design by [b]right-clicking[/b] them.
 TUT_DSG_ACT3_TITLE: Add Control Computer
 TUT_DSG_ACT3_TEXT: Add a 1-hex control computer on the ship to provide command.
 TUT_DSG_ACT4_TITLE: Add Fusion Generators
-TUT_DSG_ACT4_TEXT: Fill up the remaining empty space by adding 2 Fusion Reactor hexes, to generate sufficient power for our control computer.
+TUT_DSG_ACT4_TEXT: Fill up the remaining empty space by adding 2 Fusion Generator hexes, to generate sufficient power for our control computer.
 TUT_DSG_ACT5_TITLE: Save the Design
 TUT_DSG_ACT5_TEXT: Click the [b]Save[/b] button in the top right to save your changes to the "Heavy Carrier" design.
 
@@ -384,7 +401,7 @@ TUT_FLT_ACT2_TEXT: Click "Heavy Carrier" from the ships list on the right.
 TUT_FLT_ACT3_TITLE: Build Beamships
 TUT_FLT_ACT3_TEXT: Click the Heavy Carrier in the construction queue to highlight it, then click the [b]Beamship[/b] design to add 10 Beamships to the fleet.
 TUT_FLT_ACT4_TITLE: Build more Supports
-TUT_FLT_ACT4_TEXT: Add some more support ships, Beamships, Gunships or otherwise, to the fleet under construction.
+TUT_FLT_ACT4_TEXT: Add some more different types of support ships to the fleet under construction.
 TUT_FLT_ACT5_TITLE: Finish Construction
 TUT_FLT_ACT5_TEXT: Notice that support ships are constructed in parallel to the flagship while the fleet finishes constructing.
 

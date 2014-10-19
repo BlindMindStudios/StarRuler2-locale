@@ -316,7 +316,7 @@ ORB_FTL_JAMMER_DESC: <<|
 
 	Empires you are at war with cannot use their FTL inside this system.
 
-	[b][color=#00c0ff]Costs 0.25 FTL per second to maintain.[/color][/b]
+	[b][color=#00c0ff]Costs 0.15 FTL per second to maintain.[/color][/b]
 >>
 ORB_SCAFFOLDING: Scaffolding
 ORB_SCAFFOLDING_BLURB: An orbital hull is under construction here.
