@@ -11,6 +11,7 @@ CONSTRUCTOR_CONSTRUCT: Construct $1
 CONSTRUCTOR_CONSTRUCT_COST: Construct $1 ($2)
 SUPPLY: Supply
 STRENGTH: Strength
+PIRATE_HOARD: Pirate Hoard
 REBUY_GHOSTS: Rebuy ($1)
 TT_REBUY_GHOSTS: <<
 	Replace all remembered dead support ships by buying new ones. The fleet will need to be moved to a system with labor facilities before the ships are actually constructed.
@@ -28,7 +29,7 @@ TT_AUTO_BUY_SUPPORTS: <<
 	When checked, the fleet will automatically buy new support ships when in systems with labor facilities, until the fleet is full.
 >>
 REFRESH_SUPPORTS: Refresh Support Fleet from $1
-ABILITY_TRIGGER: Ability: $1
+ABILITY_TRIGGER: $1
 ABILITY_ENERGY: " (energy: $1)"
 ABILITY_COOLDOWN: " [cooldown: $1]"
 ABILITY_CD: " [cd: $1 remaining]"
@@ -56,6 +57,10 @@ PICKUP_PROTECTING: Protecting
 PICKUP_UNPROTECTED: Unprotected
 VERB_PICKUP: Pick Up $1
 VERB_ACTIVATE: Activate $1
+STATUS_INTERDICT_FTL: FTL Disabled
+STATUS_INTERDICT_FTL_DESC: <<|
+	This flagship's FTL capabilities have been disabled.
+>>
 
 PICKUP_RESEARCH: Research Data
 PICKUP_RESEARCH_DESC: Gain research points when picked up.
@@ -73,7 +78,7 @@ PICKUP_ENERGY: Energy Cache
 PICKUP_ENERGY_DESC: Gain some stored energy when picked up.
 
 PICKUP_CARD: Luxury Tokens
-PICKUP_CARD_DESC: Gain 3 Negotiate cards when picked up.
+PICKUP_CARD_DESC: Gain Negotiate cards when picked up.
 
 PICKUP_ANCIENT_KNOWLEDGE: Ancient Knowledge
 PICKUP_ANCIENT_KNOWLEDGE_DESC: Gain an "Ancient Knowledge" card when picked up.
@@ -191,4 +196,11 @@ TT_EXPLORE_FTL: <<|
 	
 	Automatically explores systems.
 	Uses up to half the empire's FTL stores to explore quickly.
+>>
+
+STATUS_PIRATESHIP: Pirate Ship
+STATUS_PIRATESHIP_DESC: <<
+	This ship is a pirate ship and will raid civilian traders for their cargo.
+
+	It will periodically bring its loot to "Pirate Hoard" stations, hidden in deep space.
 >>

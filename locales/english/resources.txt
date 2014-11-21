@@ -105,12 +105,14 @@ GTT_FTL: <<
 
 GTT_RESEARCH: <<
 	[font=Medium]Research[/font]
-	[i]Researching technology fields unlocks various benefits and projects.[/i]
+	[i]Research points can be spent to unlock various technologies in the research grid.[/i]
 
-	Current Technology: [right][img=$1;30/] $2[/right]
-	Progress: [right]$3[/right]
-	Level Up ETA: [right]$4[/right]
-	Generation Rate: [right]$5[/right]
+	Available Research Points: [right]$1[/right]
+	Generation Rate: [right]$2[/right]
+>>
+
+GTT_RESEARCH_TECH: <<
+	Currently Researching: [right][b][color=$3]$1[/color][/b] (ETA: $2)[/right]
 >>
 
 RESOURCE_BUDGET: Budget
@@ -375,7 +377,7 @@ SUPERCARBONS_DESC: <<
 HYDROCONDUCTORS: Hydroconductors
 HYDROCONDUCTORS_EFFECT: Duplicate Effects
 HYDROCONDUCTORS_DESC: <<|
-	All resource effects on the consuming planet are duplicated.
+	Increases all labor generation on the consuming planet by 40%.
 >>
 
 ANTIMATTER: Antimatter
@@ -385,7 +387,7 @@ ANTIMATTER_DESC: <<|
 
 EXOTIC_MATTER: Exotic Matter
 EXOTIC_MATTER_DESC: <<
-	Reduces building maintenance by up to §1M. Buildings construct instantly.
+	Reduces building maintenance by up to §$1. Buildings construct instantly.
 >>
 
 CORINIUM: Corinium

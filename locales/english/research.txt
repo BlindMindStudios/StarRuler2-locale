@@ -1,186 +1,362 @@
-PROJECT: Project
-PROJECTS: Projects
-LABEL_NAME: Name:
-REQUIRES_INSIGHT: Costs
-RESEARCH_PROJECT: Research
-PROJECT_COMPLETED: [i]Completed[/i]
-AVAIL_INSIGHTS: Available Insights
-NO_INSIGHTS: No available insights...
-NO_PROJECTS: No available projects...
-FIELD_LEVELUP: Every Level Up
-NEXT_PROJECT: Upcoming Projects/Unlocks
-PROGRESS: Progress
-AT_LEVEL: At
+RESEARCH_COST_OR: or
+RESEARCH_COST_JOIN: ", "
+RESEARCH_STUDY: Study
+RESEARCH_COST: Research Cost
+RESEARCH_TIME: Research Time
+NOT_RESEARCHING: No Active Research...
 
-RI_Wealth: Wealth Insight
-RI_Influence: Influence Insight
-RI_Labor: Labor Insight
-RI_Military: Military Insight
-RI_Ancient: Ancient Insight
-RI_Theoretical: Theoretical Insight
-RI_Energy: Energy Insight
+R_SCIENCE: Science
+R_SCIENCE_DESC: [i]The root of all knowledge. Unlocked by default as a starting point.[/i]
 
-GAIN_RANDOM_INSIGHT: Gain  [img=DesignationIcons::24;20/]: [offset=80]Research [color=#8c4ec9f][b]$2[/b][/color] more technology levels.[/offset]
-GAIN_LABOR_INSIGHT: Gain  [img=DesignationIcons::4;20/]: [offset=80]Construct [color=#f00]Forge[/color] building.[/offset]
+R_DEV_ENERGY: Energy Science
+R_DEV_ENERGY_DESC: <<
+	[i][color=#aaa]Improvements to the collection and use of energy.[/color][/i]
 
-F_SCIENCE: Theoretical Science
-F_SCIENCE_DESC: <<|
-	The understanding of understanding. Lifelong study and application of
-	advanced math and simulations provides unending insight into the universe.
->>
-F_SCIENCE_BLURB0: Gain 1 [b][img=DesignationIcons::5;20/] Theoretical Insight[/b]\n[offset=10][i]Theoretical insights act as wildcard insights and can be used on any project.[/i][/offset]
+	Generates $1 bonus energy immediately when researched normally. Energy gained is decreased by energy storage penalty.
 
-
-F_METALLURGY: Metallurgy
-F_METALLURGY_DESC: <<|
-	The study of acquisition, refinement, and utilization of raw resources.	
->>
-F_METALLURGY_BLURB0: All Subsystem Health +10%
-F_METALLURGY_BLURB1: Factory Labor Production +1
-
-P_SMELTING_1: Low Gravity Smelting: [b]Armoring[/b]
-P_SMELTING_1_BLURB: Armor Health +100%
-P_SMELTING_1_DESC: <<|
-	[i][color=#f33]Mutually exclusive with "Low Gravity Smelting:
-	[b]Industry[/b]". Choosing this project will disable the other.[/color][/i]
-
-	Armor Health +100%
->>
-P_SMELTING_2: Low Gravity Smelting: [b]Industry[/b]
-P_SMELTING_2_BLURB: Factory Labor Production +4
-P_SMELTING_2_DESC: <<|
-	[i][color=#f33]Mutually exclusive with "Low Gravity Smelting:
-	[b]Armoring[/b]". Choosing this project will disable the other.[/color][/i]
-
-	Factory Labor Production +4
->>
-P_ARMOR_ENHANCE: Resistance Tuning
-P_ARMOR_ENHANCE_DESC: <<
-	Enhances the primary aspects of armors.
-	
-	High health armors gain 10% Health.
-	Resistance armors gain 20% resistance.
-	Armors which can block hits may block 20% larger hits.
-	
-	[i]When we have the choice between killing faster or dying slower, I would choose dying slower every time.[/i]
->>
-P_ARMOR_ENHANCE_REPEAT: <<
-	Enhances the primary aspects of armors.
-	
-	High health armors gain 10% Health.
-	Resistance armors gain 20% resistance.
-	Armors which can block hits may block 20% larger hits.
-	
-	[i]The march of progress never stops.[/i]
->>
-P_NEUTRONARMOR: Neutronium Armor
-P_NEUTRONARMOR_DESC: <<|
-	Unlocks [b]Neutronium Armor[/b]: expensive, high health armor.
-	
-	[i]The curious capability of certain materials to constrain traditionally free neutrons,
-	while undoubtedly useful for many applications, has found its first use in novel armor designs.[/i]
+	[color=#42b4bd][b]Alternate Unlock:[/b] Spend $2 energy.[/color]
+	[offset=40][color=#f88][i]No bonus energy is gained from researching when using the alternate unlock.[/i][/color][/offset]
 >>
 
-F_THERMODYNAMICS: Thermodynamics
-F_THERMODYNAMICS_BLURB: Generator Supply Capacity +10%
+R_DEV_MONEY: Economics
+R_DEV_MONEY_BLURB: §$1 Special Funds
+R_DEV_MONEY_DESC: <<
+	[i][color=#aaa]Further insight into the behaviour of large scale markets and economies.[/color][/i]
 
-P_ANTIMATTERGEN: Antimatter Generator
-P_ANTIMATTERGEN_DESC: <<|
-	Unlocks [b]Antimatter Generator[/b]: expensive, dense power source.
-	
-	[i]Destruction drives us towards destruction.[/i]
->>
-P_GRAVITYENGINE: Graviton Engine
-P_GRAVITYENGINE_DESC: <<|
-	Unlocks [b]Graviton Engine[/b]: expensive, efficient engine.
-	
-	[i]Never before have gravitons been produced so efficiently, or in such numbers,
-	so as to allow such massive propulsors.[/i]
+	When unlocked, immediately gives you §$1 extra special funds to spend.
+
+	[color=#0087c7][b]Alternate Unlock:[/b] Spend $2 influence points.[/color]
 >>
 
-F_MILITARY: Military Science
-F_MILITARY_BLURB0: All Weapon Damage +10%
-F_MILITARY_BLURB1: Planet Support Capacity +128
+R_DEV_BUDGET: Commerce
+R_DEV_BUDGET_SMALL: Business
+R_DEV_BUDGET_BLURB: +§$1 Budget
+R_DEV_BUDGET_DESC: <<
+	[i][color=#aaa]Improvements to the efficiency of trade and commerce.[/color][/i]
 
-P_SHIPCOMPUTER: Control Computer
-P_SHIPCOMPUTER_DESC: <<|
-	Unlocks [b]Control Computer[/b]: space efficient control system.
-	
-	[i]Computers have long been capable enough to command our fleets.
-	The problem has been in keeping them from revolting.[/i]
+	Permanently increases your budget income by §$1 when unlocked.
 >>
 
-F_HYPERDYNAMICS: Hyperdynamics
-F_HYPERDYNAMICS_BLURB: Shield Health +10% [color=#f00]{N}[/color]
-P_HYPERDYNAMICS: Field: Hyperdynamics
-P_HYPERDYNAMICS_DESC: <<|
-	Unlocks research field: [b]Hyperdynamics[/b]
-	
-	Hyperdynamics unlocks and improves shields, as well granting access
-	to a variety of highly advanced technologies.
->>
-P_HYPERLASER: Hyperdense Laser
-P_HYPERLASER_DESC: <<|
-	Unlocks [b]Hyperdense Laser[/b]: High power, short duration laser.
-	
-	[i]These energy densities border on what is physically possible without wasting it creating matter.[/i]
+R_DEV_FTL: FTL Containment
+R_DEV_FTL_BLURB: $1 FTL, Storage
+R_DEV_FTL_DESC: <<
+	[i][color=#aaa]New technologies to store and transport FTL energy.[/color][/i]
+
+	When unlocked, immediately increases your stored ftl and ftl storage capacity by §$1.
 >>
 
-F_SOCIOLOGY: Sociology
-F_SOCIOLOGY_BLURB: +1 Max Population on Level 3+ Worlds
+R_DEV_FTL_INCOME: FTL Tuning
+R_DEV_FTL_INCOME_BLURB: +$1 FTL/s
+R_DEV_FTL_INCOME_DESC: <<
+	[i][color=#aaa]Better control over the collection and refinement of FTL energy.[/color][/i]
 
-P_HOUSING: +$1 Max Population on Level 2 Worlds
-
-P_SOCIAL_RELATIONS_WELFARE: Social Relations: [b]Welfare[/b]
-P_SOCIAL_RELATIONS_WELFARE_DESC: <<|
-	[i][color=#f33]Mutually exclusive with "Social Relations:
-	[b]Happiness[/b]". Choosing this project will disable the other.[/color][/i]
-
-	Doubles the effect of spending money on welfare.
->>
-P_SOCIAL_RELATIONS_HAPPY: Social Relations: [b]Happiness[/b]
-P_SOCIAL_RELATIONS_HAPPY_DESC: <<|
-	[i][color=#f33]Mutually exclusive with "Social Relations:
-	[b]Welfare[/b]". Choosing this project will disable the other.[/color][/i]
-
-	Planets become happy from coexisting with friendly planets.
+	Increases empire FTL income by $1/s.
 >>
 
-P_SOCIAL_CONTROL_WAR: Social Control: [b]Warmongering[/b]
-P_SOCIAL_CONTROL_WAR_DESC: <<|
-	[i][color=#f33]Mutually exclusive with "Social Control:
-	[b]Democracy[/b]". Choosing this project will disable the other.[/color][/i]
+R_DEV_SURGE: Media Utilization
+R_DEV_SURGE_BLURB: 1x Patriotic Surge
+R_DEV_SURGE_DESC: <<
+	[i][color=#aaa]Audience research into more effective ways of riling populations into action.[/color][/i]
 
-	Increases influence generation while at war. Reduces influence generation
-	while not at war.
->>
-P_SOCIAL_CONTROL_DEMOCRACY: Social Control: [b]Democracy[/b]
-P_SOCIAL_CONTROL_DEMOCRACY_DESC: <<|
-	[i][color=#f33]Mutually exclusive with "Social Control:
-	[b]Warmongering[/b]". Choosing this project will disable the other.[/color][/i]
+	Gain a "Patriotic Surge" card immediately upon unlocking this technology.
 
-	Increases influence generation based on how much of the total galactic
-	population lives in your empire.
+	[color=#d1cb6a][b]Alternate Unlock:[/b] Spend §500k.[/color]
 >>
 
-P_INSPIRE_INSIGHT: Inspiration: [b]Great Minds[/b]
-P_INSPIRE_INSIGHT_DESC: <<|
-	[i][color=#f33]Mutually exclusive with "Inspiration:
-	[b]Great Orators[/b]". Choosing this project will disable the other.[/color][/i]
-	
-	Generates two random insights.
-	
-	[i]"The greatest minds in history are living today. I know them. I have seen them.
-	There is a great mind in all of us, and through your efforts, we will learn amazing things."[/i]
+R_DEV_NEGOTIATE: Political Science
+R_DEV_NEGOTIATE_BLURB: 1x Negotiate (*)
+R_DEV_NEGOTIATE_DESC: <<
+	[i][color=#aaa]Think tanks and studies on better use of capital for political gain.[/color][/i]
+
+	Gain an increased-quality "Negotiate" card immediately upon unlocking this technology.
+
+	[color=#d1cb6a][b]Alternate Unlock:[/b] Spend §500k.[/color]
 >>
-P_INSPIRE_INFLUENCE: Inspiration: [b]Great Orators[/b]
-P_INSPIRE_INFLUENCE_DESC: <<|
-	[i][color=#f33]Mutually exclusive with "Inspiration:
-	[b]Great Minds[/b]". Choosing this project will disable the other.[/color][/i]
-	
-	Gives 10 influence and three random influence cards.
-	
-	[i]"Though we are empowered through our knowledge and our skills, we are also driven to
-	focus on ourselves. We must look to those who grant us guidance and a sense of greater purpose,
-	for together, we are more capable than a hundred fold are separate!"[/i]
+
+R_DEV_ENHANCE: Synergy
+R_DEV_ENHANCE_BLURB: 1x Enhance
+R_DEV_ENHANCE_DESC: <<
+	[i][color=#aaa]Develop better ways to utilize existing strategies.[/color][/i]
+
+	Gain an "Enhance" card immediately upon unlocking this technology.
 >>
+
+R_DEV_INFLUENCE: Diplomacy
+R_DEV_INFLUENCE_BLURB: 5 Influence
+R_DEV_INFLUENCE_DESC: <<
+	[i][color=#aaa]Focused studies and research on the behaviour of various factions.[/color][/i]
+
+	When unlocked, immediately gives you $1 influence points to spend.
+>>
+
+R_SYS_ANTIMATTER: Antimatter Generator
+R_SYS_ANTIMATTER_DESC: <<
+	[color=#aaa][i]Unlocks the [b]Antimatter Generator[/b] subsystem.[/i][/color]
+
+	[bbloc=#AMGEN_DESC/]
+>>
+
+R_SYS_ANTIMATTER: Antimatter Generator
+R_SYS_ANTIMATTER_DESC: <<
+	[color=#aaa][i]Unlocks the Antimatter Generator subsystem.[/i][/color]
+
+	[bbloc=#AMGEN_DESC/]
+
+	[color=#42b4bd][b]Alternate Unlock:[/b] Spend 1250 energy.[/color]
+>>
+
+R_SYS_EMERGENCY_SUPPLIES: Emergency Supplies
+R_SYS_EMERGENCY_SUPPLIES_DESC: <<
+	[color=#aaa][i]Unlocks the Emergency Supplies subsystem.[/i][/color]
+
+	[bbloc=#S_EMERGENCY_SUPPLIES_DESC/]
+
+	[color=#42b4bd][b]Alternate Unlock:[/b] Spend 1000 energy.[/color]
+>>
+
+R_SYS_GRAVITY_ENGINE: Graviton Engine
+R_SYS_GRAVITY_ENGINE_DESC: <<
+	[color=#aaa][i]Unlocks the Graviton Engine subsystem.[/i][/color]
+
+	[bbloc=#GRAVITYENGINE_DESC/]
+
+	[color=#d1cb6a][b]Alternate Unlock:[/b] Spend §1M.[/color]
+>>
+
+R_SYS_HYPERLASER: Hyperdense Laser
+R_SYS_HYPERLASER_DESC: <<
+	[color=#aaa][i]Unlocks the Hyperdense Laser subsystem.[/i][/color]
+
+	[bbloc=#S_HYPERLASER_DESC/]
+
+	[color=#d1cb6a][b]Alternate Unlock:[/b] Spend §2M.[/color]
+>>
+
+R_SYS_NEUTRON_ARMOR: Neutronium Armor
+R_SYS_NEUTRON_ARMOR_DESC: <<
+	[color=#aaa][i]Unlocks the Neutronium Armor subsystem.[/i][/color]
+
+	[bbloc=#NEUTRONARMOR_DESC/]
+
+	[color=#d1cb6a][b]Alternate Unlock:[/b] Spend §2M.[/color]
+>>
+
+R_SYS_SELF_DESTRUCT: Self-Destruct Device
+R_SYS_SELF_DESTRUCT_DESC: <<
+	[color=#aaa][i]Unlocks the Self-Destruct Device subsystem.[/i][/color]
+
+	[bbloc=#S_SELF_DESTRUCT_DESC/]
+
+	[color=#42b4bd][b]Alternate Unlock:[/b] Spend 1000 energy.[/color]
+>>
+
+R_SYS_SHIP_COMPUTER: Control Computer
+R_SYS_SHIP_COMPUTER_DESC: <<
+	[color=#aaa][i]Unlocks the Control Computer subsystem.[/i][/color]
+
+	[bbloc=#SHIPCOMPUTER_DESC/]
+
+	[color=#42b4bd][b]Alternate Unlock:[/b] Spend 1500 energy.[/color]
+>>
+
+R_SYS_ION_CANNON: Ion Cannon
+R_SYS_ION_CANNON_DESC: <<
+	[color=#aaa][i]Unlocks the Ion Cannon subsystem.[/i][/color]
+
+	[bbloc=#S_ION_CANNON_DESC/]
+>>
+
+R_SYS_SKIP_DRIVE: Skip Drive
+R_SYS_SKIP_DRIVE_DESC: <<
+	[color=#aaa][i]Unlocks the Skip Drive subsystem.[/i][/color]
+
+	[bbloc=#S_SKIP_DRIVE_DESC/]
+>>
+
+R_MOD_TARGET_SENSOR: Targeting Sensor
+R_MOD_TARGET_SENSOR_DESC: <<
+	[color=#aaa][i]Unlocks the Targeting Sensor[/i][/color]
+
+	[bbloc=#TARGETINGSENSOR_DESC/]
+
+	[color=#d1cb6a][b]Alternate Unlock:[/b] Spend §1.5M.[/color]
+>>
+
+R_MOD_BULKHEAD: Bulkhead
+R_MOD_BULKHEAD_DESC: <<
+	[color=#aaa][i]Unlocks the Bulkhead[/i][/color]
+
+	[bbloc=#BULKHEAD_DESC/]
+
+	[color=#d1cb6a][b]Alternate Unlock:[/b] Spend §750k.[/color]
+>>
+
+R_IMP_DAMAGE: Kinetics
+R_IMP_DAMAGE2: Kinetics 2
+R_IMP_DAMAGE_SMALL: Impact
+R_IMP_DAMAGE_BLURB: Weapon Damage +$1
+R_IMP_DAMAGE_DESC: <<
+	[i][color=#aaa]Research on how to best damage, detonate and destroy enemy starships.[/color][/i]
+
+	Increases all ship weapon damage by $1.
+>>
+
+R_IMP_FLAG_DAMAGE: Weaponry
+R_IMP_FLAG_DAMAGE2: Weaponry 2
+R_IMP_FLAG_DAMAGE_BLURB: Flagship Damage +$1
+R_IMP_FLAG_DAMAGE_DESC: <<
+	Increases all flagship weapon damage by $1.
+>>
+
+R_IMP_SUPPORT_DAMAGE: Destruction
+R_IMP_SUPPORT_DAMAGE2: Destruction 2
+R_IMP_SUPPORT_DAMAGE_BLURB: Support Damage +$1
+R_IMP_SUPPORT_DAMAGE_DESC: <<
+	Increases all support ship weapon damage by $1.
+>>
+
+R_IMP_ALL_HEALTH: Materials Science
+R_IMP_ALL_HEALTH2: Materials Science 2
+R_IMP_ALL_HEALTH_BLURB: Subsystem Health +$1
+R_IMP_ALL_HEALTH_DESC: <<
+	[i][color=#aaa]Research on how to improve the structural integrity of starship subsystems, letting them take more damage before ceasing to function.[/color][/i]
+
+	Increases all ship subsystem health by $1.
+>>
+
+R_IMP_CIV_HEALTH: Mass Production
+R_IMP_CIV_HEALTH2: Civil Armoring
+R_IMP_CIV_HEALTH_BLURB: Civilian Health +$1
+R_IMP_CIV_HEALTH_DESC: <<
+	[i][color=#aaa]The design and development of affordable forms of military armors and systems, increasing the health of civilian units.[/color][/i]
+
+	Increases all civilian health by $1.
+>>
+
+R_IMP_DECAY: Stockpiling
+R_IMP_DECAY2: Dense Storage
+R_IMP_DECAY_BLURB: Planets Decay $1 Slower
+R_IMP_DECAY_DESC: <<
+	[i][color=#aaa]Improved storage capacities and methods allow planets to go longer without supplies of vital resources..[/color][/i]
+
+	Planets decay $1 slower when out of necessary resources.
+>>
+
+R_IMP_ALL_RANGE: Targeting
+R_IMP_ALL_RANGE2: Targeting 2
+R_IMP_ALL_RANGE_BLURB: Weapon Range +$1
+R_IMP_ALL_RANGE_DESC: <<
+	[i][color=#aaa]Improvements to weapon targeting, tracking and miniaturization allow them to reach targets further away.[/color][/i]
+
+	Increases all weapon range by $1.
+
+	[color=#42b4bd][b]Alternate Unlock:[/b] Spend $2 energy.[/color]
+>>
+
+R_IMP_ARMOR_HEALTH: Armoring
+R_IMP_ARMOR_HEALTH2: Armoring 2
+R_IMP_ARMOR_HEALTH_BLURB: Armor Health +$1
+R_IMP_ARMOR_HEALTH_DESC: <<
+	[i][color=#aaa]Better ways of reinforcing armor plates.[/color][/i]
+
+	Increases all armor health by $1.
+
+	[color=#d1cb6a][b]Alternate Unlock:[/b] Spend §$2.[/color]
+>>
+
+R_IMP_ARMOR_DR: Reinforcement
+R_IMP_ARMOR_DR2: Reinforcement 2
+R_IMP_ARMOR_DR_BLURB: Armor DR +$1
+R_IMP_ARMOR_DR_DESC: <<
+	Increases all armor damage resistance by $1.
+
+	[color=#d1cb6a][b]Alternate Unlock:[/b] Spend §$2.[/color]
+>>
+
+R_IMP_FACTORY_LABOR: Metallurgy
+R_IMP_FACTORY_LABOR2: Metallurgy 2
+R_IMP_FACTORY_LABOR_BLURB: Factory Labor +$1
+R_IMP_FACTORY_LABOR_DESC: <<
+	[i][color=#aaa]Improvements to the use of materials and labor division in planetary surface factories.[/color][/i]
+
+	Increases the labor generated by Factory buildings by $1.
+
+	[color=#0087c7][b]Alternate Unlock:[/b] Spend $2 influence points.[/color]
+>>
+
+R_IMP_PLANET_SUPPORT: Orbital Command
+R_IMP_PLANET_SUPPORT2: Orbital Command 2
+R_IMP_PLANET_SUPPORT_BLURB: Planet Support +$1
+R_IMP_PLANET_SUPPORT_DESC: <<
+	[i][color=#aaa]More focused and effective command of orbital defense vessels.[/color][/i]
+
+	Increases the maximum support capacity of all owned planets by $1.
+>>
+
+R_IMP_SUPPLY_STORAGE: Logistics
+R_IMP_SUPPLY_STORAGE2: Logistics 2
+R_IMP_SUPPLY_STORAGE_BLURB: Flagship Supplies +$1
+R_IMP_SUPPLY_STORAGE_DESC: <<
+	[i][color=#aaa]Better compression and more efficient storage of ship combat supplies.[/color][/i]
+
+	Increases the maximum supply storage capacity of all flagships by $1.
+>>
+
+R_IMP_SUPPORT_CAP: Organization
+R_IMP_SUPPORT_CAP2: Organization 2
+R_IMP_SUPPORT_CAP_SMALL: Command
+R_IMP_SUPPORT_CAP_BLURB: Flagship Support +$1
+R_IMP_SUPPORT_CAP_DESC: <<
+	[i][color=#aaa]Improved communications and coordination between a flagship and its support fleet.[/color][/i]
+
+	Increases the maximum support command of all flagships by $1.
+>>
+
+R_IMP_THRUST: Propulsion
+R_IMP_THRUST2: Propulsion 2
+R_IMP_THRUST_BLURB: Thrust +$1
+R_IMP_THRUST_DESC: <<
+	[i][color=#aaa]Studies and experiments on improving the thrust output of starship engines, conventional and otherwise.[/color][/i]
+
+	Increases all ship engine thrust by $1.
+
+	If using Hyperdrive, increases hyperdrive speed by $1 as well.
+
+	[color=#d1cb6a][b]Alternate Unlock:[/b] Spend §$2.[/color]
+>>
+
+R_IMP_TRACKING: Hydraulics
+R_IMP_TRACKING2: Hydraulics 2
+R_IMP_TRACKING_BLURB: Turret Tracking +$1
+R_IMP_TRACKING_DESC: <<
+	Increases weapon turret tracking rate by $1.
+
+	[color=#d1cb6a][b]Alternate Unlock:[/b] Spend §$2.[/color]
+>>
+
+R_IMP_FIRE_RATE: Cooling
+R_IMP_FIRE_RATE2: Cooling 2
+R_IMP_FIRE_RATE_BLURB: Weapon Reload +$1
+R_IMP_FIRE_RATE_DESC: <<
+	Increases the fire rate of all weapon systems by $1.
+>>
+
+R_IMP_PROJ_SPEED: Projectiles
+R_IMP_PROJ_SPEED2: Projectiles 2
+R_IMP_PROJ_SPEED_BLURB: Projectile Speed +$1
+R_IMP_PROJ_SPEED_DESC: Increases the speed of all weapon projectiles and missiles by $1.
+
+R_IMP_SUPPLY_USE: Ordinance
+R_IMP_SUPPLY_USE2: Ordinance 2
+R_IMP_SUPPLY_USE_BLURB: Flagship Supply Use -$1
+R_IMP_SUPPLY_USE_DESC: Reduces the supply use of all flagship weapons by $1.
+
+R_IMP_SUPPORT_SUPPLY_USE: Efficiency
+R_IMP_SUPPORT_SUPPLY_USE2: Efficiency 2
+R_IMP_SUPPORT_SUPPLY_USE_BLURB: Support Supply Use -$1
+R_IMP_SUPPORT_SUPPLY_USE_DESC: Reduces the supply use of all support ship weapons by $1.
+
+R_IMP_AOE: Explosives
+R_IMP_AOE2: Explosives 2
+R_IMP_AOE_BLURB: Explosive AoE +$1
+R_IMP_AOE_DESC: Increases the area of effect of explosive weapons such as torpedos by $1.

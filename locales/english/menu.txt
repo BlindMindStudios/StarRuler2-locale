@@ -85,11 +85,11 @@ NO_TEAM: No Team
 NG_GAME_OPTIONS: Game Options
 
 NG_UNIVERSE_GENERATION: Universe Generation
-NG_ANOMALY_OCCURANCE: Anomaly Occurance
-NG_REMNANT_OCCURANCE: Remnant Occurance
-NG_ASTEROID_OCCURANCE: Asteroid Occurance
-NG_UNIQUE_SYSTEM_OCCURANCE: Unique System Occurance
-NG_UNIQUE_RESOURCE_OCCURANCE: Unique Resource Occurance
+NG_ANOMALY_OCCURANCE: Anomaly Occurrence
+NG_REMNANT_OCCURANCE: Remnant Occurrence
+NG_ASTEROID_OCCURANCE: Asteroid Occurrence
+NG_UNIQUE_SYSTEM_OCCURANCE: Unique System Occurrence
+NG_UNIQUE_RESOURCE_OCCURANCE: Unique Resource Occurrence
 NG_PLANET_FREQUENCY: Planet Frequency
 NG_ARTIFACT_FREQUENCY: Artifact Frequency
 NG_SYSTEM_SIZE: System Size
@@ -100,6 +100,32 @@ NG_VICTORY_OPTIONS: Victory Options
 NG_TIME_LIMIT: Time Limit
 NGTT_TIME_LIMIT: <<|
 	Set a time limit for the game. After the indicated amount of minutes have expired, the empire with the most points is declared the winner.
+>>
+NG_REMNANT_AGGRESSION: Remnant Aggression
+NGTT_REMNANT_AGGRESSION: Allow remnant fleets to move to intercept nearby enemy fleets.
+NG_DISABLE_STARTING_FLEETS: Disable Starting Fleets
+NGTT_DISABLE_STARTING_FLEETS: Disable the free starting fleets that each empire gets from their Government trait.
+NG_ENABLE_REVENANT_PARTS: Enable Revenant Parts
+NGTT_ENABLE_REVENANT_PARTS: <<|
+	When checked, the 4 artifact parts of The Revenant will be spread around the universe.
+
+	Activating a part of The Revenant gives a bonus, and having all 4 of them active gives control over the most powerful warship in the universe.
+>>
+NG_ALLOW_TEAM_SURRENDER: Allow Surrender to Break Teams
+NGTT_ALLOW_TEAM_SURRENDER: <<
+	If checked, players in teams will be able to surrender to empires in other teams, breaking them away from their previous teammates and into being vassals of their new master's team.
+>>
+NG_ENABLE_DREAD_PIRATE: Enable Dread Pirate
+NGTT_ENABLE_DREAD_PIRATE: <<
+	When the Dread Pirate is enabled, a pirate ship will roam the galaxy preying on unarmed civilian trade ships.
+
+	The pirate stores its loot in multiple pirate hoard stations hidden in deep space. Kill one of the hoards or the dread pirate ship itself to get its stolen money as special funds.
+>>
+NG_RESOURCE_SCARCITY: Resource Scarcity
+NGTT_RESOURCE_SCARCITY: <<
+	When enabled, larger maps will contain barren planets to keep the amount of resources available to empires scarce and at a managable level.
+	
+	Percentages above 100% will further decrease the amount of resources in the universe, while percentages below 100% will limit the scarcity effect and generate more resources.
 >>
 
 FLATTEN: Flatten

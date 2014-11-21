@@ -5,6 +5,7 @@ SC_Armor: [vspace=-14][img=PlateArmor;42x42/][/vspace]  [color=#a9a9a9]Armor[/co
 SC_FTL: [img=HexagonSubsystems::10;42x21;#f00/]  [color=#67a7ad]FTL[/color]
 SC_Modifiers: [img=HexagonSubsystems::0;42x21;#cf00ff/]  [color=#eda1ff]Modifiers[/color]
 SC_Support: [vspace=-14][img=SupportCommand;42x42/][/vspace]  [color=#eda1ff]Support[/color]
+SC_Equipment: [img=-;42x21/]  [color=#8bb800]Equipment[/color]
 SC_Misc: Misc
 
 CREWCONTROL_NAME: Bridge and Crew
@@ -70,7 +71,7 @@ FUSIONGEN_DESC: <<
 
 AMGEN_NAME: Antimatter Generator
 AMGEN_DESC: <<
-	A sustained matter-antimatter annihilation reaction provides continuous power for th eship.
+	A sustained matter-antimatter annihilation reaction provides continuous power for the ship.
 
 	[img=ResourceIcon::2;22]Provides a [b][color=#0f0]very large[/color][/b] amount of [b][color=#42b4bd]Power[/color][/b] to operate other subsystems.[/img]
 	[img=AttributeIcons::4;22]Provides a [b][color=#0f0]very high[/color] [color=#fefc61]Resupply Rate[/color][/b].[/img]
@@ -116,6 +117,14 @@ MISSILELAUNCHER_DESC: <<
 	[img=Plus]Very effective at piercing armor.[/img]
 	[img=Minus]Slow fire rate.[/img]
 	[img=Minus]Very high [b][color=#fefc61]supply cost[/color][/b].[/img]
+>>
+
+S_SELF_DESTRUCT: Self Destruct Device
+S_SELF_DESTRUCT_DESC: <<
+	A massive warhead designed to detonate when the host vessel becomes unstable.
+	
+	[img=Plus]Extreme damage in a large area.[/img]
+	[img=Minus]Dead.[/img]
 >>
 
 PLATEARMOR_NAME: Plate Armor
@@ -210,5 +219,54 @@ SUPPORTSUPPLY_DESC: <<
 	[img=AttributeIcons::4;22]Provides [b][color=#fefc61]Supply Capacity[/color][/b] to the fleet.[/img]
 	[img=Minus]Adds maintenance cost to the support ships.[/img]
 	[img=Minus]Destroyed supply storage hexes leak supplies over time.[/img]
-	[img=MenuIcons::3;20;#f00][i][color=#aaa]Support ships with maintenance costs will not be created by Defense.[/color][/i][/img]
+	[img=MenuIcons::3;20;#f00][i][color=#faa]Support ships with maintenance costs will not be created by Defense.[/color][/i][/img]
+>>
+
+S_EMERGENCY_SUPPLIES: Emergency Supplies
+S_EMERGENCY_SUPPLIES_DESC: <<
+	An output node for the Empire's energy. Allows supplies to be produced instantly anywhere in the galaxy, at great cost.
+	
+	[img=AttributeIcons::4;22]Immediately generates supplies.[/img]
+	[img=Minus]Costs energy.[/img]
+	[img=Minus]30 Second Cooldown.[/img]
+>>
+ABL_EMERGENCY_SUPPLIES: Create Supplies
+ABL_EMERGENCY_SUPPLIES_DESC: Refill the vessel's supplies.
+
+S_HYPERLASER: Hyperdense Laser
+S_HYPERLASER_DESC: A brief laser with energy densities nearly high enough to spontaneously generate matter.
+
+S_TRACTOR_BEAM: Tractor Beam
+S_TRACTOR_BEAM_DESC: <<
+	Sophisticated graviton emitters combined with an inertial dampening field allow the ship to apply its thrust to other objects. The objects are kept suspended at the same relative position and velocity, letting the ship to move them.
+
+	[img=MenuIcons::3;20][color=#aaa]Can use tractor beam on artifacts, asteroids, orbitals and other ships.[/color][/img]
+	[img=MenuIcons::3;20][color=#aaa]Other ships will us their own thrust to attempt to break away from the tractor beam.[/color][/img]
+	[img=ResourceIcon::3;20;#f00][color=#aaa]Ships under the effect of a tractor beam cannot use their FTL drives.[/color][/img]
+>>
+ABL_TRACTOR_BEAM: Toggle Tractor Beam
+ABL_TRACTOR_BEAM_DESC: Turn the ship's tractor beam on or off.
+ABL_TRACTOR_NO: Cannot Tractor
+
+S_BUSTER_BEAM: Buster Beam
+S_BUSTER_BEAM_DESC: An immense beam weapon capable of destroying entire planets.
+
+S_ION_CANNON: Ion Cannon
+S_ION_CANNON_DESC: <<
+	A highly charged energy beam temporarily overloads an enemy's drive systems.
+	
+	[img=Plus]Disables enemy sublight engines and FTL capabilities.[/img]
+	[img=ResourceIcon::2;22]Costs [b][color=#42b4bd]Energy[/color][/b] to fire.[/img]
+	[img=MenuIcons::3;20][color=#aaa]Can fire ion cannon on enemy ships.[/color][/img]
+	[img=MenuIcons::3;20][color=#aaa]Duration of incapacitating effect is dependent on size of the ion cannon.[/color][/img]
+>>
+
+S_SKIP_DRIVE: Skip Drive
+S_SKIP_DRIVE_DESC: <<
+	A drive system that can expend raw energy to punch through quantum dimensions and achieve instant teleportation.
+	
+	[img=Plus]Instantly teleport to a nearby location.[/img]
+	[img=ResourceIcon::2;22]Costs [b][color=#42b4bd]Energy[/color][/b] to activate.[/img]
+	[img=MenuIcons::3;20][color=#aaa]The further away the ship teleports, the more energy is required.[/color][/img]
+	[img=MenuIcons::3;20][color=#aaa]The larger the skip drive is on the ship, the lower the energy cost.[/color][/img]
 >>

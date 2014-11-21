@@ -88,3 +88,4 @@ CLOSE: Close
 SIZE: Size
 VS: vs
 START: Start
+ACTIVATE: Activate

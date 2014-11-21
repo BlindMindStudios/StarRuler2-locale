@@ -16,3 +16,11 @@ TT_PERFECT_MIRROR: <<|
 
 	Intended for use in balanced 1v1 or team games.
 >>
+
+EXPANSE_MAP: The Expanse
+EXPANSE_MAP_DESC: <<|
+	Capture the remnant homeworld or expand out into the endless void.
+>>
+EXPANSE_MAP_TEXT: <<
+	[i][color=#aaa]Empires surround the remnant homeworld. Remnant fleets can be defeated in order to allow colonization of the inner planets. Remnant fleets also protect systems near the edge of the galaxy, defeating these fleets allows expansion and discovery of more previously undetected systems.[/color][/i]
+>>

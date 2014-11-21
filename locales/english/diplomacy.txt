@@ -226,12 +226,10 @@ INFLUENCE_TT_DURATION: <<|
 >>
 
 INFLUENCE_TT_FAIL: <<|
-	When the vote timer reaches [b][color=#f00]-3 minutes[/color][/b], the red
-	bar will be filled completely and the proposition will be [b]rejected[/b].
+	When the vote timer expires and the [color=#f00][b]red[/b][/color] bar fills completely, the proposition is [b]rejected[/b] and none of its effects apply.
 >>
 INFLUENCE_TT_PASS: <<|
-	When the vote timer reaches [b][color=#0f0]+3 minutes[/color][/b], the green
-	bar will be filled completely and the proposition will be [b]passed[/b].
+	When the vote timer expires and the [color=#0f0][b]green[/b][/color] bar fills completely, the proposition is [b]passed[/b] and its effects are triggered.
 >>
 
 INFLUENCE_TT_BOUGHTBY: Bought by the $1.
@@ -479,6 +477,7 @@ CARD_CALLOUT_DESC: <<|
 	empire's next support action.[/i]
 >>
 CARD_CALLOUT_LOG: * The $1 [b]Calls Out[/b] the $3 to weigh in on the vote.
+CARD_CALLOUT_NOTIFICATION: The $1 have [b][color=#f00]called you out[/color][/b] to vote.
 
 CARD_NAMEPLANET: Name Planet
 CARD_NAMEPLANET_DESC: <<|
@@ -590,16 +589,18 @@ CARD_CONTROL_DESC: <<|
 VOTE_TAKE_CONTROL: Take control of $1
 
 CARD_INTELLIGENCE: Intelligence ($1)
-CARD_INTELLIGENCE_LOG_Y: * The $1 uses their [b]Intelligence[/b] about the $3 to add [color=#0f0]$2 support[/color].
-CARD_INTELLIGENCE_LOG_N: * The $1 uses their [b]Intelligence[/b] about the $3 to add [color=#f00]$2 opposition[/color].
+CARD_INTELLIGENCE_LOG_Y: * [b]Intelligence[/b] about the $3 was revealed to add [color=#0f0]$2 support[/color].
+CARD_INTELLIGENCE_LOG_N: * [b]Intelligence[/b] about the $3 was revealed to add [color=#f00]$2 opposition[/color].
 CARD_INTELLIGENCE_DESC: <<|
-	Collected intelligence data about another empire gives us a favourable position during negotiations.
+	Anonymously releasing intelligence obtained against one of the other empires lets us create opposition for their position without revealing our identity.
+
+	[b]The support added by this card is anonymous and cannot be traced back to you.[/b]
 
 	[i]Can only be played if the $1 has voted on the opposite side of the proposition.
 	Each subsequent intelligence against the same empire played in the same vote loses 2 weight.
 	
 	You can only have 3 Intelligence about one empire at any time. If no
-	Listening Posts are generating any intelligence, your existing intelligence
+	intelligence is being actively generated, your existing intelligence
 	will expire over time.[/i]
 >>
 
@@ -745,8 +746,17 @@ CARD_ENERGY_CLASH_DESC: <<|
 
 	[i]Adds weight to either side of the vote. Costs stored energy to play.
 	Each time an Energy Clash is played into a vote, each subsequent play costs
-	more Energy.[/i]
+	more Energy and holds more weight.[/i]
 >>
+
+CARD_RUSH: Rush
+CARD_RUSH_DESC: <<|
+	Using our influence to convince the appropriate parties of the necessity of
+	this proposition, we can decrease the time needed to get it passed.
+
+	[i]The vote will only take half as long to pass, but all support cards cost 1 extra influence to play. You can only play this card if you are currently supporting the proposition. Only one rush may be played into a proposition.[/i]
+>>
+CARD_RUSH_LOG: * The $1 [color=#fa00ff][b]Rushes[/b][/color] the vote's approval through committee.
 
 CLAUSE_VISION: Share Vision
 CLAUSE_VISION_DESC: <<|

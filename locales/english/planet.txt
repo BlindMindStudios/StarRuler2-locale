@@ -63,8 +63,9 @@ WONDER_NOTIF: Wonder: $1
 WONDER_EVT: The $1 have constructed the $2.
 RENAME_NOTIF: Renamed: $1
 RENAME_EVT: The $1 have renamed $2 to [b]$3[/b].
-DEFENSE_PROJ_OPTION: Build defense for system $1.
-DEFENSE_PROJ_STOP_OPTION: Stop building defense for system $1.
+DEFENSE_ON_OPTION: Start using defense for $1
+DEFENSE_OFF_OPTION: Stop using defense for $1
+TT_IS_DEFENDING: Marked to use defense. Defense provided by resources in your empire will be used to produce defense ships here.\n\nDefense ships produced are spread evenly amongst every location marked for defense.
 TERRAFORM: Terraform
 TERRAFORM_OPTION: Terraform...
 TERRAFORM_ITEM: $1 ($2, $3 Labor)
@@ -83,6 +84,36 @@ CANCEL_AUTO_IMPORT: Cancel Auto-Imports
 QUEUED_AUTO_IMPORT: Queued auto import...
 DESTROY_BUILDING: Destroy $1
 CANCEL_BUILDING: Cancel $1
+
+EXPBLOCK_USE: [color=#f33][b]Cannot Use Resource:[/b][/color]\n$1
+EXPBLOCK_EXPORT: [color=#f33][b]Cannot Export Resource:[/b][/color]\n$1
+EXPBLOCK_IMPORT: [color=#f33][b]Cannot Import Resource:[/b][/color]\n$1
+EXPBLOCK_DISABLED: Planet is blocked from exporting.
+EXPBLOCK_DEEPSPACE: Can only trade from within systems.
+EXPBLOCK_UNOWNED: Can only trade within the same empire.
+EXPBLOCK_UNMINED: Asteroid must be mined.
+EXPBLOCK_UNCOLONIZED: Planet must be colonized.
+EXPBLOCK_LOWLEVEL: Planet must be at least level $1.
+EXPBLOCK_POP: Planet needs $1 Billion population to export resource.
+EXPBLOCK_DISCONNECTED: May only trade through connected systems.
+EXPBLOCK_UNUSABLE: Special circumstances prevent export.
+
+HINT_USE_PLANETS_TITLE: Idle Planets
+HINT_USE_PLANETS: <<|
+	Level 0 planets cost money to maintain.
+	
+	Export resources from your low level planets to build up higher level ones,
+	or abandon unused planets to free up your budget.
+>>
+
+HINT_COLONIZE_TITLE: Slow Colonization
+HINT_COLONIZE: <<|
+	Colonization requires populations and costs money. When in debt, the rate of colonization
+	can be greatly slowed.
+	
+	Focus on colonizing a small number of planets at first and grow those planets to support further
+	colonization. You may also cancel colonization orders to speed up the remaining orders.
+>>
 
 TT_MANAGE_PLANET: <<|
 	[b]Manage Planet[/b]
@@ -319,12 +350,20 @@ BLD_FORGE_DESC: <<|
 
 	The more forges you construct, the larger and more expensive subsequent forges become.
 >>
-BLD_FORGE_DESC_INSIGHT: <<|
-	Increases labor generation by 25%.
 
-	[b]The first forge you construct grants a [img=DesignationIcons::4;22/] Labor Insight[/b]
+STATUS_HAS_DEFENSES: Has Defenses
+STATUS_HAS_DEFENSES_DESC: This planet has defensive weapons constructed on its surface or in low orbit that can fire at nearby enemies.
+BLD_DEFENSE_GRID: Planetary Defense Grid
+BLD_DEFENSE_GRID_DESC: <<|
+	A massive field of missile silos located on the surface of the planet, capable of firing at nearby enemy fleets.
 
-	The more forges you construct, the larger and more expensive subsequent forges become.
+	[i]If there are enemy fleets in orbit and you do not have any remaining support ships to protect the satellite guidance system, the missile silos are disabled.[/i]
+>>
+BLD_PLANET_CANNON: Planetary Artillery Cannon
+BLD_PLANET_CANNON_DESC: <<|
+	An enormous railgun on the planet's surface propels large projectiles towards enemy fleets in the system, inflicting devastating damage.
+
+	[i]If there are enemy fleets in orbit and you do not have any remaining support ships to protect the satellite guidance system, the artillery cannon is disabled.[/i]
 >>
 
 
@@ -392,32 +431,32 @@ NATIVE_FISH_DESC: <<
 
 COND_EXTRA_MONEY: Precious Metal Deposits
 COND_EXTRA_MONEY_DESC: <<|
-	This planet's resource gives [b]1 extra [img=ResourceIcon::0;20/] [color=#d1cb6aff]Money[/color] pressure[/b].
+	This planet's resource gives [b]1 bonus [img=ResourceIcon::0;20/] [color=#d1cb6aff]Money[/color] pressure[/b].
 >>
 
 COND_EXTRA_RESEARCH: Exotic Atmosphere
 COND_EXTRA_RESEARCH_DESC: <<|
-	This planet's resource gives [b]1 extra [img=ResourceIcon::4;20/] [color=#8c4ec9]Research[/color] pressure[/b].
+	This planet's resource gives [b]1 bonus [img=ResourceIcon::4;20/] [color=#8c4ec9]Research[/color] pressure[/b].
 >>
 
 COND_EXTRA_INFLUENCE: Tropical Paradise
 COND_EXTRA_INFLUENCE_DESC: <<|
-	This planet's resource gives [b]1 extra [img=ResourceIcon::1;20/] [color=#0087c7]Influence[/color] pressure[/b].
+	This planet's resource gives [b]1 bonus [img=ResourceIcon::1;20/] [color=#0087c7]Influence[/color] pressure[/b].
 >>
 
 COND_EXTRA_LABOR: Low Gravity
 COND_EXTRA_LABOR_DESC: <<|
-	This planet's resource gives [b]1 extra [img=ResourceIcon::6;20/] [color=#b1b4b6]Labor[/color] pressure[/b].
+	This planet's resource gives [b]1 bonus [img=ResourceIcon::6;20/] [color=#b1b4b6]Labor[/color] pressure[/b].
 >>
 
 COND_EXTRA_DEFENSE: Volatile Minerals
 COND_EXTRA_DEFENSE_DESC: <<|
-	This planet's resource gives [b]1 extra [img=ResourceIcon::5;20/] [color=#af7926]Defense[/color] pressure[/b].
+	This planet's resource gives [b]1 bonus [img=ResourceIcon::5;20/] [color=#af7926]Defense[/color] pressure[/b].
 >>
 
 COND_EXTRA_ENERGY: Geothermal Vents
 COND_EXTRA_ENERGY_DESC: <<|
-	This planet's resource gives [b]1 extra [img=ResourceIcon::2;20/] [color=#42b4bd]Energy[/color] pressure[/b].
+	This planet's resource gives [b]1 bonus [img=ResourceIcon::2;20/] [color=#42b4bd]Energy[/color] pressure[/b].
 >>
 
 COND_ANCIENT_CANNON: Ancient Planetary Defense
@@ -454,4 +493,9 @@ COND_NOXIOUS_ATMOSPHERE_DESC: <<|
 COND_SPARSE: Sparse Resource
 COND_SPARSE_DESC: <<|
 	The resource gives half its pressure, but requires one fewer Tier 1 [img=ResourceClassIcons::0;18/] to level.
+>>
+
+COND_BARREN: Barren
+COND_BARREN_DESC: <<|
+	A barren rock devoid of atmosphere or resources.
 >>

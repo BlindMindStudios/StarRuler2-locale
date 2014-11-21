@@ -119,6 +119,10 @@ NTRG_NOT_NATURAL: Cannot target natural artifact.
 NTRG_NATURAL: Must target natural artifact.
 NTRG_OWN_SYSTEM: Must own all planets.
 NTRG_CONTACT: Must be in contact with other empires.
+NTRG_IN_SYSTEM: Must place inside system.
+NTRG_NOT_SYSTEM: Must place outside system.
+NTRG_IN_UNIVERSE: Must place in universe bounds.
+NTRG_NEED_WAR: Must target enemies.
 
 ABL_ENSLAVE: Enslave
 ABL_ENSLAVE_DESC: <<|

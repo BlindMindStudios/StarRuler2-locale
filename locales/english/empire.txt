@@ -73,7 +73,7 @@ TRAIT_EMPIRE: Government: Empire
 TRAIT_EMPIRE_DESC: <<|
 	[b][color=#a06911]Extra nearby Asteroids[/color][/b].
 	[b][color=#f00]Fleet:[/color][/b] Heavy Carrier with support.
-	[b][color=#0087c7]Cards:[/color][/b] 8x Negotiate, 1x Name Flagship, 1x Name Planet.
+	[b][color=#0087c7]Cards:[/color][/b] 5x Negotiate, 1x Name Flagship, 1x Name Planet.
 >>
 
 TRAIT_COMMUNISM: Government: Communism
@@ -87,14 +87,14 @@ TRAIT_THEOCRACY: Government: Theocracy
 TRAIT_THEOCRACY_DESC: <<|
 	[b][color=#00c0ff]250 FTL[/color][/b].
 	[b][color=#f00]Fleet:[/color][/b] 2x Scout, 1x Dreadnaught, Homeworld Defense.
-	[b][color=#0087c7]Cards:[/color][/b] 1x Promises, 1x Ancient Knowledge, 2x Protect System, 1x Host Galactic Senate.
+	[b][color=#0087c7]Cards:[/color][/b] 2x Call Out, 1x Ancient Knowledge, 2x Protect System, 1x Host Galactic Senate.
 >>
 
 TRAIT_CAPITALISM: Government: Capitalism
 TRAIT_CAPITALISM_DESC: <<|
 	[b][color=#d1cb6a]§300k Special Funds[/color][/b].
 	[b][color=#f00]Fleet:[/color][/b] Heavy Carrier.
-	[b][color=#0087c7]Cards:[/color][/b] 4x Leverage, 2x Attach Rider, 1x Patriotic Surge, 2x Gift.
+	[b][color=#0087c7]Cards:[/color][/b] 1-3x Leverage, 2x Attach Rider, 1x Patriotic Surge, 2x Gift.
 >>
 
 TRAIT_MERITOCRACY: Government: Meritocracy

@@ -17,6 +17,8 @@ ERROR_NEED_CONTROL: At least 1 Control required.
 ERROR_HEX_LIMIT_ARC: $1 turret must point outwards.
 ERROR_FACE_BACKWARDS: $1 exhaust must face backwards.
 ERROR_NOT_CONNECTED: Design must be a connected whole.
+ERROR_NOT_CONTIGUOUS: $1 must be a contiguous area.
+ERROR_TOO_SMALL: $1 too small.
 DESIGNS: Designs
 DSG_INSERT_NAME: Enter a name for the design...
 
@@ -119,6 +121,7 @@ S_BEAMDPS: Beam DPS
 S_DURATION: Duration
 S_COOLDOWN: Cooldown
 S_RELOAD: Reload
+S_RADIUS: Radius
 S_RANGE: Range
 S_SPEED: Speed
 S_PROJ_DR: Projectile DR
@@ -129,3 +132,6 @@ S_DamageThreshold: Damage Threshold
 S_SUPPLYCOST: Supply Cost
 S_BUILDCOST: Cost
 S_LABORCOST: Labor Cost
+S_RESUPPLY: Resupply
+S_ENERGYCOST: Energy Cost
+S_COST_FACTOR: Cost Factor

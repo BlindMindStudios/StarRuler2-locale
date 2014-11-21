@@ -256,7 +256,7 @@ TUT_BUILD2_TEXT: <<|
 >>
 TUT_BUILD2_ACT1_TITLE: Exit Planet Management
 TUT_BUILD2_ACT1_TEXT: Close the planet management screen by [b]right-clicking[/b].
-TUT_BUILD2_ACT2_TITLE: Manage the Fleet
+TUT_BUILD2_ACT2_TITLE: Manage your Titan Fleet
 TUT_BUILD2_ACT2_TEXT: Open the fleet management panel on your Titan by [b]double-clicking[/b] it.
 TUT_BUILD2_ACT3_TITLE: Order Beamships
 TUT_BUILD2_ACT3_TEXT: Click [b]'Add Support Group'[/b] and order 10 Additional [b]Beamships[/b] to be added to the Titan's fleet.
@@ -337,56 +337,57 @@ TUT_BLD_ACT3_TEXT: Speed up your research by selecting [b]Research Complex[/b] a
 
 TUT_RSC_TITLE: Researching Fields
 TUT_RSC_TEXT: <<|
-	Research points you generate can be put into any of a number of [b]Research
-	Fields[/b], in order to level them up. By leveling up research fields, you
-	gain passive benefits to various parts of your empire, as well as being
-	able to gain special research projects and unlocks.
+	Resources that give [color=#8c4ec9][img=ResourceIcon::4;20/][b] Research Pressure[/b][/color] will produce research points over time.
 
-	The rightmost part of the resource bar underneath the tab bar displays the
-	current field being researched, and the progress until the next level.
+	Research points are used to unlock technologies on the research grid, which have various effects and improvements.
+	
+	You can only research technologies adjacent to ones you already have. Technologies available for researching are indicated with a bright border.
 >>
 TUT_RSC_ACT1_TITLE: View Research
 TUT_RSC_ACT1_TEXT: Switch to the [b]Research Tab[/b] in the tab bar.
-TUT_RSC_ACT2_TITLE: Switch to Military Science
-TUT_RSC_ACT2_TEXT: Switch your active research to [b]Military Science[/b] by clicking it.
-TUT_RSC_ACT3_TITLE: Level up Military Science
-TUT_RSC_ACT3_TEXT: Research Military Science to Level 1, gaining its benefits.
-
-TUT_INS_TITLE: Research Insights
-TUT_INS_TEXT: <<|
-	As you level up fields, you will gain access to special [b]Research
-	Projects[/b]. Researching projects can give you various special benefits.
-	
-	A lot of research projects require you to spend [b]Insight[/b] to unlock
-	them. As you level up fields, you will randomly gain particular types of
-	Insight. Theoretical Insights can be used to satisfy requirements for any
-	non-Ancient type of insight.
->>
-TUT_INS_ACT1_TITLE: Unlock Control Computer
-TUT_INS_ACT1_TEXT: Use the Military Insight you just gained in order to research the [b]Control Computer[/b] project.
+TUT_RSC_ACT2_TITLE: Research Armoring
+TUT_RSC_ACT2_TEXT: Research the 'Armoring' technology to the right of the starting Science node.
+TUT_RSC_ACT3_TITLE: Research Bulkheads
+TUT_RSC_ACT3_TEXT: Research the 'Bulkhead' technology that is now accessible.
 
 TUT_DSG_TITLE: Ship Designs
 TUT_DSG_TEXT: <<|
 	Every ship you build, flagship or support ship, is based on a design. In
-	order to build ships equipped with our recently unlocked Control Computer,
+	order to build ships equipped with our recently unlocked Bulkhead,
 	we need to change one of our designs to use it.
-
-	Designs consist of a number of hexes on a blueprint, and subsystems placed
-	on those hexes. It is up to you to determine how large a subsystem is by
-	'painting' it on the blueprint, ranging from creating tiny 1-hex sized
-	laser turrets to giant spinal lasers covering most of the internals of the
-	ship.
 >>
 TUT_DSG_ACT1_TITLE: Open Heavy Carrier
 TUT_DSG_ACT1_TEXT: From the designs tab, [b]click[/b] the Heavy Carrier design in order to edit it.
-TUT_DSG_ACT2_TITLE: Remove Crew Facitilies
-TUT_DSG_ACT2_TEXT: Remove the three Bridge and Crew hexes from the design by [b]right-clicking[/b] them.
-TUT_DSG_ACT3_TITLE: Add Control Computer
-TUT_DSG_ACT3_TEXT: Add a 1-hex control computer on the ship to provide command.
-TUT_DSG_ACT4_TITLE: Add Fusion Generators
-TUT_DSG_ACT4_TEXT: Fill up the remaining empty space by adding 2 Fusion Generator hexes, to generate sufficient power for our control computer.
-TUT_DSG_ACT5_TITLE: Save the Design
-TUT_DSG_ACT5_TEXT: Click the [b]Save[/b] button in the top right to save your changes to the "Heavy Carrier" design.
+TUT_DSG2_TITLE: Subsystems
+TUT_DSG2_TEXT: <<|
+	Every ship design consists of [b]subsystems[/b]. Subsystems can consist of
+	any number of hexes, and can be painted in any shape on the design. The
+	larger the size of a subsystem, the better it is relative to the other
+	subsystems on the design.
+
+	Some subsystems have 'core' hexes: gun turrets, engine exhausts, etc.
+
+	If a core hex is destroyed in combat, the entire subsystem shuts off until it is repaired.
+>>
+TUT_DSG3_TITLE: Adding Armor
+TUT_DSG3_TEXT: <<|
+	Let's make the Heavy Carrier a bit more heavily armored by adding some
+	plate armor hexes to protect its core hexes.
+
+	Select [b]Plate Armor[/b] from the subsystem list on the left by first clicking the "Armor" category, and then clicking the "Plate Armor" subsystem.
+>>
+TUT_DSG3_ACT1_TITLE: Add Plate Armor
+TUT_DSG3_ACT1_TEXT: Add at least [b]3 additional[/b] plate armor hexes.
+TUT_DSG4_TITLE: Modifiers
+TUT_DSG4_TEXT: <<|
+	In addition to adding subsytems, it is also possible to add [b]Subsystem Modifiers[/b] inside particular subsystems. These are things like bulkheads and targeting sensors, and can improve or alter the statistics of a subsystem.
+
+	Be wary though, adding multiple modifiers to a subsystem can make it extremely expensive to build.
+>>
+TUT_DSG4_ACT1_TITLE: Add a Bulkhead
+TUT_DSG4_ACT1_TEXT: Add a bulkhead to at least one of the guns to increase its health.
+TUT_DSG4_ACT2_TITLE: Save the Design
+TUT_DSG4_ACT2_TEXT: Click the [b]Save[/b] button in the top right to save your changes to the "Heavy Carrier" design.
 
 TUT_FLT_TITLE: Constructing a New Fleet
 TUT_FLT_TEXT: <<|
@@ -488,11 +489,11 @@ TUT_VOTE_TEXT: <<|
 TUT_VOTE2_TITLE: Passing a Vote
 TUT_VOTE2_TEXT: <<|
 	While an influence vote, or "Proposition", has a positive support level,
-	its [b]Vote Timer[/b] will count upwards. When the vote timer reaches
-	3 minutes of positive support, the vote [b]Passes[/b].
+	its green bar will fill up and a remaining time to [b]Pass[/b] the proposition is shown.
 
-	When the support level is negative, the [b]Vote Timer[/b] will count down.
-	When it reaches negative 3 minutes, the vote will [b]Fail[/b].
+	When the support level is negative, any progress on the green bar is first
+	removed, then the red bar fills up. When the remaining time to fail hits
+	0 seconds, the vote will be [b]Rejected[/b].
 
 	Influence votes are a diplomatic tug-of-war that any empire in the galactic
 	senate can influence the result of.
@@ -501,13 +502,13 @@ TUT_VOTE3_TITLE: Supporting a Vote
 TUT_VOTE3_TEXT: <<|
 	The Xu'sio have used one of their "Rhetoric" actions to gather opposition
 	to your annex vote in the Senate. Quick, use one of your own actions to get
-	the [b]Support Level[/b] back in the green before the vote goes down to
-	[b][color=#f00]-3 minutes[/color][/b] and fails.
+	the [b]Support Level[/b] back in the green before the vote's red failure
+	bar fills up and the vote is rejected.
 >>
 TUT_VOTE3_ACT1_TITLE: Use "Negotiate"
 TUT_VOTE3_ACT1_TEXT: Click one of your [b]Negotiate[/b] cards and press the [b]Play in Support[/b] button to influence the vote.
 TUT_VOTE3_ACT2_TITLE: Win the Vote
-TUT_VOTE3_ACT2_TEXT: Respond to enemy support cards by playing your own negotiates and win the vote by getting to [b][color=#0f0]+3 minutes[/color][/b].
+TUT_VOTE3_ACT2_TEXT: Respond to enemy support cards by playing your own negotiates and win the vote by filling up the support bar.
 
 TUT_ANNEX2_TITLE: Annexation Complete!
 TUT_ANNEX2_TEXT: <<|
@@ -536,16 +537,14 @@ TUT_DEFCORE_ACT4_TEXT: Place the orbital by clicking on any location in the Ying
 TUT_DEFPROJ_TITLE: Defense Generation
 TUT_DEFPROJ_TEXT: <<|
 	The Spacewood locals have informed us that they've set up a means of
-	creating defense ships to protect themselves. Planets with [b]Defense
-	Generation[/b] will periodically spawn support ships in orbit to protect
-	the planet from invaders.
+	creating defense ships to protect themselves.
 
-	Planets with defense can also be ordered to build defenses for other
-	systems, causing the generated support ships to spawn in orbit of planets
-	in the targeted system instead.
+	[b][color=#af7926][img=ResourceIcon::5;20/] Defense[/color][/b] can be used to produce free support ships over time, all around your empire.
+
+	To determine which systems or planets receive defense ships, you need to mark them to use defense.
 >>
 TUT_DEFPROJ_ACT1_TITLE: Build Defense for Yingmow
-TUT_DEFPROJ_ACT1_TEXT: With Spacewood selected, [b]right-click[/b] the Yingmow Star, then select "Build defense for system Yingmow."
+TUT_DEFPROJ_ACT1_TEXT: [b]Right-click[/b] the Yingmow Star, then select "Start using defense for Yingmow".
 TUT_DEFPROJ_ACT2_TITLE: Move Heavy Carrier
 TUT_DEFPROJ_ACT2_TEXT: While we wait for our defense orbital and ships to finish construction, move your Heavy Carrier fleet to Yingmow.
 

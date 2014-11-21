@@ -317,7 +317,7 @@ ANOMALY_MORPH_GREEN: <<|
 ANOMALY_MORPH_HARVEST: <<|
 	Disassemble the obelisk and drain the power cell for your own use.
 
-	[b][color=#42b4bd][right]Gain 100 Energy.[/right][/color][/b]
+	[b][color=#42b4bd][right]Gain Energy.[/right][/color][/b]
 >>
 ANOMALY_MORPH_RESPONSE: <<|
 	In response to its activation, the obelisk emits an immense particle wave
@@ -344,8 +344,6 @@ ANOMALY_DATACENTER_RECOVER_FAIL: <<|
 >>
 ANOMALY_DATACENTER_RECOVER_SUCCEED: <<|
 	The data center reactivated without incident. Our scientists were able to learn some things that had been holding us back.
-	
-	[b][color=#842cdb]Gained a research insight.[/color][/b]
 >>
 
 ANOMALY_NAR_SYSREACTOR: <<|
@@ -374,6 +372,4 @@ ANOMALY_LIQUIDTANKS_INFUSE: <<|
 >>
 ANOMALY_LIQUIDTANKS_STUDY: <<|
 	This material may be one of a kind. Studying it could advance our understanding of material sciences.
-
-	[b][color=#842cdb][right]Gain a Labor insight.[/right][/color][/b]
 >>

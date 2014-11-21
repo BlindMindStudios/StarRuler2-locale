@@ -63,6 +63,9 @@ DESIGN_STATION: Station
 DESIGN_SHOW_ARCS: Toggle whether to show weapon turret [b]Firing Arcs[/b] at all times.
 DESIGN_SHOW_HULL: Toggle whether to show the hull model your design is approximated to under the blueprint.
 DESIGN_CENTER: Center the design on the grid.
+DESIGN_RANDOMIZE: Generate a completely random design for this ship type.
+DESIGN_RANDOMIZE_CONFIGURE: Configure parameters for random ship generation.
+DESIGN_CONFIGURE: Configure Randomizer
 DESIGN_UNDO: Undo last change. ($1)
 DESIGN_REDO: Redo last undone change. ($1)
 DESIGN_PAINT_TOOL: <<
@@ -88,6 +91,12 @@ DESIGN_DROP_TOOL: <<
 	Left click to select the subsystem type of the clicked hex.
 >>
 DESIGN_CLEAR: Clear the contents of the design. Can be undone.
+
+DESIGN_RND_WEAPONCOUNT: Weapon Count
+DESIGN_RND_ENGINESIZE: Engine Size
+DESIGN_RND_HYPERSIZE: Hyperdrive Size
+DESIGN_RND_SUPPLIES: Generate supply storage.
+DESIGN_RND_SUPPORT: Generate support command.
 
 GRAPHICS_EDITOR: Graphics Editor
 MODULES: Modules
@@ -118,16 +127,24 @@ DISABLED_RESOURCES: Disabled Resources
 NO_POP_RESOURCES: Insufficient Population to Produce
 DECAYING_PLANETS: Decaying Planets
 LABOR_PLANETS: Planets/Orbitals with Labor
-DEFENSE_PLANETS: Planets with Defense
 COLONIZING_PLANETS: Partially Colonized
 INFLUENCE_STACK: Influence Peddling
 WONDER_PLANETS: Owned Wonders
 UNDER_SIEGE_PLANETS: Planets under Siege
+DEFENSE_TARGETS: Locations Using Defense
 ALL_FLEETS: All Fleets
 COMBAT_FLEETS: Fleets in Combat
 FLEETS_LOW_SUPPLY: Fleets on Low Supply
 AVAIL_ARTIFACTS: Available Artifacts
 COLONIZE_SAFE_PLANETS: Sufficient Population to Colonize
+AUTO_IMPORTS: Pending Auto-Imports
+TT_AUTO_IMPORTS: Planets are currently waiting for [img=$3;20/] [b]$1 $2 resource(s)[/b] to become available for auto-importing.
+
+ASTEROID_UNOWNED: Needs to be mined.
+ASTEROID_UNOWNED_TOOLTIP: A planet with labor must construct a mine on this asteroid.
+ASTEROID_OWNED: [img=$1;20;$2/] Active Mine
+ASTEROID_OWNED_TOOLTIP: This asteroid is being mined by a planet. Capture the planet to capture this mine.
+MOVE_TO_OBJ: Move to $1
 
 GO_RESOURCE: $1
 GO_RESOURCE_TYPE: Find Resource
