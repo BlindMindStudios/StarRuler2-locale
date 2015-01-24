@@ -102,9 +102,26 @@ OPT_RESOLUTION: Resolution*
 OPT_RES_ENTRY: $1x$2 $3Hz
 OPT_FULLSCREEN: Fullscreen*
 OPT_RESTART: * Option requires program restart to take effect.
+OPT_GUI_SCALE: Gui Scale
 
 MONITOR: Fullscreen Monitor*
 MONITOR_PRIMARY: Primary Monitor
+
+ANTIALIASING: Antialiasing*
+AA_None: Off
+AA_2x: 2x MSAA
+AA_4x: 4x MSAA
+AA_8x: 8x MSAA
+AA_Super: 2x FSAA
+
+VSYNC: VSync
+VSYNC_Off: Off
+VSYNC_On: On
+VSYNC_OnHalf: On (Half Framerate)
+VSYNC_Adaptive: Adaptive
+
+AUDIO_DEVICE: Audio Device*
+AUDIO_DEVICE_DEFAULT: Default
 
 OPT_CAMERA: Camera
 OPT_ZOOM_SPEED: Zoom Speed
@@ -132,3 +149,11 @@ KB_DESIGN_SAVE: Save Design
 KB_DESIGN_SAVE_CLOSE: Save and Close Design
 KB_DESIGN_DUPLICATE: Duplicate Design
 KB_DESIGN_EXPORT: Export Design
+
+KB_EXPORT: Export Resource
+KB_CANCEL_EXPORT: Cancel Export
+KB_AUTO_IMPORT: Auto-Import
+KB_COLONIZE: Colonize
+KB_ATTACK: Attack
+KB_HOMEWORLD: Zoom to Homeworld
+KB_TRANSFER_SUPPORTS: Transfer Supports

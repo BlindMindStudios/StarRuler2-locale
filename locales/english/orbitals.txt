@@ -6,6 +6,8 @@ TRADE: Trade
 OERR_SYSTEM: Cannot build orbitals outside systems.
 OERR_TRADE: Must build within trade borders.
 OERR_VISION: Cannot build outside vision.
+OERR_LIMIT: Only one per system allowed.
+OERR_BLACKHOLE: Must be built near black hole.
 
 LAB_RESOURCES: Imported Resources:
 LAB_AVAIL_AFFINITIES: Available Affinities:
@@ -267,7 +269,9 @@ ORB_SHIPYARD_BLURB: Can build ships, import labor from planets.
 ORB_SHIPYARD_DESC: <<|
 	A massive orbital shipyard capable of constructing fleets in space.
 
-	Has 3 innate Labor generation per minute. Planets can export their own
+	Construction of ships on a shipyard has a 20% cheaper build cost.
+
+	Has 6 innate Labor generation per minute. Planets can export their own
 	labor to shipyards within trade range at a 75% reduced rate.
 
 	Gains Labor from Metallurgy factory research at a 75% reduced rate.
@@ -284,18 +288,49 @@ ORB_DEFENSE_PLATFORM_DESC: <<|
 	An orbital defense platform outfitted with an arsenal of short-range
 	weaponry to defend its vicinity.
 >>
-ORB_TRADE_OUTPOST: Trade Outpost
+ORB_TRADE_OUTPOST: Outpost
 ORB_TRADE_OUTPOST_BLURB: Allows trade through its system.
 ORB_TRADE_OUTPOST_DESC: <<|
-	A small trade and refueling outpost that allows your civilian ships to
-	travel through the system it is in.
+	A small outpost that allows your civilian ships to travel through the
+	system it is in.
+
+	Outposts generate up to [b]3 Defense[/b] worth of local defense ships,
+	depending on how many adjacent systems have outposts in them.
+
+	If all of the outpost's support command is used and it has a full
+	complement of defense ships, it will start adding its defense generation to
+	your empire's global pool.
+
+	Planets in systems that have contained an outpost for at least 2 minutes
+	will be [b]Protected[/b] from being captured until the outpost is destroyed.
+
+	[i]Can be built in systems you do not own planets in, expanding your
+	empire border. Only one outpost can be constructed per system.[/i]
 >>
+
 ORB_TRADE_STATION: Commerce Station
 ORB_TRADE_STATION_BLURB: Allows global trade to other commerce stations.
 ORB_TRADE_STATION_DESC: <<|
 	A large and bustling station of commerce allows global resource trade
-	between it and any other Commerce Stations you control.
+	between any territories with Commerce Stations.
+
+	In addition, on each commerce station you can purchase a quantity of
+	research, energy, influence or labor in exchange for money every 3 minutes.
+
+	[i]Normally, planets in separated territories cannot export resources to
+	each other. Construct a Commerce Station in both territories in order to
+	allow import and export of resources from planets in your distinct
+	territories.[/i]
 >>
+ABL_BUY_ENERGY: Purchase Energy
+ABL_BUY_ENERGY_DESC: Buy a lump sum of energy from the market. Shares cooldown with other purchase abilities.
+ABL_BUY_INFLUENCE: Purchase Influence
+ABL_BUY_INFLUENCE_DESC: Peddle for a few influence points. Shares cooldown with other purchase abilities.
+ABL_BUY_RESEARCH: Purchase Research
+ABL_BUY_RESEARCH_DESC: Invest in some third-party research. Shares cooldown with other purchase abilities.
+ABL_BUY_LABOR: Purchase Labor
+ABL_BUY_LABOR_DESC: Purchase some contracted labor for a targeted planet or shipyard. Shares cooldown with other purchase abilities.
+
 ORB_SUPPLY_DEPOT: Supply Depot
 ORB_SUPPLY_DEPOT_BLURB: Increases the rate of resupply in the system.
 ORB_SUPPLY_DEPOT_DESC: <<|
@@ -324,3 +359,24 @@ ORB_SCAFFOLDING_DESC: <<|
 	An orbital is under construction at this location.
 >>
 NAME_SCAFFOLDING: $1 (Scaffolding)
+
+ORB_SOLAR_ORBITAL: Solar Engine
+ORB_SOLAR_ORBITAL_DESC: <<
+	Generates extra energy per second. The higher the temperature of the star of the system it's in, the more energy is generated.
+
+	Only one may be constructed per system.
+>>
+
+ORB_FRAME: Orbital Frame
+ORB_FRAME_DESC: <<
+	A pre-built frame and scaffold that can be refitted to other orbital types.
+
+	Orbitals built on top of this frame have 50% reduced build and labor cost, and do not suffer from build distance labor penalties.
+>>
+
+ORB_SINGULARITY_LAB: Singularity Lab
+ORB_SINGULARITY_LAB_DESC: <<
+	Harnesses the unique properties of being near a singularity in order to generate power and gain scientific knowledge.
+
+	Can only be built in systems that have a black hole. Only one may be constructed per system.
+>>

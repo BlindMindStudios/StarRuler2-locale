@@ -89,3 +89,9 @@ SIZE: Size
 VS: vs
 START: Start
 ACTIVATE: Activate
+ENABLED: Enabled
+DISABLED: Disabled
+NEW: New
+ZOOM: Zoom
+ZOOM_TO: Zoom to $1
+DURATION: Duration

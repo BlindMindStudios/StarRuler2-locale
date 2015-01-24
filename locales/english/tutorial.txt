@@ -167,8 +167,7 @@ TUT_IMPORT1_TEXT: <<|
 	Now that you have a planet with a level 1 resource available, you must import[b][img=ResourceClassIcons::3;22/] Food[/b] and [b][img=ResourceClassIcons::4;22/] Water[/b]
 	to it to make use of its native resource.
 	
-	Colonize planets with the necessary resources and export them to this planet. [b]Select[/b] each planet you colonize and [b]right-click[/b] the level 1 resource planet, then choose 'export.'
-	You may also [b]right-click[/b] a planet and tell it to [b]Auto-Import[/b] the necessary resources to level up.
+	Colonize planets with the necessary resources and export them to this planet. To order a planet to export a resource, [b]left-click and drag[/b] on the source planet and drop the resource on the destination. You may also [b]right-click[/b] a planet and tell it to [b]Auto-Import[/b] the necessary resources to level up.
 >>
 TUT_IMPORT1_ACT1_TITLE: Level up the Level 1 resource planet
 TUT_IMPORT1_ACT1_TEXT: <<|
@@ -252,14 +251,14 @@ TUT_BUILD2_TEXT: <<|
 	as a maintenance cost from each subsequent budget.
 
 	While we wait for our Scout to finish constructing, lets order some
-	additional [b]Support Ships[/b] for our original Titan's fleet.
+	additional [b]Support Ships[/b] for our original Battleship's fleet.
 >>
 TUT_BUILD2_ACT1_TITLE: Exit Planet Management
 TUT_BUILD2_ACT1_TEXT: Close the planet management screen by [b]right-clicking[/b].
-TUT_BUILD2_ACT2_TITLE: Manage your Titan Fleet
-TUT_BUILD2_ACT2_TEXT: Open the fleet management panel on your Titan by [b]double-clicking[/b] it.
+TUT_BUILD2_ACT2_TITLE: Manage your Battleship Fleet
+TUT_BUILD2_ACT2_TEXT: Open the fleet management panel on your Battleship by [b]double-clicking[/b] it.
 TUT_BUILD2_ACT3_TITLE: Order Beamships
-TUT_BUILD2_ACT3_TEXT: Click [b]'Add Support Group'[/b] and order 10 Additional [b]Beamships[/b] to be added to the Titan's fleet.
+TUT_BUILD2_ACT3_TEXT: Click [b]'Add Support Group'[/b] and order 10 Additional [b]Beamships[/b] to be added to the Battleship's fleet.
 TUT_BUILD2_ACT4_TITLE: Finish Scout Construction
 TUT_BUILD2_ACT4_TEXT: Wait for Spacewood to finish constructing a Scout. Support ships can be constructed at the same time as larger projects.
 
@@ -289,8 +288,8 @@ TUT_CONQ_TEXT: <<|
 	defense ships, then lay siege to it with your fleet to reduce its loyalty.
 	When its loyalty is completely drained, the planet will be yours!
 >>
-TUT_CONQ_ACT1_TITLE: Jump Titan into Xaste
-TUT_CONQ_ACT1_TEXT: Jump your Titan fleet into the Xaste system using its hyperdrives.
+TUT_CONQ_ACT1_TITLE: Jump Battleship into Xaste
+TUT_CONQ_ACT1_TEXT: Jump your Battleship fleet into the Xaste system using its hyperdrives.
 TUT_CONQ_ACT2_TITLE: Eliminate Defenses
 TUT_CONQ_ACT2_TEXT: Move your fleet to Xaste IV and eliminate the defense ships in orbit.
 TUT_CONQ_ACT3_TITLE: Capture Planet
@@ -346,7 +345,7 @@ TUT_RSC_TEXT: <<|
 TUT_RSC_ACT1_TITLE: View Research
 TUT_RSC_ACT1_TEXT: Switch to the [b]Research Tab[/b] in the tab bar.
 TUT_RSC_ACT2_TITLE: Research Armoring
-TUT_RSC_ACT2_TEXT: Research the 'Armoring' technology to the right of the starting Science node.
+TUT_RSC_ACT2_TEXT: Research the 'Armoring' technology northeast of the top Science node.
 TUT_RSC_ACT3_TITLE: Research Bulkheads
 TUT_RSC_ACT3_TEXT: Research the 'Bulkhead' technology that is now accessible.
 
@@ -374,7 +373,7 @@ TUT_DSG3_TEXT: <<|
 	Let's make the Heavy Carrier a bit more heavily armored by adding some
 	plate armor hexes to protect its core hexes.
 
-	Select [b]Plate Armor[/b] from the subsystem list on the left by first clicking the "Armor" category, and then clicking the "Plate Armor" subsystem.
+	Select [b]Plate Armor[/b] from the subsystem list on the left by first clicking the "Defense" category, and then clicking the "Plate Armor" subsystem.
 >>
 TUT_DSG3_ACT1_TITLE: Add Plate Armor
 TUT_DSG3_ACT1_TEXT: Add at least [b]3 additional[/b] plate armor hexes.

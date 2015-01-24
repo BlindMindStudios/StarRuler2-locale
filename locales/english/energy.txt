@@ -108,6 +108,8 @@ NTRG_ORBITAL_CORE: Must target $1.
 NTRG_FLAGSHIP: Must target flagship.
 NTRG_VISION: Requires vision.
 NTRG_OWNED: Must target self.
+NTRG_ALLIED: Must target self or allies.
+NTRG_NOT_ALLIED: Cannot target allies..
 NTRG_UNNAMED: Cannot target already named.
 NTRG_STATUS: Already has status.
 NTRG_FTL: Cannot target ships in FTL.
@@ -123,6 +125,8 @@ NTRG_IN_SYSTEM: Must place inside system.
 NTRG_NOT_SYSTEM: Must place outside system.
 NTRG_IN_UNIVERSE: Must place in universe bounds.
 NTRG_NEED_WAR: Must target enemies.
+NTRG_CONSTRUCTION: Must be able to use labor.
+NTRG_UNIQUE: Cannot target unique resources.
 
 ABL_ENSLAVE: Enslave
 ABL_ENSLAVE_DESC: <<|

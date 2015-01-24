@@ -4,8 +4,10 @@ SHIPS: Ships
 ORBITALS: Orbitals
 POPULATION: Population
 MAX_POPULATION: Maximum Population
+COLONIZE_GENERIC: Colonize
 COLONIZE_WITH: Colonize with $1 (ETA $2 minutes)
 AUTO_COLONIZE: Colonize this
+AUTO_COLONIZE_BLOCKED: Colonize this (currently blocked)
 AUTO_COLONIZE_LEVEL: Colonize this and Auto-Import to Level $1
 AUTO_COLONIZE_SYSTEM: Colonize planets in $1
 AUTO_COLONIZE_SYSTEM_LEVEL: Colonize planets in $1 and Auto-Import
@@ -18,6 +20,7 @@ COLONIZE_UNSAFE_PROMPT: <<|
 	
 	Are you sure you wish to colonize despite potentially deleveling?
 >>
+ONLY_PLANETS: May only target planets.
 LEVEL: Level
 MANAGE: Manage
 ORBITAL_YARD: Orbital Construction Yard
@@ -27,6 +30,8 @@ EXPORT_RESOURCE: Export $1 to $2
 EXPORT_RESOURCES: Export resources to $1
 QUEUE_EXPORT_RESOURCE: Queue export of $1 to $2
 STOP_EXPORT_RESOURCE: Stop exporting $1 to $2
+EXPORT_RESOURCE_PROMPT: Export $1
+EXPORT_RESOURCES_PROMPT: Export Resources
 STOP_EXPORT_RES_QUEUE: Cancel queued export of $1 to $2
 IMPORT_RESOURCE: Import $1 from $2
 QUEUE_IMPORT_RESOURCE: Queue import of $1 from $2
@@ -37,6 +42,7 @@ RESOURCE_LEVEL_REQUIRED: Requires level $1 planet to produce.
 RESOURCE_TIER_DESC: [b]Tier $1[/b] [img=$2;18/] resource: requires level $1 planet to produce.
 RESOURCE_EXPORTED_TO: Exporting to $1...
 RESOURCE_IMPORTED_FROM: Importing from $1...
+ONLY_WITH_RESOURCES: May only target planets or asteroids.
 ORBITAL_SLOTS: Orbital Slots
 INCOME: Income
 REQ_FOR_LEVEL: Required for level $1:
@@ -59,8 +65,6 @@ AVAILABLE_RESOURCES: Resources:
 REQUIRED_RESOURCES: Required for Lv$1
 RESOURCE_CLASS_Food: Food
 RESOURCE_CLASS_WaterType: Water
-WONDER_NOTIF: Wonder: $1
-WONDER_EVT: The $1 have constructed the $2.
 RENAME_NOTIF: Renamed: $1
 RENAME_EVT: The $1 have renamed $2 to [b]$3[/b].
 DEFENSE_ON_OPTION: Start using defense for $1
@@ -84,6 +88,9 @@ CANCEL_AUTO_IMPORT: Cancel Auto-Imports
 QUEUED_AUTO_IMPORT: Queued auto import...
 DESTROY_BUILDING: Destroy $1
 CANCEL_BUILDING: Cancel $1
+STORED_LABOR: Stored Labor: $1 / $2
+TILE_BIOME_DEVELOPED: $1 (Developed)
+TILE_BIOME_UNDEVELOPED: $1 (Undeveloped)
 
 EXPBLOCK_USE: [color=#f33][b]Cannot Use Resource:[/b][/color]\n$1
 EXPBLOCK_EXPORT: [color=#f33][b]Cannot Export Resource:[/b][/color]\n$1
@@ -219,193 +226,11 @@ PLANET_RESEARCH_TIP: <<|
 	Research points are spent to unlock nodes in the research graph.
 >>
 
-PLANET_DESIGNATION_TIP: <<|
-	[b]Wonder[/b]
-	
-	Planets that reach Level 4 can choose to construct a wonder. This replaces
-	the planet's native resources and grants an empire-wide effect.
-
-	Choosing a wonder will lock in all the resources being exported to the
-	planet, making you unable to change their destinations.
->>
-
-PLANET_WONDER_REQ: Wonder: Level 4 planet required...
-PLANET_WONDER_CHOOSE: Choose Wonder...
-
 PLANET_REQUIREMENTS_TIP: <<|
 	[b]Level Requirements[/b]
 	
 	Importing these types of resources to this planet will cause it
 	to level up.
->>
-
-BLD_TT_SIZE: Size: $1x$2
-BLD_TT_COST: Base Cost: $1
-BLD_BASE: Base
-BLD_BASE_DESC: <<
-	Produces 1 defense. Uses 1 defense pressure;
->>
-
-BLD_BAZAAR: Bazaar
-BLD_BAZAAR_DESC: <<
-	Upgrades from Market.
-	Makes §110k per budget cycle. Uses 2 money pressure.
->>
-
-BLD_BROADCAST: Broadcast Center
-BLD_BROADCAST_DESC: <<
-	Upgrades from Media Center.
-	Grants 1.5 influence stake. Uses 2 influence pressure.
->>
-
-BLD_CITY: City
-BLD_CITY_DESC: <<
-	Constructed for population to live in.
->>
-
-BLD_ENTERPRISE: Enterprise
-BLD_ENTERPRISE_DESC: <<
-	Upgrades from Industry.
-	Generates 1.5 labor per minute. Uses 2 labor pressure.
->>
-
-BLD_FACTORY: Factory
-BLD_FACTORY_DESC: <<
-	Generates 3 labor per minute.
->>
-
-BLD_FTLSTORE: FTL Storage
-BLD_FTLSTORE_DESC: <<
-	A large storage chamber built inside a subspace isolation field to store FTL crystals.
-	
-	Stores 250 FTL resource.
-	Storage doubled when placed on a planet with native FTL crystals.
->>
-
-BLD_FARM: Megafarm
-BLD_FARM_DESC: <<
-	Generates a basic unexportable food resource.
->>
-
-BLD_HYDROGENATOR: Hydrogenator
-BLD_HYDROGENATOR_DESC: <<
-	Generates a basic unexportable water resource.
->>
-
-BLD_GENERATOR: Generator
-BLD_GENERATOR_DESC: <<
-	Generates 6 energy/minute. Uses 1 energy pressure.
->>
-
-BLD_INDUSTRY: Industry
-BLD_INDUSTRY_DESC: <<
-	Generates 1 labor per minute. Uses 1 labor pressure.
->>
-
-BLD_LAUNCHPAD: Launch Pad
-BLD_LAUNCHPAD_DESC: <<
-	Upgrades from Base.
-	Produces 1.5 defense. Uses 2 defense pressure.
->>
-
-BLD_MARKET: Market
-BLD_MARKET_DESC: <<
-	Makes §75k per budget cycle. Uses 1 money pressure.
->>
-
-BLD_MEDIACENTER: Media Center
-BLD_MEDIACENTER_DESC: <<
-	Grants 1 influence stake. Uses 1 influence pressure.
->>
-
-BLD_POWERPLANT: Power Plant
-BLD_POWERPLANT_DESC: <<
-	Upgrades from Generator.
-	Generates 9 energy/minute. Uses 2 energy pressure.
->>
-
-BLD_RESEARCHCOMPLEX: Research Complex
-BLD_RESEARCHCOMPLEX_DESC: <<
-	Generates research points for the empire, and provides training and resources to civil scientists.
-
-	Gives 1 research generation.
-	Adds 1 research pressure.
->>
-
-BLD_TECHCENTER: Tech Center
-BLD_TECHCENTER_DESC: <<
-	Upgrades from University.
-	Gives 1.5 research generation. Uses 2 research pressure.
->>
-
-BLD_UNIVERSITY: University
-BLD_UNIVERSITY_DESC: <<
-	Gives 1 research generation. Uses 1 research pressure.
->>
-
-
-BLD_FORGE: Forge
-BLD_FORGE_DESC: <<|
-	Increases labor generation by 25%.
-
-	The more forges you construct, the larger and more expensive subsequent forges become.
->>
-
-STATUS_HAS_DEFENSES: Has Defenses
-STATUS_HAS_DEFENSES_DESC: This planet has defensive weapons constructed on its surface or in low orbit that can fire at nearby enemies.
-BLD_DEFENSE_GRID: Planetary Defense Grid
-BLD_DEFENSE_GRID_DESC: <<|
-	A massive field of missile silos located on the surface of the planet, capable of firing at nearby enemy fleets.
-
-	[i]If there are enemy fleets in orbit and you do not have any remaining support ships to protect the satellite guidance system, the missile silos are disabled.[/i]
->>
-BLD_PLANET_CANNON: Planetary Artillery Cannon
-BLD_PLANET_CANNON_DESC: <<|
-	An enormous railgun on the planet's surface propels large projectiles towards enemy fleets in the system, inflicting devastating damage.
-
-	[i]If there are enemy fleets in orbit and you do not have any remaining support ships to protect the satellite guidance system, the artillery cannon is disabled.[/i]
->>
-
-
-PLANET_FULL_DESIGNATION: $1, Level $2 «$3»
-PLANET_FULL_NO_DESIGNATION: $1, Level $2
-PLANET_DESIGNATION: Level $2 «$3»
-PLANET_NO_DESIGNATION: Level $2
-
-PLANET_AUTO_DESIGNATE: Automatically Designate
-PLANET_AUTO_DESIGNATE_DESC: <<|
-	The planet will choose a reasonable designation on its own.
->>
-
-DESIG_WONDER: Wonder.
-DESIG_PERMANENT: Permanent.
-DESIG_TRANSFORMS: Transforms native resources.
-DESIG_MINLEVEL: Level $1+.
-
-DESIG_SUPERNETWORK: Intelligence Supernetwork
-DESIG_SUPERNETWORK_DESC: <<|
-	Grants vision of everything. You can trade resources anywhere.
->>
-
-DESIG_ACADEMY: Fleet Academy
-DESIG_ACADEMY_DESC: <<|
-	All fleets operate at 40% extra effectiveness.
->>
-
-DESIG_PARLIAMENT: Galactic Parliament
-DESIG_PARLIAMENT_DESC: <<|
-	Any vote you start begins at +6 support.
->>
-
-DESIG_REFINERY: Refinery Forge
-DESIG_REFINERY_DESC: <<|
-	All your orbitals start with two free wildcard affinities.
->>
-
-DESIG_BASTION: Bastion of Patriotism
-ABL_PLANET_TAKEOVER: Takeover Planet
-DESIG_BASTION_DESC: <<|
-	Grants ability to slowly take over enemy planets.
 >>
 
 STATUS_HAPPY: Happy
@@ -426,7 +251,7 @@ NATIVE_FISH: Native Fish
 NATIVE_FISH_DESC: <<
 	Increases lifetime of consumed temporary resources by 30%.
 
-	Cannot be exported.
+	[color=#ff7070][b]Cannot be exported.[/b][/color]
 >>
 
 COND_EXTRA_MONEY: Precious Metal Deposits
@@ -499,3 +324,11 @@ COND_BARREN: Barren
 COND_BARREN_DESC: <<|
 	A barren rock devoid of atmosphere or resources.
 >>
+
+BIOME_CRYSTALLIC: Crystallic
+BIOME_DESERT: Desert
+BIOME_FOREST: Forest
+BIOME_ICE: Ice
+BIOME_MOUNTAINS: Mountains
+BIOME_OCEANIC: Oceanic
+BIOME_VOLCANIC: Volcanic

@@ -373,3 +373,27 @@ ANOMALY_LIQUIDTANKS_INFUSE: <<|
 ANOMALY_LIQUIDTANKS_STUDY: <<|
 	This material may be one of a kind. Studying it could advance our understanding of material sciences.
 >>
+ANOMALY_NAR_BEAUTY: The survey team is unknowingly drawn toward a massive crystal. Nearly an hour passes before any of them thought to report anything of interest. After withdrawing to a safer distance and observing from a far, nothing further can be determined.
+ANOMALY_BEAUTY_DESTROY: The crystal clearly has some power over our species, destroy it before something can go wrong.
+ANOMALY_BEAUTY_VOLUNTEER: A particular scientist, longing to study such a unique artifact, volunteers to experience its effects.
+ANOMALY_BEAUTY_SUCCESS: <<
+	The volunteer spends several days studying the crystal, progressing from ignorance, through babbling confusion, to an impressive clarity. We will be able to use this brilliance to our advantage.
+
+	[b][color=#4141ff]+$1 Influence Generation[/color]
+	[color=#af0baf]+$2/s Research Income[/color][/b]
+>>
+ANOMALY_BEAUTY_FAIL: <<
+	The volunteer becomes utterly obsessed with the crystal, becoming corrupted by its influence.
+
+	[b][color=#ff2121]A new pirate vessel will attack your space.[/color][/b]
+>>
+ANOMALY_NAR_NEUTRONPLATE: All of the chunks of metal and rock in the area are heavily irradiated. One particular, distorted rock is easily located as the source. Careful study with a remote probe reveals the rock to be a fragment from the detonation of an ancient star. Within its core, a small amount of neutronium is discovered.
+ANOMALY_NEUTRONPLATE_INFUSE: <<
+	The supply of neutronium is plenty to enhance all armor used by our fleets.
+
+	[b][color=#96d196][right]Increase all armor HP by $1%.[/right][/color][/b]
+>>
+ANOMALY_NEUTRONPLATE_STUDY: <<
+	This sample can give our scientists invaluable insight in replicating this material artificially.
+	[right][b][color=#80ff80]Unlock[/color] [template=subsys_ref;NeutronArmor/][/b][/right]
+>>

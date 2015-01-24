@@ -29,6 +29,7 @@ SURRENDER_NAME: [b][color=#f00]Subjugation[/color][/b] of the $1
 SURRENDER_OFFER: [b][color=#f00]Surrender Offer[/color][/b] of the $1
 SURRENDER_DEMAND: [b][color=#f00]Demand for Surrender[/color][/b] of the $1
 SURRENDER_OPTION: Offer your Unconditional Surrender
+PEACE_OFFER: [b][color=#0f0]Peace Offer[/color][/b] from the $1
 DEMAND_SURRENDER_OPTION: Demand their Surrender
 OFFER_SUBJUGATE_OPTION: Offer your Subjugation to them
 DEMAND_SUBJUGATE_OPTION: Demand their Subjugation to you
@@ -105,6 +106,7 @@ CARD_PLAY_ENERGY: Energy Cost:
 INFLUENCE_POPULATION: Population
 NO_MET_EMPIRES: No alien races have been discovered...
 NOTIF_MET_EMPIRE: You have made first contact with the $1 in the $2 system.
+NOTIF_MET_EMPIRE_BONUS: You have received $3 bonus influence for being the first person to make contact with the $2!
 VOTES_FOR: $1 for
 VOTES_AGAINST: $1 against
 OFFER_FOR: Make Offer\nfor Support
@@ -154,6 +156,8 @@ EDICT_CONQUER_OPTION: Edict to Vassals: [b][color=#f00]Conquer[/color][/b]
 EDICT_CLEAR_OPTION: Clear Edict
 EDICT_1: [color=#f00][b]Conquer the $1[/b][/color]
 TT_EDICT_1: Conquer the $1. For every world captured and every flagship destroyed, gain a small resource reward.
+TT_HIGHEST_CONTRIBUTOR: The $1 is one of the [color=#00ff00][b]highest contributors[/b][/color] to this proposition.
+TT_LOWEST_CONTRIBUTOR: The $1 is one of the [color=#ff0000][b]lowest contributors[/b][/color] to this proposition.
 
 INFLUENCE_TT_ACTION: <<|
 	This is a diplomatic [b]action[/b]. After being purchased, it can be used at will,
@@ -474,7 +478,8 @@ CARD_CALLOUT_DESC: <<|
 	[i]When the vote ends, if the target empire has not added weight to the vote
 	after this card was played, you gain leverage on them. Can only be used on
 	an empire once per vote. The weight of this action is added to the target
-	empire's next support action.[/i]
+	empire's next support action. Extends the vote to ensure at least 60
+	seconds are remaining to vote.[/i]
 >>
 CARD_CALLOUT_LOG: * The $1 [b]Calls Out[/b] the $3 to weigh in on the vote.
 CARD_CALLOUT_NOTIFICATION: The $1 have [b][color=#f00]called you out[/color][/b] to vote.
@@ -758,6 +763,76 @@ CARD_RUSH_DESC: <<|
 >>
 CARD_RUSH_LOG: * The $1 [color=#fa00ff][b]Rushes[/b][/color] the vote's approval through committee.
 
+CARD_INFILTRATE: Infiltrate
+CARD_INFILTRATE_DESC: <<|
+	Send a highly trained operative to infiltrate the command structure of an enemy fleet, getting ready to subtly sabotage it in combat, and spreading dissent amongst key officers in the fleet.
+
+	[i]The targeted enemy fleet grants you vision in the system it is in. Over the next 60 seconds, the enemy fleet's efficiency and strength is slowly reduced by 10% permanently. Effect lasts for 30 minutes.[/i]
+>>
+STATUS_INFILTRATED: Infiltrated
+STATUS_INFILTRATED_DESC: <<
+	You have an operative infiltrated in this enemy fleet. It grants you vision and causes the fleet to have slightly reduced combat effectiveness.
+>>
+
+ZEITGEIST_ENERGY: Zeitgeist: Power
+ZEITGEIST_ENERGY_DESC: <<
+	[b]Zeitgeist Effect[/b]
+
+	If the vote passes, the energy generation rate of all empires will be increased by 25%, and all empires will be able to construct Solar Engine orbitals to generate more energy.
+
+	[img=QuickbarIcons::6;32]If the vote passes, the most supportive empire will receive a bonus [b]+2 energy per second[/b] base generation rate while this zeitgeist is active.[/img]
+	[img=QuickbarIcons::3;32]If the vote fails, the most opposing empire will receive an instant bonus of [b]§800k special funds[/b].[/img]
+	[i]Only one zeitgeist effect can be active at the same time. Passing a new zeitgeist will remove any previously active ones.[/i]
+>>
+
+ZEITGEIST_COOPERATION: Zeitgeist: Cooperation
+ZEITGEIST_COOPERATION_DESC: <<
+	[b]Zeitgeist Effect[/b]
+
+	If the vote passes, all empires will gain vision over any empires they are not currently at war with, even if they are not allied.
+
+	While this zeitgeist is active, all empires will get reduced influence generation dependent on the total size of their military. The bigger their military strength, the greater the reduction in influence generation.
+
+	[i]Only one zeitgeist effect can be active at the same time. Passing a new zeitgeist will remove any previously active ones.[/i]
+>>
+
+ZEITGEIST_PROGRESS: Zeitgeist: Progress
+ZEITGEIST_PROGRESS_DESC: <<
+	[b]Zeitgeist Effect[/b]
+
+	If the vote passes, all energy generation on planets and by civilian structures is converted to research generation instead.
+
+	[img=QuickbarIcons::6;32]If the vote passes, the most supportive empire will receive a bonus [b]+3 research per second[/b] base generation rate while this zeitgeist is active.[/img]
+	[img=QuickbarIcons::3;32]If the vote fails, the most opposing empire will receive an instant bonus of [b]800 energy[/b].[/img]
+	[i]Only one zeitgeist effect can be active at the same time. Passing a new zeitgeist will remove any previously active ones.[/i]
+>>
+STATUS_PROGRESS_GEIST: Zeitgeist: Progress
+STATUS_PROGRESS_GEIST_DESC: All energy generation on the surface of this planet is converted to research generation instead.
+
+ZEITGEIST_ZEALOT: Zeitgeist: Zealotry
+ZEITGEIST_ZEALOT_DESC: <<
+	[b]Zeitgeist Effect[/b]
+
+	If the vote passes, all owned planets will defend themselves from enemy fleets with missile launchers. The amount of launchers on a planet is dependent on its planet level. Planetary missile launchers always deactivate when all orbital support ships are destroyed and an enemy fleet starts sieging to capture the world.
+
+	[img=QuickbarIcons::6;32]If the vote passes, the most supportive empire will receive a bonus [b]+5 defense per minute[/b] while this zeitgeist is active.[/img]
+	[img=QuickbarIcons::3;32]If the vote fails, the most opposing empire will receive an instant bonus of [b]4 random influence cards[/b].[/img]
+	[i]Only one zeitgeist effect can be active at the same time. Passing a new zeitgeist will remove any previously active ones.[/i]
+>>
+STATUS_ZEALOT_GEIST: Zeitgeist: Zealotry
+STATUS_ZEALOT_GEIST_DESC: This planet defends itself with missile silos while not actively under siege.
+
+ZEITGEIST_ART: Zeitgeist: Art
+ZEITGEIST_ART_DESC: <<
+	[b]Zeitgeist Effect[/b]
+
+	While this zeitgeist is active, all empires will be able to construct Museums on their planets. Museums cost labor to construct, but give an instant bonus of 10 influence when constructed.
+
+	[img=QuickbarIcons::6;32]If the vote passes, the most supportive empire will receive [b]+20% influence generation[/b] while this zeitgeist is active.[/img]
+	[img=QuickbarIcons::3;32]If the vote fails, the most opposing empire will receive an instant bonus of [b]800 research[/b].[/img]
+	[i]Only one zeitgeist effect can be active at the same time. Passing a new zeitgeist will remove any previously active ones.[/i]
+>>
+
 CLAUSE_VISION: Share Vision
 CLAUSE_VISION_DESC: <<|
 	All empires that have signed this treaty will share intelligence, giving
@@ -799,4 +874,9 @@ CLAUSE_MUTUAL_DEFENSE_DESC: <<|
 	empires in the treaty.
 	
 	If any signatory empire goes to war, all signatories are automatically at war as well.
+>>
+
+CLAUSE_PEACE: Peace Offer
+CLAUSE_PEACE_DESC: <<
+	If this treaty is accepted, war between the two empires will cease immediately.
 >>

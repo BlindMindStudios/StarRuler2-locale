@@ -4,6 +4,11 @@ TRANSFER_SUPPORT_SHIPS: Transfer Support Ships
 CREATE_SUPPORT_SHIPS: Create More Support Ships
 SCUTTLE_SUPPORT_SHIPS: Remove/Scuttle Support Ships
 MANAGE_SUPPORTS: Manage Support Ships
+ORDER_SUPPORT_COUNT: Order $1x $2
+ORDER_SUPPORT_CUSTOM: Order custom amount...
+ORDER_SUPPORT_DESIGN: Support Ship Design:
+ORDER_SUPPORT_AMOUNT: Amount:
+ORDER_SUPPORT_COST: Cost:
 ADD_SUPPORTS: Add Support Group
 SHIP_ORDERS: Orders
 SHIP_FORMATIONS: Formations
@@ -36,6 +41,7 @@ ABILITY_CD: " [cd: $1 remaining]"
 BUILD_RETROFIT: Retrofit Fleet: $1
 RETROFIT_OPTION: Retrofit Fleet ($1, $2 Labor)
 CAPTURE_OPTION: Capture Planet ($1 Supply, $2)
+PROTECTED_OPTION: Cannot Capture - Protected by Outpost or Decree
 REV_SPEC: " r$1"
 SUPPORT_CAPACITY: Support Capacity
 SLIPSTREAM_TEAR: Slipstream Tear
@@ -61,6 +67,7 @@ STATUS_INTERDICT_FTL: FTL Disabled
 STATUS_INTERDICT_FTL_DESC: <<|
 	This flagship's FTL capabilities have been disabled.
 >>
+SHIELD_STRENGTH: Shields
 
 PICKUP_RESEARCH: Research Data
 PICKUP_RESEARCH_DESC: Gain research points when picked up.
@@ -145,6 +152,16 @@ TT_SHIP_HEALTH: <<
 
 	[b]Repair (In Combat)[/b] [offset=230]$3/sec[/offset]
 	[b]Repair (Outside Combat)[/b] [offset=230]$4/sec[/offset]
+>>
+
+TT_SHIP_SHIELD: <<
+	[font=Medium]Shield[/font]
+	Any incoming damage is first blocked by shields. The lower shields are, the more damage is let through instead of being blocked.
+
+	[b]Current Shield[/b] [offset=230]$1[/offset]
+	[b]Maximum Shield[/b] [offset=230]$2[/offset]
+
+	[b]Shield Regeneration[/b] [offset=230]$3/sec[/offset]
 >>
 
 TT_SHIP_SUPPLY: <<

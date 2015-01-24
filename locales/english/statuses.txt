@@ -3,3 +3,12 @@ STATUS_DEVASTATE_DESC: This planet is losing population over time.
 
 STATUS_GRAVITARSHIP: Gravitar Ship
 STATUS_GRAVITARSHIP_DESC: These ancient vessels recover artifacts that have wandered too far into deep space.
+
+STATUS_STARTING_PROTECTION: Establishing Protection
+STATUS_STARTING_PROTECTION_DESC: Full loyalty protection for the planets in this system is still being established. It will take time to become active.
+
+STATUS_BLOCKED_COLONIZATION: Colonization Blocked
+STATUS_BLOCKED_COLONIZATION_DESC: This planet cannot be colonized due to undefeated remnants in the system.
+
+STATUS_LIMITED_SIGHT: Limited Vision
+STATUS_LIMITED_SIGHT_DESC: The nebula in this system is limiting vision range.

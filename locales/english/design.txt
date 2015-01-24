@@ -12,6 +12,7 @@ ERROR_INVALID_FILE: File is not a valid exported design.
 ERROR_INVALID_HULL: Cannot use $1 on this hull type.
 ERROR_MINIMUM_SIZE: '$1' Hull requires minimum size $2.
 ERROR_MAXIMUM_SIZE: '$1' Hull has a maximum size of $2.
+ERROR_MIN_SIZE: $1 has minimum size $2.
 ERROR_HULL_NOT_IN_SHIPSET: Design's hull is not available to the current shipset.
 ERROR_NEED_CONTROL: At least 1 Control required.
 ERROR_HEX_LIMIT_ARC: $1 turret must point outwards.
@@ -19,8 +20,23 @@ ERROR_FACE_BACKWARDS: $1 exhaust must face backwards.
 ERROR_NOT_CONNECTED: Design must be a connected whole.
 ERROR_NOT_CONTIGUOUS: $1 must be a contiguous area.
 ERROR_TOO_SMALL: $1 too small.
+ERROR_GRID_SIZE: Invalid hex grid size.
+ERROR_HEX_COUNT: Too much interior space used.
+ERROR_MUST_BE_EXTERIOR: All $1 hexes must be exterior.
+ERROR_MUST_COVER: $1 must cover the ship in all directions.
+ERROR_ONE_APPLIED: Only one $1 may be applied.
+ERROR_CANNOT_APPLY: Cannot apply $1 subsystem.
+APPLIED_HULL: Hull
 DESIGNS: Designs
 DSG_INSERT_NAME: Enter a name for the design...
+AUTO_SELECT_HULL: Automatically select hull model...
+FORCE_HULL: Hull Model: $1
+DESIGN_HEX_LIMIT: Interior Space: $1 / $2
+TT_DESIGN_HEX_LIMIT: <<
+	Designs can only contain up to a limited amount of interior hexes.
+
+	Certain subsystems like armor hexes placed on the outside of the ship do not count towards a ship's interior hex count.
+>>
 
 TIP_ROTATE: You can rotate a turret's facing by using the scroll wheel.
 
@@ -79,6 +95,12 @@ STT_HP: The sum hitpoints of all hexes on the design.
 S_REPAIR: Repair / Second
 STT_REPAIR: The amount of hitpoints the ship can repair per second. Reduced to 25% of the normal rate during combat.
 
+S_Shield: Shield Capacity
+STT_Shield: Maximum hitpoints of the shield.
+
+S_ShieldRegen: Shield Regen
+STT_ShieldRegen: Shield hitpoints regenerated per second.
+
 S_DPS: Damage / Second
 STT_DPS: Total damage per second (DPS) dealt by the ship in combat, when undamaged.
 
@@ -98,7 +120,7 @@ S_MASS: Mass
 STT_MASS: Total mass of the ship.
 
 S_SUPPLYREGEN: Resupply Rate
-STT_SUPPLYREGEN: Amount of supply regenerated per second in uncontested space.
+STT_SUPPLYREGEN: Amount of supply regenerated per second in friendly space.
 
 S_SUPPLYUSE: Combat Supply Use
 STT_SUPPLYUSE: Amount of supply used by this ship per second while firing all weapons in combat.
@@ -135,3 +157,4 @@ S_LABORCOST: Labor Cost
 S_RESUPPLY: Resupply
 S_ENERGYCOST: Energy Cost
 S_COST_FACTOR: Cost Factor
+S_STELLAR_DAMAGE: Stellar Damage

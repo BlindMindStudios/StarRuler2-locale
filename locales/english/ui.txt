@@ -132,7 +132,8 @@ INFLUENCE_STACK: Influence Peddling
 WONDER_PLANETS: Owned Wonders
 UNDER_SIEGE_PLANETS: Planets under Siege
 DEFENSE_TARGETS: Locations Using Defense
-ALL_FLEETS: All Fleets
+ALL_FLEETS: All Flagships
+DEFENSE_STATIONS: Defense Stations
 COMBAT_FLEETS: Fleets in Combat
 FLEETS_LOW_SUPPLY: Fleets on Low Supply
 AVAIL_ARTIFACTS: Available Artifacts

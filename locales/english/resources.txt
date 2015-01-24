@@ -4,6 +4,7 @@ NEED_FLING_BEACON: Requires a Fling Beacon
 OUT_OF_BEACON_RANGE: Too far from a Fling Beacon
 PER_SECOND: /s
 PER_MINUTE: /min
+PER_MIN: /m
 BUILD_FOR: Build Time: $1
 BUILD_TIME: Build Time
 EST_BUILD_TIME: Est. Build Time
@@ -87,11 +88,12 @@ GTT_INFLUENCE: <<
 
 GTT_ENERGY: <<
 	[font=Medium]Energy[/font]
-	[i]Energy is used to activate abilities on artifacts found across the galaxy. The more Energy you are currently storing, the more your generation rate is reduced.[/i]
+	[i]Energy is used to activate abilities on artifacts found across the galaxy. The more Energy you are currently storing above your free storage cap, the more your generation rate is reduced.[/i]
 
 	Available Energy: [right]$1[/right]
 	Generation Rate: [right]$2[/right]
-	Storage Penalty: [right]$3[/right]
+	Free Storage: [right]$3[/right]
+	Storage Penalty: [right]$4[/right]
 >>
 
 GTT_FTL: <<
@@ -170,34 +172,20 @@ EFFECT_VANISHBONUS: Temp. Resources
 EFFECT_POPRESEARCH: Generating research per $1 billion people.
 
 WATER: Water
-WATER_DESC: <<|
-	Native water bonds with additional waters to create other resources.
->>
+WATER_BLURB: Leveling planets up to Level 1 requires [img=ResourceClassIcons::4;20/] Water.
+FOOD_BLURB: Leveling planets up requires [img=ResourceClassIcons::3;20/] Food.
 
 GRAIN: Grain (Food)
 GRAIN_EFFECT: Pop. Growth
-GRAIN_DESC: <<
-	Adds 1 Overpopulation.
->>
 
 MEAT: Meat (Food)
 MEAT_EFFECT: Building Construction
-MEAT_DESC: <<
-	Reduces building maintenance by up to §100k.
->>
 
 FRUIT: Fruit (Food)
 FRUIT_EFFECT: Undeveloped Maint.
 
-FRUIT_DESC: <<|
-	The native resource of the consuming planet produces +20% extra pressure.
->>
-
 FISH: Fish (Food)
 FISH_EFFECT: Developed Tiles
-FISH_DESC: <<
-	Increases lifetime of consumed temporary resources by 30%.
->>
 
 HYPER_OATS: Nillin Wheat (Food)
 HYPER_OATS_DESC: <<
@@ -273,15 +261,11 @@ ELECTRONICS_DESC: <<
 
 GLASS: Glass
 GLASS_EFFECT: Energy
-GLASS_DESC: <<
-	Gives 1 free Energy generation.
->>
+GLASS_DESC: Gives 1 [img=ResourceIcon::2;20/] Energy generation.
 
 NATIVE_GOLD: Native Gold
 NATIVE_GOLD_EFFECT: Influence
-NATIVE_GOLD_DESC: <<
-	Gives 1 free Influence generation.
->>
+NATIVE_GOLD_DESC: Gives 1 [img=ResourceIcon::1;20/] Influence generation.
 
 DEUTERIUM: Deuterium
 DEUTERIUM_DESC: <<
@@ -318,7 +302,9 @@ TITANIUM_DESC: <<
 
 LOCAL_ASTEROID_FIELD: Local Asteroid Field
 LOCAL_ASTEROID_FIELD_DESC: <<
-	Cannot be exported. Civilian labor generation is increased by 50%.
+	Civilian labor generation is increased by 50%.
+
+	[color=#ff7070][b]Cannot be exported.[/b][/color]
 >>
 
 EXPLOSIVES: Explosives
@@ -366,9 +352,7 @@ PSIONIC_REAGENTS_DESC: <<
 >>
 
 ANCIENT_CITY: Ancient City
-ANCIENT_CITY_DESC: <<
-	Cannot be exported.
->>
+ANCIENT_CITY_DESC: [color=#ff7070][b]Cannot be exported.[/b][/color]
 
 SUPERCARBONS: Supercarbons
 SUPERCARBONS_DESC: <<
@@ -377,7 +361,7 @@ SUPERCARBONS_DESC: <<
 HYDROCONDUCTORS: Hydroconductors
 HYDROCONDUCTORS_EFFECT: Duplicate Effects
 HYDROCONDUCTORS_DESC: <<|
-	Increases all labor generation on the consuming planet by 40%.
+	Increases all labor generation on the consuming planet by 50%.
 >>
 
 ANTIMATTER: Antimatter
@@ -387,7 +371,7 @@ ANTIMATTER_DESC: <<|
 
 EXOTIC_MATTER: Exotic Matter
 EXOTIC_MATTER_DESC: <<
-	Reduces building maintenance by up to §$1. Buildings construct instantly.
+	Buildings on the consuming planet construct instantly.
 >>
 
 CORINIUM: Corinium
@@ -413,8 +397,17 @@ DRUGS_DESC: <<|
 
 FTL_CRYSTALS: FTL Crystals
 FTL_CRYSTALS_EFFECT: FTL Generation
-FTL_CRYSTALS_DESC: <<|
-	Generates 1 FTL per second. Cannot be used to level up planets.
+FTL_CRYSTALS_BLURB: <<
+	Generates [levels=$1;#00c0ff]0.1/0.5/1/2/3/8[/levels] [img=ResourceIcon::3;20/] FTL/s.
+	[b]Level 4+:[/b] FTL leaving this system is free.
+>>
+FTL_CRYSTALS_DESC: <<
+	Generates [levels=$1;#00c0ff]0.1/0.5/1/2/3/8[/levels] [img=ResourceIcon::3;20/] FTL per second.
+
+	[b]If this planet is Level 4 or higher:[/b]
+	[offset=30]All FTL jumps leaving from this system are free.[/offset]
+
+	[i][color=#aaa]This resource is a scalable resource and cannot be exported or used to level up. Its bonuses depend on the level of the planet.[/color][/i]
 >>
 
 UNIQUE_RESEARCH: Errite
@@ -551,4 +544,57 @@ SLAVE_LABOR_DESC: <<
 	Adds 5 flat labor generation.
 
 	Only ticks down while used in construction.
+>>
+
+PLAINS: Vast Plains
+PLAINS_BLURB: <<
+	Planet has a massive surface. Tile development rate increased per level.
+>>
+
+QUARTZ: Quartz
+QUARTZ_BLURB: <<
+	Gain [levels=$1;#ffb4b6]10/25/50/80/120/200[/levels] bonus stored labor per artifact activated.
+>>
+QUARTZ_DESC: <<
+	Every time you activate an artifact, this planet gains [levels=$1;#ffb4b6]10/25/50/80/120/200[/levels] stored labor, provided it has enough labor storage to hold it.
+
+	This planet has [levels=$1;#ffb4b6]10/110/210/310/410/510[/levels] bonus labor storage.
+
+	[i][color=#aaa]This resource is a scalable resource and cannot be exported or used to level up. Its bonuses depend on the level of the planet.[/color][/i]
+>>
+
+ALLONDIUM: Allondium
+ALLONDIUM_BLURB: <<
+	Increases civilian influence generation.
+	Generates random diplomacy cards.
+>>
+ALLONDIUM_DESC: <<
+	Influence generation on this planet is increased by [levels=$1;#ffb4b6]10%/20%/30%/40%/50%/60%[/levels].
+
+	Generates a random diplomacy card every [levels=$1;#ffb4b6]10/8/6/4/2/1[/levels] minutes.
+
+	[i][color=#aaa]This resource is a scalable resource and cannot be exported or used to level up. Its bonuses depend on the level of the planet.[/color][/i]
+>>
+
+PHOSPHATE: Phosphate
+PHOSPHATE_BLURB: <<
+	Increases fleet strength in allied systems by [levels=$1;#ffb4b6]0%/5%/10%/15%/25%/35%[/levels].
+>>
+PHOSPHATE_DESC: <<
+	Fleets fighting in any systems you control gain [levels=$1;#ffb4b6]0%/5%/10%/15%/25%/35%[/levels] extra strength.
+
+	[i][color=#aaa]This resource is a scalable resource and cannot be exported or used to level up. Its bonuses depend on the level of the planet.[/color][/i]
+>>
+
+CYLLIUM: Cyllium
+CYLLIUM_BLURB: <<
+	Increases civilian energy generation.
+	Generates artifacts over time.
+>>
+CYLLIUM_DESC: <<
+	Energy generation on this planet is increased by [levels=$1;#ffb4b6]10%/20%/30%/40%/50%/60%[/levels].
+
+	Generates a random artifact in the system every [levels=$1;#ffb4b6]20/18/14/8/5/3[/levels] minutes.
+
+	[i][color=#aaa]This resource is a scalable resource and cannot be exported or used to level up. Its bonuses depend on the level of the planet.[/color][/i]
 >>

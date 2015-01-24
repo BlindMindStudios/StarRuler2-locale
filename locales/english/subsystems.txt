@@ -1,11 +1,12 @@
+SC_Hulls: [hspace=4/][img=DesignationIcons::16;32x32/][hspace=6/]  [color=#cc6a3a]Hulls[/color]
 SC_Control: [vspace=-14][img=Bridge;42x42/][/vspace]  [color=#2fd6b3]Control[/color]
-SC_Weapons: [img=HexagonSubsystems::6;42x21/]  [color=#f9464d]Weapons[/color]
+SC_Weapons: [vspace=-18][hspace=-22/][img=Railgun::2;70x53/][/vspace][hspace=-10/]  [color=#f9464d]Weapons[/color]
 SC_Propulsion: [hspace=-10/][vspace=-56][img=RocketEngine;84x84/][/vspace][hspace=-32/]  [color=#f9e146]Propulsion[/color]
-SC_Armor: [vspace=-14][img=PlateArmor;42x42/][/vspace]  [color=#a9a9a9]Armor[/color]
+SC_Defense: [vspace=-14][img=PlateArmor;42x42/][/vspace]  [color=#a9a9a9]Defense[/color]
 SC_FTL: [img=HexagonSubsystems::10;42x21;#f00/]  [color=#67a7ad]FTL[/color]
 SC_Modifiers: [img=HexagonSubsystems::0;42x21;#cf00ff/]  [color=#eda1ff]Modifiers[/color]
 SC_Support: [vspace=-14][img=SupportCommand;42x42/][/vspace]  [color=#eda1ff]Support[/color]
-SC_Equipment: [img=-;42x21/]  [color=#8bb800]Equipment[/color]
+SC_Equipment: [vspace=-22][hspace=-29/][img=TractorGun::2;100x76/][/vspace][hspace=-29/]  [color=#8bb800]Equipment[/color]
 SC_Misc: Misc
 
 CREWCONTROL_NAME: Bridge and Crew
@@ -51,6 +52,14 @@ SUPPORTCAPMODULE_DESC: <<
 	[img=Minus]May lose control over support ships when destroyed.[/img]
 >>
 
+SHIELDGEN_NAME: Shield Generator
+SHIELDGEN_DESC: <<
+	Creates a shield around the vessel, blocking some incoming damage.
+
+	[img=Plus]Creates regenerating barrier against damage.[/img]
+	[img=Minus]Weakened shields allow some damage through.[/img]
+>>
+
 FISSIONGEN_NAME: Fission Generator
 FISSIONGEN_DESC: <<
 	A power generator based on atomic fission.
@@ -89,11 +98,37 @@ RAILBATTERY_DESC: <<
 	[img=Minus]Limited turret firing arc.[/img]
 >>
 
+MUONBATTERY_NAME: Muon Cannon Battery
+MUONBATTERY_DESC: <<
+	Fires batches of newly created muons at relativistic speeds.
+	
+	Benefits from technologies that improve railgun batteries.
+	
+	[img=Plus]Rapid fire rate.[/img]
+	[img=Plus]Pierces through armor.[/img]
+	[img=Minus]Lower damage.[/img]
+	[img=Minus]Inaccurate projectiles.[/img]
+	[img=Minus]Limited turret firing arc.[/img]
+>>
+
 RAILGUN_NAME: Railgun
 RAILGUN_DESC: <<
 	A magnetic cannon that fires relatively small projectiles at immense velocities.
 	
 	[img=Plus]High damage per hit.[/img]
+	[img=Minus]Inaccurate projectiles.[/img]
+	[img=Minus]Limited turret firing arc.[/img]
+>>
+
+MUON_CANNON_NAME: Muon Cannon
+MUON_CANNON_DESC: <<
+	Fires batches of newly created muons at relativistic speeds.
+	
+	Benefits from technologies that improve railguns.
+	
+	[img=Plus]Rapid fire rate.[/img]
+	[img=Plus]Pierces through armor.[/img]
+	[img=Minus]Lower damage.[/img]
 	[img=Minus]Inaccurate projectiles.[/img]
 	[img=Minus]Limited turret firing arc.[/img]
 >>
@@ -132,8 +167,8 @@ PLATEARMOR_DESC: <<
 	Heavy, interlocked plates of metal that protect the ship from damage.
 	
 	[img=Plus]High [b][color=#80ff80]health[/color][/b].[/img]
-	[img=Plus]Increases the [b][color=#80ff80]health[/color][/b] of surrounding hexes.[/img]
 	[img=Plus]Resists and reduces incoming damage.[/img]
+	[img=Plus]Armor on the outside of the ship does not use up interior space.[/img]
 	[img=Minus]Heavy.[/img]
 >>
 
@@ -142,7 +177,7 @@ ABLATIVEARMOR_DESC: <<
 	A stiff metal foam designed to absorb damage by ablating away.
 	
 	[img=Plus]High [b][color=#c6c33a]damage resistance[/color][/b].[/img]
-	[img=Plus]Increases the [b][color=#80ff80]health[/color][/b] of surrounding hexes.[/img]
+	[img=Plus]Armor on the outside of the ship does not use up interior space.[/img]
 	[img=MenuIcons::3;20]Effective against many small hits.[/img]
 >>
 
@@ -151,7 +186,7 @@ REACTIVEARMOR_DESC: <<
 	A sheet of independent explosives that detonate nearly instantly in response to incoming weapon fire.
 
 	[img=Plus]Damage hits exceeding the [b][color=#c33ac6]damage threshold[/color][/b] are reduced significantly.[/img]
-	[img=Plus]Increases the [b][color=#80ff80]health[/color][/b] of surrounding hexes.[/img]
+	[img=Plus]Armor on the outside of the ship does not use up interior space.[/img]
 	[img=MenuIcons::3;20]Effective against massive single hits.[/img]
 >>
 
@@ -160,7 +195,7 @@ NEUTRONARMOR_DESC: <<
 	Microscopic pellets of neutronium-doped metal are mixed with standard plate armor.
 	
 	[img=Plus]Very high [b][color=#80ff80]health[/color][/b].[/img]
-	[img=Plus]Increases the [b][color=#80ff80]health[/color][/b] of surrounding hexes.[/img]
+	[img=Plus]Armor on the outside of the ship does not use up interior space.[/img]
 	[img=Minus]Extremely heavy.[/img]
 	[img=Minus]Expensive build cost.[/img]
 >>
@@ -168,27 +203,28 @@ NEUTRONARMOR_DESC: <<
 ROCKETENGINE_NAME: Rocket Engine
 ROCKETENGINE_DESC: <<
 	Expels large amounts of mass at high speeds to produce thrust.
-	
-	Very High Thrust.
-	High Maintenance.
+
+	[img=Plus]Very High Thrust.[/img]
+	[img=Minus]High Maintenance.[/img]
 >>
 
 IONENGINE_NAME: Ion Engine
 IONENGINE_DESC: <<
 	Propels small amounts of fuel at extremely high speeds.
-	
-	Low Thrust.
-	Requires Power.
+
+	[img=Plus]Low maintenance.[/img]
+	[img=Minus]Low Thrust.[/img]
+	[img=Minus]Requires Power.[/img]
 >>
 
 GRAVITYENGINE_NAME: Graviton Engine
 GRAVITYENGINE_DESC: <<
 	A dense artificial gravity wave allows seemingly reactionless engines to propel spacecraft.
-	
-	Higher Thrust.
-	Expensive.
-	Can be placed internally.
-	Has high power needs.
+
+	[img=Plus]High Thrust.[/img]
+	[img=Plus]Can be placed internally.[/img]
+	[img=Minus]Expensive.[/img]
+	[img=Minus]Has high power needs.[/img]
 >>
 
 BULKHEAD_NAME: Bulkhead
@@ -234,7 +270,13 @@ ABL_EMERGENCY_SUPPLIES: Create Supplies
 ABL_EMERGENCY_SUPPLIES_DESC: Refill the vessel's supplies.
 
 S_HYPERLASER: Hyperdense Laser
-S_HYPERLASER_DESC: A brief laser with energy densities nearly high enough to spontaneously generate matter.
+S_HYPERLASER_DESC: <<
+	A brief laser with energy densities nearly high enough to spontaneously generate matter.
+
+	[img=Plus]Accurate and instant beam lock-on.[/img]
+	[img=Plus]Deals damage quickly.[/img]
+	[img=Minus]Lower overall DPS.[/img]
+>>
 
 S_TRACTOR_BEAM: Tractor Beam
 S_TRACTOR_BEAM_DESC: <<
@@ -269,4 +311,47 @@ S_SKIP_DRIVE_DESC: <<
 	[img=ResourceIcon::2;22]Costs [b][color=#42b4bd]Energy[/color][/b] to activate.[/img]
 	[img=MenuIcons::3;20][color=#aaa]The further away the ship teleports, the more energy is required.[/color][/img]
 	[img=MenuIcons::3;20][color=#aaa]The larger the skip drive is on the ship, the lower the energy cost.[/color][/img]
+>>
+
+S_GRAVITON_CONDENSER: Graviton Condenser
+S_GRAVITON_CONDENSER_DESC: <<
+	An immense beam generator that collapses a celestial object's own gravity into itself, leading it to compress and eventually detonate.
+
+	[img=Plus]Beam can be activated to deal damage over time to stars and planets.[/img]
+>>
+ABL_GRAVITON_CONDENSER: Fire Graviton Condenser
+ABL_GRAVITON_CONDENSER_DESC: Fire a beam that collapses a celestial object's own gravity into itself, leading it to compress and eventually detonate.
+
+S_CLOAKPLATING: Cloaking Mesh
+S_CLOAKPLATING_DESC: <<
+	Fully covering a ship in a mesh of hyperabsorbant material allows it to avoid detection by enemies outside immediate visual range.
+
+	[img=Plus]When activated, fleet cannot be seen from a distance.[/img]
+	[img=ResourceIcon::2;22]Cloak slowly drains [b][color=#42b4bd]Energy[/color][/b] when active.[/img]
+	[img=Minus]Cloak is broken when the fleet enters combat.[/img]
+	[img=MenuIcons::3;20][color=#aaa]The ship's exterior must be fully covered in cloaking mesh in order to successfully cloak.[/color][/img]
+>>
+ABL_CLOAK: Toggle Cloak
+ABL_CLOAK_DESC: <<
+	Toggle whether the ship is currently cloaked.
+
+	Cloaking costs a small amount of energy per second to maintain and breaks as soon as the fleet enters combat.
+>>
+STATUS_CLOAKED: Cloaked
+STATUS_CLOAKED_DESC: <<
+	This fleet is currently cloaked.
+
+	Cloaking costs a small amount of energy per second to maintain and breaks as soon as the fleet enters combat.
+>>
+
+S_TITAN_HULL: Titan Hull
+S_TITAN_HULL_DESC: <<
+	A colossal, extremely heavy hull frame that allows larger ships to be constructed more efficiently.
+
+	[img=Plus]Much more internal space available.[/img]
+	[img=Plus]Reduces build costs by up to 50% as the ship size gets bigger.[/img]
+	[img=Plus]Rigourous construction increases turret potential firing arcs.[/img]
+	[img=Minus]Extreme mass increase.[/img]
+	[img=Minus]Much slower hyperdrive speed.[/img]
+	[img=Minus]Can only be used for ships of size 500 or greater.[/img]
 >>

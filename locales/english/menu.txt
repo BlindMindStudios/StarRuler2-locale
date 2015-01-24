@@ -6,6 +6,20 @@ MENU_GAME_SETTINGS: Game Settings
 MENU_GALAXIES: Galaxies
 MENU_GAMES: Games
 HANDICAP: Handicap
+MODS_MENU: Mods
+DISABLED_MOD: Disabled
+DISABLE_MOD: Disable Mod
+ENABLE_MOD: Enable Mod
+NEW_MOD: Create New Mod
+EDIT_MOD: Edit Mod
+MENU_CONTINUE_MAIN: Continue to Main Menu
+MENU_MOD_COUNTS: $1 Mod(s) Installed, $2 Mods(s) Enabled
+MANAGE_MODS: Manage Mods
+OPEN_WORKSHOP: View Steam Workshop
+MOD_INCOMPATIBLE: Cannot enable, mod is not compatible with '$1'.
+MOD_CONFLICT_BASE: Can only enable one base mod at a time.
+MOD_CONFLICT: Conflicting Files:
+MENU_LOADING: Loading...
 
 MAIN_MENU: Main Menu
 PAUSED_MENU: Paused
@@ -33,6 +47,9 @@ SAVE_NO_COMPAT: <<|
 
 	The development team apologizes for the inconvenience.
 >>
+SAVE_NO_MODS: <<
+	Cannot load save: one or more mods used in this save file are not installed.
+>>
 
 MP_OPTIONS: Multiplayer Options
 MP_HOST_OPTIONS: Host Options
@@ -44,6 +61,7 @@ MP_HOST_LOAD: Host & Load
 MP_PUBLIC: Public Game
 MP_PUNCHTHROUGH: NAT Traversal
 MP_VERSION_MISMATCH: (INCOMPATIBLE VERSION)
+MP_MISSING_MODS: (MISSING MODS)
 MP_ENTER_PASSWORD: Password Required
 MP_CHAT_INTRO: [i][color=#aaa]Press Shift+Return to re-open the chat window after closing it...[/color][/i]
 MP_NOT_READY: Ready Up
@@ -126,6 +144,18 @@ NGTT_RESOURCE_SCARCITY: <<
 	When enabled, larger maps will contain barren planets to keep the amount of resources available to empires scarce and at a managable level.
 	
 	Percentages above 100% will further decrease the amount of resources in the universe, while percentages below 100% will limit the scarcity effect and generate more resources.
+>>
+NG_ENABLE_INFLUENCE_EVENTS: Enable Diplomacy Events
+NGTT_ENABLE_INFLUENCE_EVENTS: <<
+	When enabled, event cards will be seeded into the influence card deck that trigger when drawn.
+
+	Disabling this will prevent Zeitgeists and other diplomacy events from occuring.
+>>
+NG_START_EXPLORED_MAP: Fully Explored Map
+NGTT_START_EXPLORED_MAP: <<
+	When enabled, all systems in the map start out explored and all empires know where they are.
+
+	Otherwise, empires will need to scout for systems to reveal them.
 >>
 
 FLATTEN: Flatten

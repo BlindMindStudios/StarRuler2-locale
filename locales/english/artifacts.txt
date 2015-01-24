@@ -191,9 +191,9 @@ ABL_GENERATE_STAR_DESC: <<
 ART_SKIP_DRIVE: Skip Drive
 ART_SKIP_DRIVE_DESC: An equippable experimental drive system that uses raw energy to FTL very short distances.
 ABL_EQUIP_SKIP_DRIVE: Equip Skip Drive
-ABL_EQUIP_SKIP_DRIVE_DESC: Equip a skip drive to the targeted fleet. Skip drives are instant teleportation, but use up large amounts of energy and have a long cooldown.
+ABL_EQUIP_SKIP_DRIVE_DESC: Equip a skip drive to the targeted fleet. Skip drives are instant teleportation, but use up large amounts of energy.
 STATUS_SKIP_DRIVE: Skip Drive
-STATUS_SKIP_DRIVE_DESC: This flagship has a skip drive equipped. Skip drives are instant teleportation, but use up large amounts of energy and have a long cooldown.
+STATUS_SKIP_DRIVE_DESC: This flagship has a skip drive equipped. Skip drives are instant teleportation, but use up large amounts of energy.
 ABL_BLINK: Teleport
 ABL_BLINK_DESC: Instantly teleport the fleet to a nearby position. Costs more energy the further away the fleet is teleported.
 
@@ -205,7 +205,7 @@ STATUS_ION_CANNON: Ion Cannon
 STATUS_ION_CANNON_DESC: This flagship has an ion cannon equipped. Firing an ion cannon temporarily prevents the targeted ship from moving or using FTL.
 ABL_ION_CANNON: Fire Ion Cannon
 ABL_ION_CANNON_DESC: <<
-	Fire the equipped ion cannon on a target enemy flagship. It will be unable to move or use FTL for 2 minutes after being hit.
+	Fire the equipped ion cannon on a target enemy flagship. It will be unable to move or use FTL for a duration after being hit.
 	
 	Ion cannons cost more energy to fire if the enemy ship is larger than the ship with the ion cannon.
 >>
@@ -218,3 +218,14 @@ ABL_PROTO_LEVEL1: Form Planet (Tier 1)
 ABL_PROTO_LEVEL1_DESC: Manipulate the planet's formation by expending a large amount of energy. The planet will produce a random tier 1 resource.
 ABL_PROTO_LEVEL2: Form Planet (Tier 2)
 ABL_PROTO_LEVEL2_DESC: Manipulate the planet's formation by expending a large amount of energy. The planet will produce a random tier 2 resource.
+
+ART_FRAME_CONSTRUCTOR: Orbital Frame Constructor
+ART_FRAME_CONSTRUCTOR_DESC: <<
+	Create a frame that an orbital can be constructed on top of for reduced build and labor costs.
+>>
+ABL_ORBITAL_FRAME: Construct Orbital Frame
+ABL_ORBITAL_FRAME_DESC: <<
+	Create an orbital frame at the specified location.
+
+	You can construct any other orbital on top of an orbital frame to replace it. Orbitals constructed on top of frames have 50% reduced build and labor costs, and do not suffer from build distance labor penalties.
+>>
